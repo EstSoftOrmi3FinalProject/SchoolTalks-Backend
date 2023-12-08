@@ -1,15 +1,5 @@
 # 지역기반 스터디 그룹 커뮤니티 서비스
-- 테스트용 계정
-  ```
-  id : test@test.test
-  pw : test11!!
-  ```
-- 해당 repo는 sample repo입니다. 실제 사용되고 있는 repo가 아닙니다.
-- 이미지는 약간의 블러처리를 하였습니다.
-- 모든 템플릿이 동일한 템플릿이 되지 않도록 적절한 수정이 필요합니다.
-- GitHub Project나 GitHub Wiki를 사용하시는 것도 좋습니다.
-- 스웨거와 같은 서비스를 이용할 경우 캡쳐된 이미지가 있어야 합니다.
-- Notion으로 WBS 등을 작성하였으면 노션 링크가 아니라 내용이나 캡쳐 이미지가 들어가도록 해주세요.(URL 이동 최소화)
+
 
 ## 1. 목표와 기능
 
@@ -103,9 +93,8 @@
 | blog      | 'comment/<int:pk>/delete/'                 | comment_delete    | blog/comment_<br>confirm_delete.html      |댓글 삭제 폼    |
 
 ## 3. 요구사항 명세와 기능 명세
-- https://www.mindmeister.com/ 등을 사용하여 모델링 및 요구사항 명세를 시각화하면 좋습니다.
-- 이미지는 셈플 이미지입니다.
-<img src="map.png" width="100%">
+
+![image](https://github.com/EstSoftOrmi3FinalProject/ESTSoftOrmi3FinalProject/assets/141907655/22a8b15c-a7e9-4ff0-84aa-ae0012d7b3da)
 
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
