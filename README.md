@@ -295,63 +295,8 @@
 
 
 ## 7. 데이터베이스 모델링(ERD)
+![image](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/90c23e5b-930c-4a88-9678-80187a1f8d15)
 
-* 아래 ERD는 머메이드를 사용했습니다.
-```mermaid
-erDiagram
-    user ||--o{ post : write
-    user {
-      integer id PK
-      varchar username
-      varchar password
-      image profile_image
-      datetime created_at
-      varchar ip_address
-      datetime last_login
-    }
-    post }|--|{ tag : contains
-    post ||--o| category : has
-    post {
-      integer id PK
-      varchar title
-      text content
-      file file_upload
-      image image_upload
-      datetime created_at
-      datetime updated_at
-      varchar writer
-      integer user_id FK
-      integer hits
-      integer tags FK
-      varchar category FK
-    }
-    post ||--o{ comment : contains
-    comment ||--o{ comment : contains
-    comment {
-      integer id PK
-      integer parent FK
-      text comment
-      comment comment_reply FK
-      datetime created_at
-      datetime updated_at
-    }
-    
-    tag {
-      integer id PK
-      varchar name
-    }
-    
-    
-    category {
-      integer id PK
-      varchar name
-    }
-```
-
-* 아래 ERD는 [ERDCloud](https://www.erdcloud.com/)를 사용했습니다.
-<img src="erd.png" width="60%">
-
-* https://dbdiagram.io/home도 많이 사용합니다.
 
 ## 8. Architecture
 
