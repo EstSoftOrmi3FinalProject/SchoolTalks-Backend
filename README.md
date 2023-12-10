@@ -17,11 +17,15 @@
 - 실제 사진을 업로드 하시길 권합니다.
 <table>
 	<tr>
-		<th>이호준</th>
-		<th>이호준</th>
-		<th>이호준</th>
+		<th>김정원</th>
+		<th>김찬양</th>
+		<th>김동후</th>
+		<th>황진경</th>
+		<th>김창수</th>
 	</tr>
  	<tr>
+		<td><img src="my.jpg" width="100%"></td>
+		<td><img src="my.jpg" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
