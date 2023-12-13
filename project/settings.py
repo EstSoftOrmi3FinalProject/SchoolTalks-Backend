@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # custom app
     "accounts",
-    "FreeBoard",
+    "post",
     # install app
     "rest_framework",
     "rest_framework_simplejwt",

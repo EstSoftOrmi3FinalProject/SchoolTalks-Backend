@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-class FreePost(models.Model):
+class Post(models.Model):
     title = models.CharField(_("제목"), max_length=50)
     content = models.TextField(_("내용"))
     author = models.ForeignKey(User, verbose_name=_("글쓴이"), on_delete=models.CASCADE)
