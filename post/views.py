@@ -14,7 +14,7 @@ from .serializers import PostSerializer
 User = get_user_model()
 
 
-class PostListView(generics.ListAPIView):
+class PostListView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]

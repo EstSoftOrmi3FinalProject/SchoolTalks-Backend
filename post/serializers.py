@@ -6,10 +6,6 @@ from .models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
-    author_username = serializers.SerializerMethodField()
-    likesCount = serializers.IntegerField(source="likes.count", read_only=True)
-    isLiked = serializers.SerializerMethodField()
-
     class Meta:
         model = Post
         fields = [
@@ -17,7 +13,6 @@ class PostSerializer(serializers.ModelSerializer):
             "title",
             "content",
             "author",
-            "author_username",
             "is_notice",
             "created_at",
             "updated_at",
@@ -25,6 +20,8 @@ class PostSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = [
             "author",
+            "is_notice",
+            "hits",
         ]
 
     def create(self, validated_data):
