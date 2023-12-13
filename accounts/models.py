@@ -1,3 +1,4 @@
+# Basic Django Modules
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -13,4 +14,6 @@ class User(AbstractUser):
     nickname = models.CharField(max_length=20, verbose_name="닉네임")
     school_name = models.CharField(max_length=20, verbose_name="학교명")
     name = models.CharField(max_length=20, verbose_name="이름")
-    grade = models.PositiveSmallIntegerField(verbose_name="학년", blank=True)
+    grade = models.PositiveSmallIntegerField(verbose_name="학년")
+
+    REQUIRED_FIELDS = ["grade"]
