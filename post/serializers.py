@@ -14,16 +14,18 @@ class PostSerializer(serializers.ModelSerializer):
         model = Post
         fields = [
             "id",
+            "title",
+            "content",
             "author",
             "author_username",
-            "caption",
-            "image",
+            "is_notice",
             "created_at",
-            "comments",
-            "likesCount",
-            "isLiked",
+            "updated_at",
+            "hits",
         ]
-        read_only_fields = ["author"]
+        read_only_fields = [
+            "author",
+        ]
 
     def create(self, validated_data):
         validated_data["author"] = self.context["request"].user
