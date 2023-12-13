@@ -1,5 +1,8 @@
-from rest_framework import serializers
+# Basic Django Modules
 from django.contrib.auth import get_user_model
+
+# Rest Framework Modules
+from rest_framework import serializers
 
 User = get_user_model()
 
