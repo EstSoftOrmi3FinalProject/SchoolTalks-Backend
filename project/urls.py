@@ -14,6 +14,7 @@ from drf_spectacular.views import (
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
+    path("post/", include("post.urls")),
     path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
     # jwt 토큰 발급
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
