@@ -1,13 +1,12 @@
 # Basic Django Modules
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
 
 # Rest Framework Modules
-from rest_framework import generics
-from rest_framework import permissions
+from rest_framework import generics, views, permissions, response, status
 
 # Custom Models
-from .models import Post, Comment
+from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer
 from .permissions import IsAuthorOrReadOnly
 
@@ -21,7 +20,7 @@ class PostListCreateView(generics.ListCreateAPIView):
 
     method:
     - GET: 글 목록을 출력합니다.
-    - CREATE: 글을 작성합니다.
+    - POST: 글을 작성합니다.
     """
 
     queryset = Post.objects.all()
@@ -49,7 +48,7 @@ class CommentCreateView(generics.CreateAPIView):
     댓글 작성을 하는 View입니다.
 
     method:
-    - CREATE: 댓글을 작성합니다.
+    - POST: 댓글을 작성합니다.
     """
 
     queryset = Comment.objects.all()
@@ -81,3 +80,54 @@ class CommentDeleteView(generics.DestroyAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsAuthorOrReadOnly]
+
+
+class LikeView(views.APIView):
+    """
+    좋아요를 관리하는 View입니다.
+
+    method:
+    - POST: 좋아요가 있으면 생성하고 없으면 409를 냅니다.
+    - POST: 좋아요를 삭제합니다.
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, post_id):
+        """
+        좋아요를 생성하는 메서드입니다.
+
+        args:
+        - post_id: 좋아요를 생성할 글의 id를 주소창의 <int:post_id>로 받아옵니다.
+
+        return:
+        - HTTP 201 created
+
+        error:
+        - HTTP 409 conflict
+        """
+        post = get_object_or_404(Post, id=post_id)
+        like, created = Like.objects.get_or_create(post=post, user=request.user)
+
+        if not created:
+            return response.Response(status=status.HTTP_409_CONFLICT)
+
+        return response.Response(status=status.HTTP_201_CREATED)
+
+    def delete(self, request, post_id):
+        """
+        좋아요를 삭제하는 메서드입니다.
+
+        args:
+        - post_id: 좋아요를 삭제할 글의 id를 주소창의 <int:post_id>로 받아옵니다.
+
+        return:
+        - HTTP 204 no content
+
+        error:
+        - HTTP 404 not found
+        """
+        post = get_object_or_404(Post, id=post_id)
+        like = get_object_or_404(Like, post=post, user=request.user)
+        like.delete()
+        return response.Response(status=status.HTTP_204_NO_CONTENT)
