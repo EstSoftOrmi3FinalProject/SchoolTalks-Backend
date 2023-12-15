@@ -16,22 +16,22 @@
 ### 1.3 팀 구성
 - 실제 사진을 업로드 하시길 권합니다.
 <table>
-	<tr>
-		<th>김정원</th>
-		<th>김찬양</th>
-		<th>김동후</th>
-		<th>황진경</th>
-		<th>김창수</th>
-	</tr>
- 	<tr>
-		<td>![KakaoTalk_20231204_213922912](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546)
-</td>
-		<td><img src="my.jpg" width="100%"></td>
-		<td><img src="my.jpg" width="100%"></td>
-		<td><img src="my.jpg" width="100%"></td>
-		<td><img src="my.jpg" width="100%"></td>
-	</tr>
+    <tr>
+        <th>김정원</th>
+        <th>김찬양</th>
+        <th>김동후</th>
+        <th>황진경</th>
+        <th>김창수</th>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="100%"></td>
+        <td><img src="my.jpg" width="100%"></td>
+        <td><img src="my.jpg" width="100%"></td>
+        <td><img src="my.jpg" width="100%"></td>
+        <td><img src="my.jpg" width="100%"></td>
+    </tr>
 </table>
+
 
 ## 2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
