@@ -17,8 +17,33 @@ class Post(models.Model):
     hits = models.PositiveIntegerField(_("조회수"), default=0)
 
     class Meta:
-        verbose_name = _("자유게시판")
-        verbose_name_plural = _("자유게시판")
+        verbose_name = _("자유게시판 게시글")
+        verbose_name_plural = _("자유게시판 게시글들")
 
     def __str__(self):
         return self.title
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(
+        Post,
+        verbose_name=_("원본 글"),
+        on_delete=models.CASCADE,
+        related_name="comments",
+    )
+    author = models.ForeignKey(
+        User,
+        verbose_name=_("글쓴이"),
+        on_delete=models.CASCADE,
+        related_name="comments",
+    )
+    content = models.TextField(_("내용"))
+    created_at = models.DateTimeField(_("작성일자"), auto_now_add=True)
+    updated_at = models.DateTimeField(_("수정일자"), auto_now=True)
+
+    class Meta:
+        verbose_name = _("자유게시판 게시글 댓글")
+        verbose_name_plural = _("자유게시판 게시글 댓글들")
+
+    def __str__(self):
+        return self.content
