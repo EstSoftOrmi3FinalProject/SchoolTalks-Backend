@@ -1,4 +1,7 @@
+# Basic Django Modules
 from django.urls import path
+
+# Custom Models
 from . import views
 
 urlpatterns = [
