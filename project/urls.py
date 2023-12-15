@@ -9,6 +9,9 @@ from drf_spectacular.views import (
     SpectacularSwaggerView as swagger,
 )
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
@@ -20,3 +23,5 @@ urlpatterns = [
     # 문서화
     path("schema/redoc/", redoc.as_view(url_name="schema"), name="redoc"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
