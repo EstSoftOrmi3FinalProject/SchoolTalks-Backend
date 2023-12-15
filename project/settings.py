@@ -41,13 +41,17 @@ INSTALLED_APPS = [
     # custom app
     "accounts",
     "post",
+    "study",
     # install app
     "rest_framework",
     "rest_framework_simplejwt",
     "drf_spectacular",
+    'django_filters',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -56,6 +60,9 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 ROOT_URLCONF = "project.urls"
 
