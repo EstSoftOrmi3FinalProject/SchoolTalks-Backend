@@ -24,7 +24,8 @@
 		<th>김창수</th>
 	</tr>
  	<tr>
-		<td><img src="my.jpg" width="100%"></td>
+		<td><img src="![제목을-입력해주세요_-001](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b4993ca3-4b32-49e9-8d2d-d149531b4f85)
+" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
 		<td><img src="my.jpg" width="100%"></td>
