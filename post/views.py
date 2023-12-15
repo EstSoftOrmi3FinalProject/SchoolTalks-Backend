@@ -34,7 +34,7 @@ class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     글 자세히보기와 수정, 삭제를 합니다.
 
     method:
-    - GET: 글 자세히보기입니다.
+    - GET: 글 자세히보기입니다. 조회수를 1 증가시킵니다.
     - PATCH: 글을 수정합니다.
     - DELETE: 글을 삭제합니다.
     """

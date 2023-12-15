@@ -19,7 +19,7 @@ class CommentSerializer(serializers.ModelSerializer):
             "created_at",
             "updated_at",
         ]
-        read_only_fields = ["author"]
+        read_only_fields = ["author", "post"]
 
     def get_author_name(self, obj):
         """
@@ -29,6 +29,7 @@ class CommentSerializer(serializers.ModelSerializer):
         return obj.author.nickname or obj.author.name or obj.author.username
 
     def create(self, validated_data):
+        validated_data["post_id"] = self.context["view"].kwargs.get("post_id")
         validated_data["author"] = self.context["request"].user
         return super().create(validated_data)
 
