@@ -25,7 +25,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    post_id = models.ForeignKey(
+    post = models.ForeignKey(
         Post,
         verbose_name=_("원본 글"),
         on_delete=models.CASCADE,
