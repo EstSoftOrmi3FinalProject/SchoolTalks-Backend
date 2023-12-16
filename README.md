@@ -259,10 +259,10 @@
         </tr>
         <tr>
             <td>
-		<img src="https://raw.githubusercontent.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/main/assets/141907655/bebfe3f2-7167-4f98-8176-4a0387caf9d1" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f0a25746-a5a7-41a3-98f7-388f063bfa0e" width="100%">
             </td>
             <td>
-		<img src="https://raw.githubusercontent.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/main/assets/141907655/f36c8309-8779-4bcf-8814-36bd43dae93b" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/86d154fe-9395-4576-adcd-04eece74e3eb" width="100%">
             </td>
 	</tr>
         <tr>
