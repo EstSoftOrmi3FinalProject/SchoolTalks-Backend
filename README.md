@@ -259,13 +259,13 @@
         </tr>
         <tr>
             <td>
-		<img src="[main]!(https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bebfe3f2-7167-4f98-8176-4a0387caf9d1)" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bebfe3f2-7167-4f98-8176-4a0387caf9d1" width="100%">
 
             </td>
             <td>
-                <img src="ui2.png" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bebfe3f2-7167-4f98-8176-4a0387caf9d1" width="100%">
             </td>
-        </tr>
+	</tr>
         <tr>
             <td>회원가입</td>
             <td>정보수정</td>
