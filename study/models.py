@@ -8,7 +8,7 @@ class StudyPost(models.Model):
     )
     title = models.CharField(max_length=200, null=True, blank=True)
     caption = models.TextField()
-    image = models.ImageField(upload_to="post_images/")
+    image = models.ImageField(upload_to="post_images/", null=True, blank=True)
     attachment = models.FileField(upload_to="post_attachments/", null=True, blank=True)
     views = models.PositiveIntegerField(default=0)  # 조회수 필드 추가
     created_at = models.DateTimeField(auto_now_add=True)
