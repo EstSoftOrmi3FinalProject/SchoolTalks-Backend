@@ -22,4 +22,5 @@ urlpatterns = [
         views.CommentDeleteView.as_view(),
         name="comment_delete",
     ),
+    path("<int:post_id>/like", views.LikeView.as_view(), name="like"),
 ]

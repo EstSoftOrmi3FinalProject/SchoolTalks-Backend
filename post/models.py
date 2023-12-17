@@ -47,3 +47,16 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.content
+
+
+class Like(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="likes")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="likes")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = _("좋아요")
+        verbose_name_plural = _("좋아요들")
+
+    def __str__(self):
+        return f"{self.user}가 누른 {self.post}의 좋아요"
