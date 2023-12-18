@@ -316,7 +316,7 @@
 
 
 ## 7. 데이터베이스 모델링(ERD)
-![image](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/90c23e5b-930c-4a88-9678-80187a1f8d15)
+![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
 
 
 ## 8. Architecture
