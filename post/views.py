@@ -112,7 +112,10 @@ class LikeView(views.APIView):
         if not created:
             return response.Response(status=status.HTTP_409_CONFLICT)
 
-        return response.Response(status=status.HTTP_201_CREATED)
+        return response.Response(
+            status=status.HTTP_201_CREATED,
+            data={"likecount": Like.objects.filter(post=post_id).count()},
+        )
 
     def delete(self, request, post_id):
         """
@@ -130,4 +133,7 @@ class LikeView(views.APIView):
         post = get_object_or_404(Post, id=post_id)
         like = get_object_or_404(Like, post=post, user=request.user)
         like.delete()
-        return response.Response(status=status.HTTP_204_NO_CONTENT)
+        return response.Response(
+            status=status.HTTP_200_OK,
+            data={"likecount": Like.objects.filter(post=post_id).count()},
+        )
