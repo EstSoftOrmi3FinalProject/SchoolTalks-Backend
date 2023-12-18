@@ -22,3 +22,12 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
 
         # 다른 요청에 대해서는 작성자만 허용합니다.
         return obj.author == request.user
+# study/permissions.py
+from rest_framework import permissions
+
+class IsCommentAuthorOrReadOnly(permissions.BasePermission):
+    def has_object_permission(self, request, view, obj):
+        if request.method in permissions.SAFE_METHODS:
+            return True
+
+        return obj.author == request.user
