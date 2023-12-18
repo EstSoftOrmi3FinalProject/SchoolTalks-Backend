@@ -17,6 +17,7 @@ urlpatterns = [
     path("accounts/", include("accounts.urls")),
     path("post/", include("post.urls")),
     path("study/", include("study.urls")),
+    path("aichat/", include("aichat.urls")),
     # 스키마
     path("schema/", schema.as_view(), name="schema"),
     # 스웨거
