@@ -1,4 +1,4 @@
-#study/serializers.py
+# study/serializers.py
 from rest_framework import serializers
 from .models import StudyComment, StudyLike, StudyPost
 
@@ -26,7 +26,7 @@ class CommentSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     author_username = serializers.SerializerMethodField()
     comments = CommentSerializer(many=True, read_only=True)
-    likesCount = serializers.IntegerField(source="likes.count", read_only=True)
+    likesCount = serializers.SerializerMethodField()
     isLiked = serializers.SerializerMethodField()
 
     class Meta:
@@ -46,6 +46,9 @@ class PostSerializer(serializers.ModelSerializer):
             "isLiked",
         ]
         read_only_fields = ["author", "views"]
+
+    def get_likesCount(self, obj):
+        return StudyLike.objects.filter(post=obj).count()  # 게시물에 대한 실제 좋아요 개수 반환
 
     def get_isLiked(self, obj):
         user = self.context["request"].user

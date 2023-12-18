@@ -12,6 +12,7 @@ class StudyPost(models.Model):
     attachment = models.FileField(upload_to="post_attachments/", null=True, blank=True)
     views = models.PositiveIntegerField(default=0)  # 조회수 필드 추가
     created_at = models.DateTimeField(auto_now_add=True)
+    likesCount = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         # self.author와 self.author.username은 같은 값을 반환합니다.
@@ -22,6 +23,11 @@ class StudyPost(models.Model):
     def increment_views(self):
         self.views += 1
         self.save()
+
+    def save(self, *args, **kwargs):
+        if self.likesCount < 0:
+            self.likesCount = 0
+        super().save(*args, **kwargs)
 
 
 class StudyComment(models.Model):
@@ -39,14 +45,12 @@ class StudyComment(models.Model):
 
 
 class StudyLike(models.Model):
-    post = models.ForeignKey(
-        StudyPost, on_delete=models.CASCADE, related_name="study_likes"
-    )
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="study_likes")
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(StudyPost, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        unique_together = ("post", "user")
+        unique_together = ["user", "post"]
 
     def __str__(self):
         return f"{self.user.username} likes {self.post.caption}"

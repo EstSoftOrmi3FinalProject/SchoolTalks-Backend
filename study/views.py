@@ -44,7 +44,9 @@ class PostDetailView(generics.RetrieveAPIView):
     def get(self, request, *args, **kwargs):
         instance = self.get_object()
         instance.increment_views()
-        serializer = self.get_serializer(instance)
+        serializer = self.get_serializer(
+            instance, context={"request": request}
+        )  # 요청 객체를 context에 전달
         return response.Response(serializer.data)
 
 
@@ -68,6 +70,7 @@ class PostUpdateView(generics.UpdateAPIView):
         serializer.is_valid(raise_exception=True)
         serializer.save(author=self.request.user)
         return Response(serializer.data)
+
 
 class PostDeleteView(generics.DestroyAPIView):
     queryset = StudyPost.objects.all()
@@ -114,18 +117,27 @@ class LikeView(views.APIView):
         # created == True : 좋아요가 클릭이 안되어 있어서 새로 생성했다.
         # created == False : 좋아요가 클릭이 되어서 생성하지 못했다.
 
-        if not created:
-            # 이미 좋아요가 존재하는 경우, 409 Conflict 반환
-            return response.Response(status=status.HTTP_409_CONFLICT)
+        if created:
+            # 좋아요가 생성되었으면 게시물의 likeCount를 1 증가시킴
+            post.likesCount += 1
+            post.save()
 
-        # 좋아요가 생성되었으면 201 응답
-        return response.Response(status=status.HTTP_201_CREATED)
+            # 좋아요가 생성되었으면 201 응답
+            return response.Response(status=status.HTTP_201_CREATED)
+
+        # 이미 좋아요가 존재하는 경우, 409 Conflict 반환
+        return response.Response(status=status.HTTP_409_CONFLICT)
 
     def delete(self, request, post_id):
         post = get_object_or_404(StudyPost, id=post_id)  # 게시물이 존재하지 않으면 404 에러
         like = get_object_or_404(
             StudyLike, post=post, user=request.user
         )  # 좋아요가 존재하지 않으면 404 에러
+
+        # 좋아요가 삭제되기 전에 게시물의 likeCount를 1 감소시킴
+        post.likesCount -= 1
+        post.save()
+
         like.delete()
         return response.Response(
             status=status.HTTP_204_NO_CONTENT

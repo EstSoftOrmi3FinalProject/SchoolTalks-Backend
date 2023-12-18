@@ -1,4 +1,4 @@
-#study/permissions.py
+# study/permissions.py
 from rest_framework import permissions
 
 
