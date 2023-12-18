@@ -7,8 +7,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import generics, views, status, response, permissions
 from rest_framework.permissions import IsAuthenticated
 
-# Models
-from .serializers import PostSerializer, CommentSerializer
+from .serializers import PostSerializer, CommentSerializer, CommentUpdateSerializer
 from .models import StudyComment, StudyPost, StudyLike
 from .permissions import IsOwnerOrReadOnly
 from rest_framework.response import Response
@@ -16,10 +15,34 @@ from django.views.generic import View
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
+from .serializers import CommentSerializer
+from .permissions import IsCommentAuthorOrReadOnly
 
+class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = StudyComment.objects.all()
+    serializer_class = CommentSerializer
+    permission_classes = [IsCommentAuthorOrReadOnly]
 
+    def get_serializer_class(self):
+        if self.request.method == 'PATCH':
+            return CommentUpdateSerializer
+        return CommentSerializer
+
+    def perform_destroy(self, instance):
+        instance.delete()
+
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        if instance.author == request.user:
+            self.perform_destroy(instance)
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response(
+                {"detail": "권한이 없습니다."},
+                status=status.HTTP_403_FORBIDDEN
+            )
 class CustomPagination(PageNumberPagination):
-    page_size = 50
+    page_size = 9
     page_size_query_param = "page_size"
     max_page_size = 1000
 
