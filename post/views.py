@@ -9,6 +9,10 @@ from rest_framework import generics, views, permissions, response, status
 from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer
 from .permissions import IsAuthorOrReadOnly
+from .filters import PostFilter
+
+# Django Filter
+from django_filters.rest_framework import DjangoFilterBackend
 
 # User 모델을 가져옵니다.
 User = get_user_model()
@@ -26,6 +30,8 @@ class PostListCreateView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = PostFilter
 
 
 class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
