@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+from django.urls import path
 from .views import ChatViewSet
 
-router = DefaultRouter()
-router.register(r"", ChatViewSet, basename="aichat")
-
 urlpatterns = [
-    path("", include(router.urls)),
+    path("", ChatViewSet.as_view({'get': 'list', 'post': 'create', 'delete': 'destroy'}), name='aichat-list'),
 ]

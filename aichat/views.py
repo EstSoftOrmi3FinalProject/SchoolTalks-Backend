@@ -59,3 +59,10 @@ class ChatViewSet(viewsets.ModelViewSet):
             )
 
         return Response(status=status.HTTP_400_BAD_REQUEST)
+    
+    def destroy(self, request, *args, **kwargs):
+        user = self.request.user
+        conversations_to_delete = Conversation.objects.filter(author=user)
+        conversations_to_delete.delete()
+        
+        return Response(status=status.HTTP_204_NO_CONTENT)
