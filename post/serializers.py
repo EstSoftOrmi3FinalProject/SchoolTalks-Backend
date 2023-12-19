@@ -2,7 +2,7 @@
 from rest_framework import serializers
 
 # Custom Models
-from .models import Post, Comment
+from .models import Post, Comment, Like
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -37,6 +37,8 @@ class CommentSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     author_name = serializers.SerializerMethodField()
     comments = CommentSerializer(many=True, read_only=True)
+    is_like = serializers.SerializerMethodField()
+    likecount = serializers.SerializerMethodField()
 
     class Meta:
         model = Post
@@ -51,6 +53,8 @@ class PostSerializer(serializers.ModelSerializer):
             "updated_at",
             "hits",
             "comments",
+            "likecount",
+            "is_like",
         ]
         read_only_fields = [
             "author",
@@ -60,6 +64,15 @@ class PostSerializer(serializers.ModelSerializer):
 
     def get_author_name(self, obj):
         return obj.author.nickname or obj.author.name or obj.author.username
+
+    def get_is_like(self, obj):
+        user = self.context["request"].user
+        if user.is_authenticated:
+            return Like.objects.filter(post=obj, user=user).exists()
+        return False
+
+    def get_likecount(self, obj):
+        return Like.objects.filter(post=obj).count()
 
     def create(self, validated_data):
         validated_data["author"] = self.context["request"].user
