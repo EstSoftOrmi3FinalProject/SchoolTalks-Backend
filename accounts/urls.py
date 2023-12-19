@@ -13,7 +13,7 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path("signup/", UserCreateView.as_view(), name="signup"),
-    path("user/<int:pk>/", UserDetailView.as_view(), name="user-detail"),
+    path("user/", UserDetailView.as_view(), name="user-detail"),
     # jwt 토큰 발급
     path("token/", get_token.as_view(), name="token_obtain_pair"),
     # jwt 토큰 갱신
