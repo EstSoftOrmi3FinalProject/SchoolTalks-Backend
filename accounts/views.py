@@ -30,9 +30,7 @@ class UserDetailView(generics.RetrieveAPIView):
     특정 사용자의 프로필을 보여줍니다.
 
     function
-    - get: 프로필
-        - args:
-            - pk: user_id
+    - get: 프로필 보기
         - return:
             - name
             - nickname
@@ -44,3 +42,6 @@ class UserDetailView(generics.RetrieveAPIView):
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+    def get_object(self, queryset=None):
+        return self.request.user
