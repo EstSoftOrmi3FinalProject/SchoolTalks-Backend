@@ -23,6 +23,10 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def increase_hits(self):
+        self.hits += 1
+        self.save()
+
 
 class Comment(models.Model):
     post = models.ForeignKey(

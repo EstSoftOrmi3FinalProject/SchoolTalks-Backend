@@ -4,11 +4,17 @@ from django.contrib.auth import get_user_model
 
 # Rest Framework Modules
 from rest_framework import generics, views, permissions, response, status
+from rest_framework.filters import SearchFilter
 
 # Custom Models
 from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer
 from .permissions import IsAuthorOrReadOnly
+from .filters import PostFilter
+from .pagenation import CustomPagination
+
+# Django Filter
+from django_filters.rest_framework import DjangoFilterBackend
 
 # User 모델을 가져옵니다.
 User = get_user_model()
@@ -26,6 +32,10 @@ class PostListCreateView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    filter_backends = [DjangoFilterBackend, SearchFilter]
+    filterset_class = PostFilter
+    pagination_class = CustomPagination
+    search_fields = ["title", "content"]
 
 
 class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
@@ -41,6 +51,11 @@ class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthorOrReadOnly]
+
+    def get(self, request, *args, **kwargs):
+        post = self.get_object()
+        post.increase_hits()
+        return super().get(request, *args, **kwargs)
 
 
 class CommentCreateView(generics.CreateAPIView):
