@@ -38,6 +38,7 @@ class UserDetailView(generics.RetrieveAPIView):
             - about_me
             - school_name
             - grade
+            - id
     """
 
     queryset = User.objects.all()
