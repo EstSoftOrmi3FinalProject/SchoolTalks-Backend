@@ -17,20 +17,49 @@
 - 실제 사진을 업로드 하시길 권합니다.
 <table>
     <tr>
-        <th>김정원</th>
-        <th>김동후</th>
-        <th>김찬양</th>
-        <th>황진경</th>
-        <th>김창수</th>
+        <th>이름</th>
+        <th>프로필 이미지</th>
+        <th>역할 및 업무 내용</th>
     </tr>
     <tr>
+        <td>김정원</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="100%"></td>
+        <td>
+            - study 앱 BE & FE<br>
+            - qna 기능 BE & FE<br>
+            - accounts 앱 FE 연결
+        </td>
+    </tr>
+    <tr>
+        <td>김동후</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/d2fd4777-ff32-4187-b31c-162463a1745f" width="100%"></td>
+        <td>
+            - AIchat 앱 메인 담당 BE & FE
+        </td>
+    </tr>
+    <tr>
+        <td>김찬양</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%"></td>
+        <td>
+            - post 앱 메인 담당 BE & FE
+        </td>
+    </tr>
+    <tr>
+        <td>황진경</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%"></td>
+        <td>
+            - Chat 앱 메인 담당 BE & FE
+        </td>
+    </tr>
+    <tr>
+        <td>김창수</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%"></td>
+        <td>
+            - accounts 앱 메인 담당 BE
+        </td>
     </tr>
 </table>
+
 
 
 ## 2. 개발 환경 및 배포 URL
