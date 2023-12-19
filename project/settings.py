@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "post",
     "study",
     "aichat",
+    "qna",
     # install app
     "rest_framework",
     "rest_framework_simplejwt",
