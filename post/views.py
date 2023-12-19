@@ -4,12 +4,14 @@ from django.contrib.auth import get_user_model
 
 # Rest Framework Modules
 from rest_framework import generics, views, permissions, response, status
+from rest_framework.filters import SearchFilter
 
 # Custom Models
 from .models import Post, Comment, Like
 from .serializers import PostSerializer, CommentSerializer
 from .permissions import IsAuthorOrReadOnly
 from .filters import PostFilter
+from .pagenation import CustomPagination
 
 # Django Filter
 from django_filters.rest_framework import DjangoFilterBackend
@@ -30,8 +32,10 @@ class PostListCreateView(generics.ListCreateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_class = PostFilter
+    pagination_class = CustomPagination
+    search_fields = ["title", "content"]
 
 
 class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
