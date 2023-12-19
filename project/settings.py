@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "post",
     "study",
     "aichat",
-    "qna",
+    "qna", #앱추가
     # install app
     "rest_framework",
     "rest_framework_simplejwt",
