@@ -42,6 +42,11 @@ class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PostSerializer
     permission_classes = [IsAuthorOrReadOnly]
 
+    def get(self, request, *args, **kwargs):
+        post = self.get_object()
+        post.increase_hits()
+        return super().get(request, *args, **kwargs)
+
 
 class CommentCreateView(generics.CreateAPIView):
     """
