@@ -164,3 +164,4 @@ cython_debug/
 /media/post_images/*
 /media/profile_pics/*
 __pycache__/
+migrations/
