@@ -234,11 +234,14 @@
 
 ## 5. 역할 분담
 
-- 팀장 : 김정원(study앱 BE&FE , qna 기능BE&FE, accounts 앱 FE 연결)
-- 팀원1 : 김창수(accounts 앱 BE)
-- 팀원2 : 김찬양(post앱 BE & FE)
-- 팀원3 : 김동후 (AIchat앱 BE & FE)
-- 팀원4 : 황진경 (Chat앱 BE & FE)
+| 역할    | 이름        | 업무 내용                                |
+|---------|-------------|-----------------------------------------|
+| 팀장    | 김정원      | - study 앱 BE & FE<br>- qna 기능 BE & FE<br>- accounts 앱 FE 연결 |
+| 팀원1   | 김창수      | - accounts 앱 메인 담당 BE             |
+| 팀원2   | 김찬양      | - post 앱 메인 담당 BE & FE             |
+| 팀원3   | 김동후      | - AIchat 앱 메인 담당 BE & FE           |
+| 팀원4   | 황진경      | - Chat 앱 메인 담당 BE & FE            |
+
 
 ## 6. 와이어프레임 / UI / BM
 
