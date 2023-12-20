@@ -23,3 +23,5 @@ django-cors-headers==4.3.1
 django-filter==23.5
 python-dotenv==1.0.0
 openai
+Faker==21.0.0
+django-seed==0.3.1

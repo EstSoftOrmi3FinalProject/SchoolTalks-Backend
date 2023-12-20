@@ -20,4 +20,4 @@ class PostFilter(filters.FilterSet):
 
     class Meta:
         model = Post
-        fields = ["title", "author", "content"]
+        fields = ["title", "author", "content", "is_notice"]

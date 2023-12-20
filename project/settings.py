@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "post",
     "study",
     "aichat",
-    "qna", #앱추가
+    "qna",  # 앱추가
     # install app
     "rest_framework",
     "rest_framework_simplejwt",
@@ -122,7 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = "ko-kr"
+LANGUAGE_CODE = "ko-KR"
 
 TIME_ZONE = "Asia/Seoul"
 
