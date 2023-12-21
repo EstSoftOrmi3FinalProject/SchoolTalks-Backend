@@ -34,6 +34,7 @@
         <td>
             - study 앱 BE & FE<br>
             - qna 기능 BE & FE<br>
+	    - Chat 앱 BE & FE <br>	
             - accounts 앱 FE 연결
         </td>
         <td>
@@ -43,7 +44,9 @@
             - post 앱 메인 담당 BE & FE
         </td>
         <td>
-            - Chat 앱 메인 담당 BE & FE
+            - Chat 앱 서브 담당 FE
+	    - Chat 앱 BE 구현 방법 조사
+	    - AIChat 앱 서브 담당 BE & FE
         </td>
         <td>
             - accounts 앱 메인 담당 BE
