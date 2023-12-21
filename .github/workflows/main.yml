@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
             set -e
-            cd /home/ubuntu
+            cd /home/ubuntu/SchoolTalks-Backend
             git pull origin main
 
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
