@@ -19,6 +19,7 @@ urlpatterns = [
     path("study/", include("study.urls")),
     path("aichat/", include("aichat.urls")),
     path('qna/', include('qna.urls')),
+    path('chat/', include('chat.urls')),
 
     # 스키마
     path("schema/", schema.as_view(), name="schema"),
