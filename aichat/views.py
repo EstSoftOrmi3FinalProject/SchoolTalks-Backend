@@ -3,11 +3,13 @@ from rest_framework.response import Response
 from .models import Conversation
 from .serializers import ConversationSerializer
 from dotenv import load_dotenv
-import openai
-import os
+from openai import OpenAI
+from django.conf import settings
+
+api_key = settings.OPENAI_API_KEY
+client = OpenAI(api_key=api_key)
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 class ChatViewSet(viewsets.ModelViewSet):
     """
@@ -34,14 +36,12 @@ class ChatViewSet(viewsets.ModelViewSet):
             prompt_with_previous = f"{conversation_text}\nUser: {prompt}\nAI:"
 
             model_engine = "text-davinci-003"
-            completions = openai.Completion.create(
-                engine=model_engine,
-                prompt=prompt_with_previous,
-                max_tokens=1024,
-                n=5,
-                stop=None,
-                temperature=0.5,
-            )
+            completions = client.completions.create(model=model_engine,
+            prompt=prompt_with_previous,
+            max_tokens=1024,
+            n=5,
+            stop=None,
+            temperature=0.5)
             response = completions.choices[0].text.strip()
 
             conversation_data = {
