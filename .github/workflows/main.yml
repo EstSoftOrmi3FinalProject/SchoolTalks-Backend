@@ -39,4 +39,4 @@ jobs:
 
             source /home/ubuntu/SchoolTalks-Backend/venv/bin/activate
             pip install -r requirements.txt
-            sudo systemctl restart drf.service 
+            sudo systemctl restart project.service 
