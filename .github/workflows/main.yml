@@ -30,13 +30,13 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-						set -e
-            cd /home/ubuntu/{레포지토리주소}
+            set -e
+            cd /home/ubuntu
             git pull origin main
 
             echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
             echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
 
-            source venv/bin/activate
+            source /home/ubuntu/SchoolTalks-Backend/venv/bin/activate
             pip install -r requirements.txt
-            sudo systemctl restart {아까등록한서비스이름}.service
+            sudo systemctl restart drf.service
