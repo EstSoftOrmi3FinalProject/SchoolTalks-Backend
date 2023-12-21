@@ -40,6 +40,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Application definition
 
 INSTALLED_APPS = [
+    #channels 
+    "channels",
+    'channels_redis',
+    "daphne",
+    #basic
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -52,6 +57,7 @@ INSTALLED_APPS = [
     "study",
     "aichat",
     "qna", #앱추가
+    "chat",
     # install app
     "rest_framework",
     "rest_framework_simplejwt",
@@ -93,6 +99,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "project.wsgi.application"
+ASGI_APPLICATION = "project.asgi.application"
 
 
 # Database
@@ -166,3 +173,20 @@ SIMPLE_JWT = {
 }
 
 AUTH_USER_MODEL = "accounts.User"
+
+
+# channels
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [
+                {
+                    "host": os.getenv('REDIS_HOST'),  # 기본값을 'localhost'로 설정
+                    "port": os.getenv('REDIS_PORT'),  # 기본값을 6379로 설정
+                    "password": os.getenv('REDIS_PASSWORD'),
+                }
+            ],
+        },
+    },
+}
