@@ -16,7 +16,7 @@ jobs:
       - name: 파이썬 설정
         uses: actions/setup-python@v3
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: 의존성 설치
         run: |
