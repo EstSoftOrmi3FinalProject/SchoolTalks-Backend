@@ -36,20 +36,26 @@
             - qna 기능 BE & FE<br>
 	    - Chat 앱 BE & FE <br>	
             - accounts 앱 FE 연결
+	    - 문서작업 	
         </td>
         <td>
             - AIchat 앱 메인 담당 BE & FE
+	    - 문서작업 	
+		
         </td>
         <td>
-            - post 앱 메인 담당 BE & FE
+            - Post 앱 메인 담당 BE & FE
+	    - 문서작업 	
         </td>
         <td>
-	    - Chat 앱 BE & FE 구현 방법 조사<br>
-	    - AIChat 앱 서브 담당 BE & FE
+	    - Chat 앱 BE & FE 서브: 구현 방법 조사<br>
+	    - AIChat 앱 서브: FE
         </td>
         <td>
             - accounts 앱 메인 담당 BE
-        </td>
+	    - 문서작업 	
+
+	</td>
     </tr>
 </table>
 
