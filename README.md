@@ -32,10 +32,10 @@
     </tr>
     <tr>
         <td>
-            - study 앱 BE & FE<br>
-            - qna 기능 BE & FE<br>
+            - Study 앱 BE & FE<br>
+            - Qna 기능 BE & FE<br>
 	    - Chat 앱 BE & FE <br>	
-            - accounts 앱 FE 연결<br>
+            - Accounts 앱 FE 연결<br>
 	    - 문서작업 	
         </td>
         <td>
@@ -52,7 +52,7 @@
 	    - 문서작업
         </td>
         <td>
-            - accounts 앱 메인 담당 BE<br>
+            - Accounts 앱 메인 담당 BE<br>
 	    - 문서작업
 	</td>
     </tr>
