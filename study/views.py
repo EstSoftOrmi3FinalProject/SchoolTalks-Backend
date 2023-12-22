@@ -20,7 +20,7 @@ from .permissions import IsCommentAuthorOrReadOnly
 
 
 class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
-    """
+    """  
     특정 댓글의 업데이트 및 삭제를 처리합니다.
 
     - Retrieve: 특정 댓글의 상세 정보를 조회합니다.
