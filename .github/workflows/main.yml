@@ -46,4 +46,4 @@ jobs:
             python manage.py makemigrations
             python manage.py migrate
             sudo systemctl restart project
-            sudo systemctl restart nignx
+            sudo systemctl restart nginx
