@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     "post",
     "study",
     "aichat",
-    "qna", 
+    "qna",
     "chat",
     # install app
     "rest_framework",
@@ -169,7 +169,6 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),  # 액세스 토큰 만료 시간을 60분으로 설정
-   
 }
 
 AUTH_USER_MODEL = "accounts.User"
@@ -182,8 +181,8 @@ CHANNEL_LAYERS = {
         "CONFIG": {
             "hosts": [
                 {
-                    "host": env("REDIS_HOST"),  
-                    "port": env("REDIS_PORT"),  
+                    "host": env("REDIS_HOST"),
+                    "port": env("REDIS_PORT"),
                     "password": env("REDIS_PASSWORD"),
                 }
             ],

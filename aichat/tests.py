@@ -42,8 +42,12 @@ class AIChatTests(TestCase):
         self.chat_url = "/aichat/"
 
     def test_list_conversations(self):
-        Conversation.objects.create(prompt="Prompt 1", response="Response 1", author=self.user)
-        Conversation.objects.create(prompt="Prompt 2", response="Response 2", author=self.user)
+        Conversation.objects.create(
+            prompt="Prompt 1", response="Response 1", author=self.user
+        )
+        Conversation.objects.create(
+            prompt="Prompt 2", response="Response 2", author=self.user
+        )
 
         response = self.client.get(self.chat_url)
 
@@ -64,8 +68,12 @@ class AIChatTests(TestCase):
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_delete_conversations(self):
-        Conversation.objects.create(prompt="Prompt 1", response="Response 1", author=self.user)
-        Conversation.objects.create(prompt="Prompt 2", response="Response 2", author=self.user)
+        Conversation.objects.create(
+            prompt="Prompt 1", response="Response 1", author=self.user
+        )
+        Conversation.objects.create(
+            prompt="Prompt 2", response="Response 2", author=self.user
+        )
 
         response = self.client.delete(self.chat_url)
 

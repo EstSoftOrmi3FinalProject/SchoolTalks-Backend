@@ -3,6 +3,8 @@ from django.urls import reverse
 from rest_framework.test import APIClient
 from rest_framework import status
 from .models import User
+
+
 class UserCreateViewTest(TestCase):
     def setUp(self):
         self.client = APIClient()
@@ -35,9 +37,7 @@ class UserCreateViewTest(TestCase):
             "name": "weakname",
             "grade": 11,
         }
-        response = self.client.post(
-            self.signup_url, weak_password_data, format="json"
-        )
+        response = self.client.post(self.signup_url, weak_password_data, format="json")
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_create_user_without_required_fields(self):
@@ -47,7 +47,5 @@ class UserCreateViewTest(TestCase):
             # 필수 필드인 nickname, school_name, name이 누락됨
             "grade": 12,
         }
-        response = self.client.post(
-            self.signup_url, missing_fields_data, format="json"
-        )
+        response = self.client.post(self.signup_url, missing_fields_data, format="json")
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

@@ -2,6 +2,8 @@ from django.test import TestCase
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .models import Inquiry
+
+
 class InquiryViewSetTestCase(APITestCase):
     def setUp(self):
         self.inquiry_data = {
@@ -14,4 +16,4 @@ class InquiryViewSetTestCase(APITestCase):
     def test_create_inquiry(self):
         response = self.client.post("/inquiry/", self.inquiry_data, format="json")
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        self.assertEqual(Inquiry.objects.count(), 2)  
+        self.assertEqual(Inquiry.objects.count(), 2)

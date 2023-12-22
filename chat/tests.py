@@ -3,6 +3,7 @@ from rest_framework.test import APIClient
 from rest_framework import status
 from .models import ChatMessage
 
+
 class ChatMessageListCreateViewTest(TestCase):
     def setUp(self):
         self.client = APIClient()
