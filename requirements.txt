@@ -24,3 +24,5 @@ django-filter==23.5
 python-dotenv==1.0.0
 openai==1.5.0
 django-environ==0.11.2
+Faker==21.0.0
+django-seed==0.3.1
