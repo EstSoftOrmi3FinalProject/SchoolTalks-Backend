@@ -20,7 +20,7 @@ from .permissions import IsCommentAuthorOrReadOnly
 
 
 class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
-    """  
+    """
     특정 댓글의 업데이트 및 삭제를 처리합니다.
 
     - Retrieve: 특정 댓글의 상세 정보를 조회합니다.
@@ -30,6 +30,7 @@ class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
     사용자 권한:
     - IsCommentAuthorOrReadOnly: 댓글 작성자만 수정 및 삭제할 수 있습니다.
     """
+
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsCommentAuthorOrReadOnly]
@@ -67,6 +68,7 @@ class PostListView(generics.ListCreateAPIView):
     사용자 권한:
     - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
     """
+
     queryset = StudyPost.objects.order_by("-created_at")
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -83,6 +85,7 @@ class PostDetailView(generics.RetrieveAPIView):
     """
     특정 게시물의 상세 정보를 조회합니다.
     """
+
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
 
@@ -102,6 +105,7 @@ class PostCreateView(generics.CreateAPIView):
     사용자 권한:
     - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
     """
+
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticated]  # 인증된 사용자만 접근 가능
@@ -118,6 +122,7 @@ class PostUpdateView(generics.UpdateAPIView):
     - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
     - IsOwnerOrReadOnly: 게시물 작성자만 수정할 수 있습니다.
     """
+
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
@@ -138,6 +143,7 @@ class PostDeleteView(generics.DestroyAPIView):
     - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
     - IsOwnerOrReadOnly: 게시물 작성자만 삭제할 수 있습니다.
     """
+
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
     permission_classes = [
@@ -161,6 +167,7 @@ class CommentCreateView(generics.CreateAPIView):
     사용자 권한:
     - IsAuthenticated: 인증된 사용자만 댓글을 생성할 수 있습니다.
     """
+
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -173,6 +180,7 @@ class CommentListView(generics.ListAPIView):
     """
     특정 게시물의 댓글 목록을 조회합니다.
     """
+
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
 
@@ -184,6 +192,7 @@ class LikeView(views.APIView):
     """
     게시물에 대한 좋아요를 처리합니다.
     """
+
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request, post_id):

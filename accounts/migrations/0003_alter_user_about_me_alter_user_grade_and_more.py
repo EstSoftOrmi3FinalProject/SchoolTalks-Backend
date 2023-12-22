@@ -4,30 +4,29 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('accounts', '0002_user_name_alter_user_email_alter_user_username'),
+        ("accounts", "0002_user_name_alter_user_email_alter_user_username"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='user',
-            name='about_me',
-            field=models.TextField(blank=True, verbose_name='자기소개'),
+            model_name="user",
+            name="about_me",
+            field=models.TextField(blank=True, verbose_name="자기소개"),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='grade',
-            field=models.PositiveSmallIntegerField(verbose_name='학년'),
+            model_name="user",
+            name="grade",
+            field=models.PositiveSmallIntegerField(verbose_name="학년"),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='nickname',
-            field=models.CharField(max_length=20, verbose_name='닉네임'),
+            model_name="user",
+            name="nickname",
+            field=models.CharField(max_length=20, verbose_name="닉네임"),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='school_name',
-            field=models.CharField(max_length=20, verbose_name='학교명'),
+            model_name="user",
+            name="school_name",
+            field=models.CharField(max_length=20, verbose_name="학교명"),
         ),
     ]
