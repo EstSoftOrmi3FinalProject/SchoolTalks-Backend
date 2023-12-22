@@ -6,30 +6,59 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('post', '0001_initial'),
+        ("post", "0001_initial"),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='post',
-            options={'verbose_name': '자유게시판 게시글', 'verbose_name_plural': '자유게시판 게시글들'},
+            name="post",
+            options={"verbose_name": "자유게시판 게시글", "verbose_name_plural": "자유게시판 게시글들"},
         ),
         migrations.CreateModel(
-            name='Comment',
+            name="Comment",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('content', models.TextField(verbose_name='내용')),
-                ('created_at', models.DateTimeField(auto_now_add=True, verbose_name='작성일자')),
-                ('updated_at', models.DateTimeField(auto_now=True, verbose_name='수정일자')),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to=settings.AUTH_USER_MODEL, verbose_name='글쓴이')),
-                ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='post.post', verbose_name='원본 글')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("content", models.TextField(verbose_name="내용")),
+                (
+                    "created_at",
+                    models.DateTimeField(auto_now_add=True, verbose_name="작성일자"),
+                ),
+                (
+                    "updated_at",
+                    models.DateTimeField(auto_now=True, verbose_name="수정일자"),
+                ),
+                (
+                    "author",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="comments",
+                        to=settings.AUTH_USER_MODEL,
+                        verbose_name="글쓴이",
+                    ),
+                ),
+                (
+                    "post",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="comments",
+                        to="post.post",
+                        verbose_name="원본 글",
+                    ),
+                ),
             ],
             options={
-                'verbose_name': '자유게시판 게시글 댓글',
-                'verbose_name_plural': '자유게시판 게시글 댓글들',
+                "verbose_name": "자유게시판 게시글 댓글",
+                "verbose_name_plural": "자유게시판 게시글 댓글들",
             },
         ),
     ]

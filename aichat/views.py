@@ -36,13 +36,9 @@ class ChatViewSet(viewsets.ModelViewSet):
         if not Conversation.objects.filter(author=author).exists():
             # 이전 대화 데이터가 없는 경우
             if "문제" in prompt:
-                system_prompt = (
-                    f"SYSTEM: 너는 고등학생들의 질문을 받아주는 선생님 AI야. 학생이 {prompt}라는 질문을 했을 때 고등학교 입시 수준 맞게 적절하게 답변해줘."
-                )
+                system_prompt = f"SYSTEM: 너는 고등학생들의 질문을 받아주는 선생님 AI야. 학생이 {prompt}라는 질문을 했을 때 고등학교 입시 수준 맞게 적절하게 답변해줘."
             elif "면접" in prompt:
-                system_prompt = (
-                    f"SYSTEM: 너는 학생의 대입 면접을 도와주는 대학 면접관 AI야. 학생이 {prompt}라는 질문을 했을 때 대학교를 들어가는 입시 면접에 적절하게 답변해줘."
-                )
+                system_prompt = f"SYSTEM: 너는 학생의 대입 면접을 도와주는 대학 면접관 AI야. 학생이 {prompt}라는 질문을 했을 때 대학교를 들어가는 입시 면접에 적절하게 답변해줘."
             else:
                 system_prompt = (
                     "SYSTEM: 너는 고등학생들의 질문을 받아주는 AI야. 교육 및 입시 정보에서 벗어나지 않는 범위에서 답변을 해줘."
