@@ -20,7 +20,7 @@ from .permissions import IsCommentAuthorOrReadOnly
 
 
 class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
-    """
+    """  
     특정 댓글의 업데이트 및 삭제를 처리합니다.
 
     - Retrieve: 특정 댓글의 상세 정보를 조회합니다.
@@ -143,7 +143,7 @@ class PostDeleteView(generics.DestroyAPIView):
     permission_classes = [
         IsAuthenticated,
         IsOwnerOrReadOnly,
-    ]  # 인증된 사용자만 접근 가능하며, 작성자만 삭제 가능
+    ]
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
