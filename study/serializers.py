@@ -7,10 +7,17 @@ class CommentSerializer(serializers.ModelSerializer):
     author_username = serializers.SerializerMethodField()
     deleted = serializers.BooleanField(default=False, read_only=True)
 
-
     class Meta:
         model = StudyComment
-        fields = ["id", "post", "author", "author_username", "text", "created_at", "deleted"]
+        fields = [
+            "id",
+            "post",
+            "author",
+            "author_username",
+            "text",
+            "created_at",
+            "deleted",
+        ]
         read_only_fields = ["author"]
 
     def get_author_username(self, obj):
@@ -26,10 +33,12 @@ class CommentSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
 
+
 class CommentUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudyComment
         fields = ["text"]
+
 
 class PostSerializer(serializers.ModelSerializer):
     author_username = serializers.SerializerMethodField()
