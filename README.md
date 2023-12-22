@@ -39,19 +39,20 @@
 	    - 문서작업 	
         </td>
         <td>
-            - AIchat 앱 메인 담당 BE & FE
+            - AIchat 앱 메인 담당 BE & FE<br>
 	    - 문서작업	
         </td>
         <td>
-            - Post 앱 메인 담당 BE & FE
-	    - 문서작업 	
+            - Post 앱 메인 담당 BE & FE<br>
+	    - 문서작업
         </td>
         <td>
 	    - Chat 앱 BE & FE 서브: 구현 방법 조사<br>
-	    - AIChat 앱 서브: FE
+	    - AIChat 앱 서브: FE<br>
+	    - 문서작업
         </td>
         <td>
-            - accounts 앱 메인 담당 BE
+            - accounts 앱 메인 담당 BE<br>
 	    - 문서작업
 	</td>
     </tr>
