@@ -35,7 +35,7 @@
             - study 앱 BE & FE<br>
             - qna 기능 BE & FE<br>
 	    - Chat 앱 BE & FE <br>	
-            - accounts 앱 FE 연결
+            - accounts 앱 FE 연결<br>
 	    - 문서작업 	
         </td>
         <td>
@@ -53,8 +53,7 @@
         </td>
         <td>
             - accounts 앱 메인 담당 BE
-	    - 문서작업 	
-
+	    - 문서작업
 	</td>
     </tr>
 </table>
