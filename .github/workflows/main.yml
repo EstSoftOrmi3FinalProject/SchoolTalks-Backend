@@ -34,12 +34,12 @@ jobs:
             cd /home/ubuntu/SchoolTalks-Backend
             git pull origin main
 
-            echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
-            echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
-            echo "OPENAI_API_KEY='${{ secrets.OPENAI_API_KEY }}'" >> .env
-            echo "REDIS_HOST='${{ secrets.REDIS_HOST }}'" >> .env
-            echo "REDIS_PORT='${{ secrets.REDIS_PORT }}'" >> .env
-            echo "REDIS_PASSWORD='${{ secrets.REDIS_PASSWORD }}'" >> .env
+            echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" > .env
+            echo "DEBUG=${{ secrets.DEBUG }}" >> .env
+            echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> .env
+            echo "REDIS_HOST=${{ secrets.REDIS_HOST }}" >> .env
+            echo "REDIS_PORT=${{ secrets.REDIS_PORT }}" >> .env
+            echo "REDIS_PASSWORD=${{ secrets.REDIS_PASSWORD }}" >> .env
 
             source /home/ubuntu/SchoolTalks-Backend/venv/bin/activate
             pip install -r requirements.txt
