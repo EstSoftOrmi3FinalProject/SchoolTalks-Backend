@@ -18,13 +18,24 @@ from rest_framework.filters import SearchFilter
 from .serializers import CommentSerializer
 from .permissions import IsCommentAuthorOrReadOnly
 
+
 class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
+    """
+    특정 댓글의 업데이트 및 삭제를 처리합니다.
+
+    - Retrieve: 특정 댓글의 상세 정보를 조회합니다.
+    - Update: 특정 댓글을 수정합니다.
+    - Destroy: 특정 댓글을 삭제합니다.
+
+    사용자 권한:
+    - IsCommentAuthorOrReadOnly: 댓글 작성자만 수정 및 삭제할 수 있습니다.
+    """
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsCommentAuthorOrReadOnly]
 
     def get_serializer_class(self):
-        if self.request.method == 'PATCH':
+        if self.request.method == "PATCH":
             return CommentUpdateSerializer
         return CommentSerializer
 
@@ -37,10 +48,9 @@ class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
             self.perform_destroy(instance)
             return Response(status=status.HTTP_204_NO_CONTENT)
         else:
-            return Response(
-                {"detail": "권한이 없습니다."},
-                status=status.HTTP_403_FORBIDDEN
-            )
+            return Response({"detail": "권한이 없습니다."}, status=status.HTTP_403_FORBIDDEN)
+
+
 class CustomPagination(PageNumberPagination):
     page_size = 9
     page_size_query_param = "page_size"
@@ -48,6 +58,15 @@ class CustomPagination(PageNumberPagination):
 
 
 class PostListView(generics.ListCreateAPIView):
+    """
+    게시물 목록 조회 및 생성을 처리합니다.
+
+    - List: 모든 게시물 목록을 조회합니다.
+    - Create: 새로운 게시물을 생성합니다.
+
+    사용자 권한:
+    - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
+    """
     queryset = StudyPost.objects.order_by("-created_at")
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -61,6 +80,9 @@ class PostListView(generics.ListCreateAPIView):
 
 
 class PostDetailView(generics.RetrieveAPIView):
+    """
+    특정 게시물의 상세 정보를 조회합니다.
+    """
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
 
@@ -74,6 +96,12 @@ class PostDetailView(generics.RetrieveAPIView):
 
 
 class PostCreateView(generics.CreateAPIView):
+    """
+    새로운 게시물을 생성합니다.
+
+    사용자 권한:
+    - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
+    """
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthenticated]  # 인증된 사용자만 접근 가능
@@ -83,9 +111,16 @@ class PostCreateView(generics.CreateAPIView):
 
 
 class PostUpdateView(generics.UpdateAPIView):
+    """
+    특정 게시물을 수정합니다.
+
+    사용자 권한:
+    - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
+    - IsOwnerOrReadOnly: 게시물 작성자만 수정할 수 있습니다.
+    """
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
-    # permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
+    permission_classes = [IsAuthenticated, IsOwnerOrReadOnly]
 
     def update(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -96,6 +131,13 @@ class PostUpdateView(generics.UpdateAPIView):
 
 
 class PostDeleteView(generics.DestroyAPIView):
+    """
+    특정 게시물을 삭제합니다.
+
+    사용자 권한:
+    - IsAuthenticated: 인증된 사용자만 접근할 수 있습니다.
+    - IsOwnerOrReadOnly: 게시물 작성자만 삭제할 수 있습니다.
+    """
     queryset = StudyPost.objects.all()
     serializer_class = PostSerializer
     permission_classes = [
@@ -113,6 +155,12 @@ class PostDeleteView(generics.DestroyAPIView):
 
 
 class CommentCreateView(generics.CreateAPIView):
+    """
+    댓글을 생성합니다.
+
+    사용자 권한:
+    - IsAuthenticated: 인증된 사용자만 댓글을 생성할 수 있습니다.
+    """
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -122,6 +170,9 @@ class CommentCreateView(generics.CreateAPIView):
 
 
 class CommentListView(generics.ListAPIView):
+    """
+    특정 게시물의 댓글 목록을 조회합니다.
+    """
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
 
@@ -130,6 +181,9 @@ class CommentListView(generics.ListAPIView):
 
 
 class LikeView(views.APIView):
+    """
+    게시물에 대한 좋아요를 처리합니다.
+    """
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request, post_id):
