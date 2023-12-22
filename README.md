@@ -44,7 +44,6 @@
             - post 앱 메인 담당 BE & FE
         </td>
         <td>
-            - Chat 앱 서브 담당 FE<br>
 	    - Chat 앱 BE 구현 방법 조사<br>
 	    - AIChat 앱 서브 담당 BE & FE
         </td>
