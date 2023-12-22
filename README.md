@@ -40,8 +40,7 @@
         </td>
         <td>
             - AIchat 앱 메인 담당 BE & FE
-	    - 문서작업 	
-		
+	    - 문서작업	
         </td>
         <td>
             - Post 앱 메인 담당 BE & FE
