@@ -27,7 +27,7 @@
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/d2fd4777-ff32-4187-b31c-162463a1745f" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%"></td>
-        <td>(https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/6cf71da4-0deb-445c-88da-b81715d018bd)</td>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%">)</td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0a5bc736-d465-47be-b777-50b9e072ce15" width="100%"></td>
     </tr>
     <tr>
