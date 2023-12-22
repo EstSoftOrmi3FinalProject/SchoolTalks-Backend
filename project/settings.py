@@ -28,7 +28,7 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
@@ -40,11 +40,11 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Application definition
 
 INSTALLED_APPS = [
-    #channels 
+    # channels
     "channels",
-    'channels_redis',
+    "channels_redis",
     "daphne",
-    #basic
+    # basic
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     "post",
     "study",
     "aichat",
-    "qna", #앱추가
+    "qna",  # 앱추가
     "chat",
     # install app
     "rest_framework",
@@ -182,9 +182,9 @@ CHANNEL_LAYERS = {
         "CONFIG": {
             "hosts": [
                 {
-                    "host": os.getenv('REDIS_HOST'),  # 기본값을 'localhost'로 설정
-                    "port": os.getenv('REDIS_PORT'),  # 기본값을 6379로 설정
-                    "password": os.getenv('REDIS_PASSWORD'),
+                    "host": os.getenv("REDIS_HOST"),  # 기본값을 'localhost'로 설정
+                    "port": os.getenv("REDIS_PORT"),  # 기본값을 6379로 설정
+                    "password": os.getenv("REDIS_PASSWORD"),
                 }
             ],
         },

@@ -11,6 +11,7 @@ client = OpenAI(api_key=api_key)
 
 load_dotenv()
 
+
 class ChatViewSet(viewsets.ModelViewSet):
     """
     AI와 채팅을 할 수 있는 Class View 입니다.
@@ -20,6 +21,7 @@ class ChatViewSet(viewsets.ModelViewSet):
     - POST: prompt를 작성하고 ai의 답변을 받습니다.
     - DELETE: 현재 접속된 유저의 채팅을 모두 삭제합니다.
     """
+
     queryset = Conversation.objects.all()
     serializer_class = ConversationSerializer
 
@@ -32,16 +34,20 @@ class ChatViewSet(viewsets.ModelViewSet):
         if prompt:
             author = self.request.user
             previous_conversations = Conversation.objects.filter(author=author)
-            conversation_text = "\n".join([f"User: {c.prompt}\nAI: {c.response}" for c in previous_conversations])
+            conversation_text = "\n".join(
+                [f"User: {c.prompt}\nAI: {c.response}" for c in previous_conversations]
+            )
             prompt_with_previous = f"{conversation_text}\nUser: {prompt}\nAI:"
 
             model_engine = "text-davinci-003"
-            completions = client.completions.create(model=model_engine,
-            prompt=prompt_with_previous,
-            max_tokens=1024,
-            n=5,
-            stop=None,
-            temperature=0.5)
+            completions = client.completions.create(
+                model=model_engine,
+                prompt=prompt_with_previous,
+                max_tokens=1024,
+                n=5,
+                stop=None,
+                temperature=0.5,
+            )
             response = completions.choices[0].text.strip()
 
             conversation_data = {
@@ -59,10 +65,10 @@ class ChatViewSet(viewsets.ModelViewSet):
             )
 
         return Response(status=status.HTTP_400_BAD_REQUEST)
-    
+
     def destroy(self, request, *args, **kwargs):
         user = self.request.user
         conversations_to_delete = Conversation.objects.filter(author=user)
         conversations_to_delete.delete()
-        
+
         return Response(status=status.HTTP_204_NO_CONTENT)

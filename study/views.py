@@ -18,13 +18,14 @@ from rest_framework.filters import SearchFilter
 from .serializers import CommentSerializer
 from .permissions import IsCommentAuthorOrReadOnly
 
+
 class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
     queryset = StudyComment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [IsCommentAuthorOrReadOnly]
 
     def get_serializer_class(self):
-        if self.request.method == 'PATCH':
+        if self.request.method == "PATCH":
             return CommentUpdateSerializer
         return CommentSerializer
 
@@ -37,10 +38,9 @@ class CommentUpdateView(generics.RetrieveUpdateDestroyAPIView):
             self.perform_destroy(instance)
             return Response(status=status.HTTP_204_NO_CONTENT)
         else:
-            return Response(
-                {"detail": "권한이 없습니다."},
-                status=status.HTTP_403_FORBIDDEN
-            )
+            return Response({"detail": "권한이 없습니다."}, status=status.HTTP_403_FORBIDDEN)
+
+
 class CustomPagination(PageNumberPagination):
     page_size = 9
     page_size_query_param = "page_size"

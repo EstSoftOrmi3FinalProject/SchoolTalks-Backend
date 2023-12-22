@@ -5,12 +5,13 @@ from .models import ChatMessage
 from .serializers import ChatMessageSerializer
 from rest_framework.permissions import AllowAny  # 임포트 추가
 
+
 class ChatMessageListCreateView(APIView):
     serializer_class = ChatMessageSerializer
     permission_classes = [AllowAny]  # 권한 설정 추가
 
     def get(self, request):
-        chat_messages = ChatMessage.objects.all().order_by('-timestamp')[:50]
+        chat_messages = ChatMessage.objects.all().order_by("-timestamp")[:50]
         serializer = self.serializer_class(chat_messages, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

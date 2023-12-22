@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Inquiry(models.Model):
     email = models.EmailField()
     subject = models.CharField(max_length=200)
