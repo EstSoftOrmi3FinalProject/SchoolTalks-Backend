@@ -29,7 +29,7 @@ class PostListCreateView(generics.ListCreateAPIView):
     - POST: 글을 작성합니다.
     """
 
-    queryset = Post.objects.all()
+    queryset = Post.objects.all().order_by("-pk")
     serializer_class = PostSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     filter_backends = [DjangoFilterBackend, SearchFilter]
