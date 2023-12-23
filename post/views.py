@@ -58,11 +58,12 @@ class PostDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
         return super().get(request, *args, **kwargs)
 
 
-class CommentCreateView(generics.CreateAPIView):
+class CommentListCreateView(generics.ListCreateAPIView):
     """
-    댓글 작성을 하는 View입니다.
+    댓글 목록과 작성을 하는 View입니다.
 
     method:
+    - GET: 댓글 목록을 출력합니다.
     - POST: 댓글을 작성합니다.
     """
 
@@ -71,25 +72,14 @@ class CommentCreateView(generics.CreateAPIView):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
-class CommentUpdateView(generics.UpdateAPIView):
+class CommentDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     """
-    댓글 수정을 하는 View입니다.
+    댓글 자세히보기와 수정, 삭제를 합니다.
 
     method:
-    - PATCH: 댓글을 작성합니다.
-    """
-
-    queryset = Comment.objects.all()
-    serializer_class = CommentSerializer
-    permission_classes = [IsAuthorOrReadOnly]
-
-
-class CommentDeleteView(generics.DestroyAPIView):
-    """
-    댓글 삭제를 하는 View입니다.
-
-    method:
-    - DELETE: 댓글을 작성합니다.
+    - GET: 댓글 자세히보기입니다.
+    - PATCH: 댓글을 수정합니다.
+    - DELETE: 댓글을 삭제합니다.
     """
 
     queryset = Comment.objects.all()

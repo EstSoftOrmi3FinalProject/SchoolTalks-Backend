@@ -5,22 +5,17 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("", views.PostListCreateView.as_view(), name="post_list"),
+    path("", views.PostListCreateView.as_view(), name="post"),
     path("<int:pk>/", views.PostDetailUpdateDeleteView.as_view(), name="post_detail"),
     path(
-        "<int:post_id>/comment/create",
-        views.CommentCreateView.as_view(),
-        name="comment_create",
+        "<int:post_id>/comment/",
+        views.CommentListCreateView.as_view(),
+        name="comment",
     ),
     path(
-        "<int:post_id>/comment/<int:pk>/update",
-        views.CommentUpdateView.as_view(),
-        name="comment_update",
+        "<int:post_id>/comment/<int:pk>/",
+        views.CommentDetailUpdateDeleteView.as_view(),
+        name="comment_detail",
     ),
-    path(
-        "<int:post_id>/comment/<int:pk>/delete",
-        views.CommentDeleteView.as_view(),
-        name="comment_delete",
-    ),
-    path("<int:post_id>/like", views.LikeView.as_view(), name="like"),
+    path("<int:post_id>/like/", views.LikeView.as_view(), name="like"),
 ]
