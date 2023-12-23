@@ -32,25 +32,29 @@
     </tr>
     <tr>
         <td>
-            - study 앱 BE & FE<br>
-            - qna 기능 BE & FE<br>
+            - Study 앱 BE & FE<br>
+            - Qna 기능 BE & FE<br>
 	    - Chat 앱 BE & FE <br>	
-            - accounts 앱 FE 연결
+            - Accounts 앱 FE 연결<br>
+	    - 문서작업 	
         </td>
         <td>
-            - AIchat 앱 메인 담당 BE & FE
+            - AIchat 앱 메인 담당 BE & FE<br>
+	    - 문서작업	
         </td>
         <td>
-            - post 앱 메인 담당 BE & FE
+            - Post 앱 메인 담당 BE & FE<br>
+	    - 문서작업
         </td>
         <td>
-            - Chat 앱 서브 담당 FE<br>
-	    - Chat 앱 BE 구현 방법 조사<br>
-	    - AIChat 앱 서브 담당 BE & FE
+	    - Chat 앱 BE & FE 서브: 구현 방법 조사<br>
+	    - AIChat 앱 서브: FE<br>
+	    - 문서작업
         </td>
         <td>
-            - accounts 앱 메인 담당 BE
-        </td>
+            - Accounts 앱 메인 담당 BE<br>
+	    - 문서작업
+	</td>
     </tr>
 </table>
 
@@ -146,111 +150,48 @@
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
 - 해당 프로젝트에서 폴더 트리 잘 다듬어 사용하세요. 필요하다면 주석을 달아주세요.
-📦tutorial  
- ┣ 📂accounts  
- ┃ ┣ 📂migrations  
- ┃ ┣ 📂__pycache__  
- ┃ ┣ 📜admin.py  
- ┃ ┣ 📜apps.py  
- ┃ ┣ 📜forms.py  
- ┃ ┣ 📜models.py  
- ┃ ┣ 📜tests.py  
- ┃ ┣ 📜urls.py  
- ┃ ┣ 📜views.py  
- ┃ ┗ 📜__init__.py  
- ┣ 📂blog  
- ┃ ┣ 📂migrations  
- ┃ ┣ 📂__pycache__  
- ┃ ┣ 📜admin.py  
- ┃ ┣ 📜apps.py  
- ┃ ┣ 📜forms.py  
- ┃ ┣ 📜models.py  
- ┃ ┣ 📜tests.py  
- ┃ ┣ 📜urls.py  
- ┃ ┣ 📜views.py  
- ┃ ┗ 📜__init__.py  
- ┣ 📂board  
- ┃ ┣ 📂migrations  
- ┃ ┣ 📂__pycache__  
- ┃ ┣ 📜admin.py  
- ┃ ┣ 📜apps.py  
- ┃ ┣ 📜forms.py  
- ┃ ┣ 📜models.py  
- ┃ ┣ 📜tests.py  
- ┃ ┣ 📜urls.py  
- ┃ ┣ 📜views.py  
- ┃ ┗ 📜__init__.py  
- ┣ 📂main  
- ┃ ┣ 📂migrations  
- ┃ ┣ 📂__pycache__  
- ┃ ┣ 📜admin.py  
- ┃ ┣ 📜apps.py  
- ┃ ┣ 📜models.py  
- ┃ ┣ 📜tests.py  
- ┃ ┣ 📜urls.py  
- ┃ ┣ 📜views.py  
- ┃ ┗ 📜__init__.py  
- ┣ 📂media  
- ┃ ┣ 📂accounts  
- ┃ ┣ 📂blog  
- ┃ ┗ 📂board  
- ┣ 📂static  
- ┃ ┣ 📂assets  
- ┃ ┃ ┣ 📂css  
- ┃ ┃ ┃ ┣ 📂apps  
- ┃ ┃ ┃ ┣ 📂authentication  
- ┃ ┃ ┃ ┣ 📂components  
- ┃ ┃ ┃ ┣ 📂dashboard  
- ┃ ┃ ┃ ┣ 📂elements  
- ┃ ┃ ┃ ┣ 📂forms  
- ┃ ┃ ┃ ┣ 📂pages  
- ┃ ┃ ┃ ┣ 📂tables  
- ┃ ┃ ┃ ┣ 📂users  
- ┃ ┃ ┣ 📂images  
- ┃ ┃ ┃ ┣ 📂mockup_image  
- ┃ ┃ ┣ 📂img  
- ┃ ┃ ┗ 📂js  
- ┃ ┣ 📂bootstrap  
- ┃ ┃ ┣ 📂css  
- ┃ ┃ ┗ 📂js  
- ┃ ┗ 📂plugins  
- ┣ 📂tech_blog  
- ┃ ┣ 📂__pycache__  
- ┃ ┣ 📜.env  
- ┃ ┣ 📜asgi.py  
- ┃ ┣ 📜settings.py  
- ┃ ┣ 📜urls.py  
- ┃ ┣ 📜wsgi.py  
- ┃ ┗ 📜__init__.py  
- ┣ 📂templates  
- ┃ ┣ 📂accounts  
- ┃ ┃ ┣ 📜login.html  
- ┃ ┃ ┣ 📜password_change.html  
- ┃ ┃ ┣ 📜profile.html  
- ┃ ┃ ┣ 📜profile_edit.html  
- ┃ ┃ ┣ 📜signup.html  
- ┃ ┃ ┗ 📜user_list.html  
- ┃ ┣ 📂blog  
- ┃ ┃ ┣ 📜blog_base.html  
- ┃ ┃ ┣ 📜post_detail.html  
- ┃ ┃ ┣ 📜post_form.html  
- ┃ ┃ ┣ 📜post_list.html  
- ┃ ┃ ┗ 📜post_not_found.html  
- ┃ ┣ 📂board  
- ┃ ┃ ┣ 📜board_base.html  
- ┃ ┃ ┣ 📜board_post_detail.html  
- ┃ ┃ ┣ 📜board_post_form.html  
- ┃ ┃ ┗ 📜board_post_list.html  
- ┃ ┣ 📂main  
- ┃ ┃ ┗ 📜index.html  
- ┃ ┣ 📜404.html  
- ┃ ┗ 📜base.html  
- ┣ 📜CONVENTION.md  
- ┣ 📜db.sqlite3  
- ┣ 📜manage.py  
- ┣ 📜README.md  
- ┗ 📜requirements.txt  
-
+```bash
+📦project
+ ┣ 📂accounts
+ ┃ ┣ 📂migrations
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜managers.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜init.py
+ ┣ 📂chat
+ ┃ ┣ 📂migrations
+ ┃ ┣ 📂pycache
+ ┃ ┣ 📜admin.py
+ ┃ ┣ 📜apps.py
+ ┃ ┣ 📜models.py
+ ┃ ┣ 📜tests.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜views.py
+ ┃ ┗ 📜init.py
+ ┣ 📂project
+ ┃ ┣ 📜asgi.py
+ ┃ ┣ 📜settings.env
+ ┃ ┣ 📜settings.py
+ ┃ ┣ 📜urls.py
+ ┃ ┣ 📜wsgi.py
+ ┃ ┗ 📜init.py
+ ┣ 📂staticfiles
+ ┣ 📜.env
+ ┣ 📜.gitignore
+ ┣ 📜db.sqlite3
+ ┣ 📜manage.py
+ ┗ 📜requirements.txt
+📦env
+📦FE
+ ┣ 📂css
+ ┣ 📂js
+ ┣ 📂Repo
+ ┗ 📜index.html
+```
 ### 4.1 개발 일정(WBS)
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
 
