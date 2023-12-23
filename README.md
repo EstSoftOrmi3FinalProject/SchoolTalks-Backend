@@ -262,19 +262,20 @@
         </tr>
 	</tbody>
 </table> 
-- Chat 앱 & QNA 앱
+
+- QNA 앱 & QNA
 <table>
     <tbody>
 	<tr>
-            <td>글 상세보기</td>
-            <td>댓글</td>
+            <td>문의사항</td>
+            <td>익명실시간챗</td>
         </tr>
         <tr>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fa665613-6c57-4452-854f-479ba3a024e6" width="100%">
             </td>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd3df75d-214f-4cad-8425-f2596e9d600f" width="100%">
             </td>
         </tr>
     </tbody>
