@@ -315,7 +315,8 @@ NameError: name 'Post' is not defined SystemCheckError: System check identified 
 - 해결 방법:
 
 각 모델의 역 관계 이름을 명시적으로 설정하여 충돌을 해결해야 합니다. related_name 매개변수를 사용하여 각 모델의 관계 이름을 고유하게 지정가능
- 예제:
+
+- 예제:
 ```
 python Copy code class Comment(models.Model): author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='post_comments') # 다른 필드들...
 
