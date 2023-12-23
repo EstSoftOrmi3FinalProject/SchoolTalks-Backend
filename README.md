@@ -147,46 +147,7 @@
 ### 4.1 프로젝트 구조
 - 해당 프로젝트에서 폴더 트리 잘 다듬어 사용하세요. 필요하다면 주석을 달아주세요.
 ```bash
-📦project
- ┣ 📂accounts
- ┃ ┣ 📂migrations
- ┃ ┣ 📜admin.py
- ┃ ┣ 📜apps.py
- ┃ ┣ 📜managers.py
- ┃ ┣ 📜models.py
- ┃ ┣ 📜tests.py
- ┃ ┣ 📜urls.py
- ┃ ┣ 📜views.py
- ┃ ┗ 📜init.py
- ┣ 📂chat
- ┃ ┣ 📂migrations
- ┃ ┣ 📂pycache
- ┃ ┣ 📜admin.py
- ┃ ┣ 📜apps.py
- ┃ ┣ 📜models.py
- ┃ ┣ 📜tests.py
- ┃ ┣ 📜urls.py
- ┃ ┣ 📜views.py
- ┃ ┗ 📜init.py
- ┣ 📂project
- ┃ ┣ 📜asgi.py
- ┃ ┣ 📜settings.env
- ┃ ┣ 📜settings.py
- ┃ ┣ 📜urls.py
- ┃ ┣ 📜wsgi.py
- ┃ ┗ 📜init.py
- ┣ 📂staticfiles
- ┣ 📜.env
- ┣ 📜.gitignore
- ┣ 📜db.sqlite3
- ┣ 📜manage.py
- ┗ 📜requirements.txt
-📦env
-📦FE
- ┣ 📂css
- ┣ 📂js
- ┣ 📂Repo
- ┗ 📜index.html
+12/25 업데이트 예정
 ```
 ### 4.1 개발 일정(WBS)
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
