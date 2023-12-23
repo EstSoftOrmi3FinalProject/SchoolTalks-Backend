@@ -238,18 +238,18 @@
     <tbody>
         <tr>
             <td>입시 정보 게시판</td>
-            <td>게시글 상세페이지</td>
+            <td>게시글 생성</td>
         </tr>
         <tr>
             <td>
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/26b1edeb-61b6-4ed6-a5f7-8bdb52f55a93" width="100%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/650f9bbe-714b-4626-bc80-db4a15a6b75e" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bad7eef5-c618-4c3f-a9b9-a13a292f707c" width="100%">
             </td>
         </tr>
         <tr>
-            <td>게시글 생성</td>
+            <td>게시글 상세페이지</td>
             <td>게시글 수정</td>
         </tr>
         <tr>
@@ -257,13 +257,17 @@
 	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0dece3fb-3639-4f01-ad66-91bec323f1f5" width="100%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bad7eef5-c618-4c3f-a9b9-a13a292f707c" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/650f9bbe-714b-4626-bc80-db4a15a6b75e" width="100%">
             </td>
         </tr>
         <tr>
             <td>글 상세보기</td>
             <td>댓글</td>
         </tr>
+	</tbody>
+</table>    
+<table>
+    <tbody>
         <tr>
             <td>
                 <img src="ui3.png" width="100%">
