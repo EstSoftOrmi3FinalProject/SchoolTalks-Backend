@@ -32,24 +32,24 @@
     </tr>
     <tr>
 	<td>
-            - Study, Qna, Chat 앱 BE & FE<br>
-            - Accounts 앱 FE 연결<br>
+            - Study, Qna, Chat BE & FE<br>
+            - Accounts FE 연결<br>
 	    - 문서작업 	
         </td>
         <td>
-            - AIchat 앱 메인 담당 BE & FE<br>
+            - AIchat 메인 담당 BE & FE<br>
 	    - 문서작업	
         </td>
         <td>
-            - Post 앱 메인 담당 BE & FE<br>
+            - Post 메인 담당 BE & FE<br>
 	    - 문서작업
         </td>
         <td>
-	    - Chat 앱 및 AIChat 앱 서브: 구현방법조사 및 FE수정<br>
+	    - Chat, AIChat 서브: 구현방법조사 및 FE수정<br>
 	    - 문서작업
         </td>
         <td>
-            - Accounts 앱 메인 담당 BE<br>
+            - Accounts 메인 담당 BE<br>
 	    - 문서작업
 	</td>
     </tr>
