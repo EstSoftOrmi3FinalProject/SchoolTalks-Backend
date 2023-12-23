@@ -225,7 +225,7 @@
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/c95c7cdf-d0eb-49e8-b2c1-c07feb4c202c" width="100%">
             </td>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1ad1f6dd-e98f-4dfd-91b2-546b13dd0b7f" width="100%">
             </td>
         </tr>
         <tr>
