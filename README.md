@@ -59,7 +59,6 @@
 
 ## 2. 개발 환경 및 배포 URL
 ### 2.1 개발 환경
-### 2.1 개발 환경
 - FE:
 
 
@@ -263,7 +262,7 @@
 	</tbody>
 </table> 
 
-- QNA 앱 & QNA
+- QNA 앱 & Chat 앱
 <table>
     <tbody>
 	<tr>
