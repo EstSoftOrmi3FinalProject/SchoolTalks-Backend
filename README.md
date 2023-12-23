@@ -202,6 +202,7 @@
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
 ### 5.2 화면 설계 
+- Accounts 앱
 <table>
     <tbody>
         <tr>
@@ -228,6 +229,13 @@
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1ad1f6dd-e98f-4dfd-91b2-546b13dd0b7f" width="100%">
             </td>
         </tr>
+        <tr>
+	</tbody>
+</table>
+
+- Study 앱
+<table>
+    <tbody>
         <tr>
             <td>검색</td>
             <td>번역</td>
