@@ -261,7 +261,8 @@
             </td>
         </tr>
 	</tbody>
-</table>    
+</table> 
+- Chat 앱 & QNA 앱
 <table>
     <tbody>
 	<tr>
@@ -279,6 +280,41 @@
     </tbody>
 </table>
 
+- Study 앱
+<table>
+    <tbody>
+	<tr>
+            <td>글 상세보기</td>
+            <td>댓글</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+- AI Chat 앱
+<table>
+    <tbody>
+	<tr>
+            <td>글 상세보기</td>
+            <td>댓글</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## 6. 데이터베이스 모델링(ERD)
 ![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
