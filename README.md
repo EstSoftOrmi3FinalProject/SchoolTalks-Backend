@@ -47,8 +47,7 @@
 	    - 문서작업
         </td>
         <td>
-	    - Chat 앱 BE & FE 서브: 구현 방법 조사<br>
-	    - AIChat 앱 서브: FE<br>
+	    - Chat 앱 및 AIChat 앱 서브: 구현 방법 조사 및 FE 수정<br>
 	    - 문서작업
         </td>
         <td>
