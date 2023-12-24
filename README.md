@@ -123,16 +123,24 @@
 ### 5.2 개발 일정(WBS)
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
 
+## 6. 데이터베이스 모델링(ERD)
+![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
 
-## 6. 와이어프레임 / UI / BM
 
-### 6.1 와이어프레임
+## 7. Architecture
+
+![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
+
+
+## 8. 와이어프레임 / UI / BM
+
+### 8.1 와이어프레임
 - 아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
 ![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
-### 6.2 화면 설계 
+### 8.2 화면 설계 
 - Accounts 앱
 <table>
     <tbody>
@@ -248,13 +256,7 @@
     </tbody>
 </table>
 
-## 7. 데이터베이스 모델링(ERD)
-![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
 
-
-## 8. Architecture
-
-![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
 
 
 ## 9. 메인 기능
