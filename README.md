@@ -286,7 +286,7 @@
 ## 7. Architecture
 
 
-![시스템 아키텍쳐](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/61e6863c-d0ef-4bf4-984c-0307348c2655)
+![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
 
 
 ## 8. 메인 기능
