@@ -292,7 +292,11 @@
 - PPT로 간단하게 작성하였으나, 아키텍쳐가 커지거나, 상세한 내용이 필요할 경우 [AWS architecture Tool](https://online.visual-paradigm.com/ko/diagrams/features/aws-architecture-diagram-tool/)을 사용하기도 합니다.
 
 ## 8. 메인 기능
+
+
 - accounts
+
+
 📌 회원가입
 ![Register](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3879f948-6ea5-4302-915c-57571177fb56)
 - 회원가입 성공시 성공 메시지 생성
