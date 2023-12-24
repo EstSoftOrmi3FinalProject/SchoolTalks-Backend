@@ -241,10 +241,10 @@
         </tr>
         <tr>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/c8a4fcdd-903d-421c-9aa7-f35d431fe036" width="100%">
             </td>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/66139d03-150c-4761-9e06-c0eb9abcb513" width="100%">
             </td>
         </tr>
     </tbody>
