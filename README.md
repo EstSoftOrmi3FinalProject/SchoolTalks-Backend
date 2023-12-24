@@ -215,7 +215,7 @@
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fa665613-6c57-4452-854f-479ba3a024e6" width="95%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd3df75d-214f-4cad-8425-f2596e9d600f" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/9d743ed8-7557-4fcf-8843-fb3c5b6ad494" width="100%">
             </td>
         </tr>
     </tbody>
@@ -248,10 +248,10 @@
         </tr>
         <tr>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f3162cc-686b-410f-9312-5e69ad7f223a" width="100%">
             </td>
             <td>
-                <img src="ui3.png" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/40dc826a-3625-4998-8a6d-a56673ffab01" width="100%">
             </td>
         </tr>
     </tbody>
