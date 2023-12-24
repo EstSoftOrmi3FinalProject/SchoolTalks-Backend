@@ -243,15 +243,15 @@
 <table>
     <tbody>
 	<tr>
-            <td>글 상세보기</td>
-            <td>댓글</td>
+            <td>시작</td>
+            <td>질문</td>
         </tr>
         <tr>
             <td>
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f3162cc-686b-410f-9312-5e69ad7f223a" width="100%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/40dc826a-3625-4998-8a6d-a56673ffab01" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="100%">
             </td>
         </tr>
     </tbody>
