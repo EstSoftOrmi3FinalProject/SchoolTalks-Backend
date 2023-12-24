@@ -244,7 +244,7 @@
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6f82502e-498b-4faf-b25b-56b90a84e2d3" width="100%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/7836c00a-3c40-4bd0-9db8-933427ceb304" width="70%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/7836c00a-3c40-4bd0-9db8-933427ceb304" width="90%">
             </td>
         </tr>
     </tbody>
