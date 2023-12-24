@@ -285,11 +285,9 @@
 
 ## 7. Architecture
 
-* 아래  Architecture 설계도는 PPT를 사용했습니다.
-  
-![image](./architecture.png)
 
-- PPT로 간단하게 작성하였으나, 아키텍쳐가 커지거나, 상세한 내용이 필요할 경우 [AWS architecture Tool](https://online.visual-paradigm.com/ko/diagrams/features/aws-architecture-diagram-tool/)을 사용하기도 합니다.
+![시스템 아키텍쳐](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/61e6863c-d0ef-4bf4-984c-0307348c2655)
+
 
 ## 8. 메인 기능
 
