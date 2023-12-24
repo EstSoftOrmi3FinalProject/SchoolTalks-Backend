@@ -241,7 +241,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/c8a4fcdd-903d-421c-9aa7-f35d431fe036" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6f82502e-498b-4faf-b25b-56b90a84e2d3" width="100%">
             </td>
             <td>
                 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/7836c00a-3c40-4bd0-9db8-933427ceb304" width="70%">
