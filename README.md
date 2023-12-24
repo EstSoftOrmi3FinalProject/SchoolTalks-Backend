@@ -35,6 +35,7 @@
 	<td>
             - Study, Qna, Chat BE & FE<br>
             - Accounts FE 연결<br>
+            - 전체 프론트 효율 개선<br>
 	    - 문서작업 	
         </td>
         <td>
@@ -43,7 +44,7 @@
         </td>
         <td>
             - Post 메인 담당 BE & FE<br>
-            - 전체 프론트 코드 효율 개선<br>(include.js, 공통주소 const 설정 등)<br> 
+            - 전체 프론트 코드 효율 개선<br>
 	    - 문서작업
         </td>
         <td>
