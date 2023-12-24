@@ -57,10 +57,12 @@
     </tr>
 </table>
 
+## 2. 요구사항 명세와 기능 명세
 
+![image](https://github.com/EstSoftOrmi3FinalProject/ESTSoftOrmi3FinalProject/assets/141907655/22a8b15c-a7e9-4ff0-84aa-ae0012d7b3da)
 
-## 2. 개발 환경 및 배포 URL
-### 2.1 개발 환경
+## 3. 개발 환경 및 배포 URL
+### 3.1 개발 환경
 - FE:
 
 
@@ -88,10 +90,12 @@
   [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
 
 
-### 2.2 배포 URL
+### 3.2 배포 URL
 - https://www.studyin.co.kr/
 
-### 2.3 URL 구조 및 API 명세
+## 4. URL 설계 및 API 명세
+
+
 | 엔드포인트               | HTTP 메서드 | 기능                                  | 앱             | 비고 |
 |--------------------------|-------------|--------------------------------------|----------------|------|
 | /accounts/signup/        | POST        | 새로운 User를 만들어주는 역할 (회원가입) | Accounts       |      |
@@ -108,29 +112,27 @@
 | /qna/inquiry/{id}/       | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제 | QnA            |      |
 | /study/{id}/             | GET, DELETE, PUT | 특정 게시물 조회, 삭제, 수정     | Study          |      |
 
-## 3. 요구사항 명세와 기능 명세
 
-![image](https://github.com/EstSoftOrmi3FinalProject/ESTSoftOrmi3FinalProject/assets/141907655/22a8b15c-a7e9-4ff0-84aa-ae0012d7b3da)
 
-## 4. 프로젝트 구조와 개발 일정
-### 4.1 프로젝트 구조
+## 5. 프로젝트 구조와 개발 일정
+### 5.1 프로젝트 구조
 - 해당 프로젝트에서 폴더 트리 잘 다듬어 사용하세요. 필요하다면 주석을 달아주세요.
 ```bash
 12/25 업데이트 예정
 ```
-### 4.1 개발 일정(WBS)
+### 5.2 개발 일정(WBS)
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
 
 
-## 5. 와이어프레임 / UI / BM
+## 6. 와이어프레임 / UI / BM
 
-### 5.1 와이어프레임
+### 6.1 와이어프레임
 - 아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
 ![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
-### 5.2 화면 설계 
+### 6.2 화면 설계 
 - Accounts 앱
 <table>
     <tbody>
@@ -246,17 +248,16 @@
     </tbody>
 </table>
 
-## 6. 데이터베이스 모델링(ERD)
+## 7. 데이터베이스 모델링(ERD)
 ![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
 
 
-## 7. Architecture
-
+## 8. Architecture
 
 ![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
 
 
-## 8. 메인 기능
+## 9. 메인 기능
 
 
 - accounts
@@ -284,7 +285,7 @@
 - 회원 가입시 입력 정보를 프로필로 불러옴
 - 회원 가입시 이미지 정보도 불러 오기 가능
 
-## 9. 에러와 에러 해결
+## 10. 에러와 에러 해결
 - <김정원>
 - 에러명 : NameError:
 
@@ -310,10 +311,8 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 
 위와 같이 related_name을 설정한 후, makemigrations 및 migrate 명령을 실행하여 데이터베이스를 업데이트 -> 역 관계 이름 충돌 문제가 해결
 
-
-
-## 10. 개발하며 느낀점
-- <김정원>
+## 11. 개발하며 알게 된 점 및 느낀점
+<김정원>
 - 가장 실무와 가까운 협업 프로젝트를 하는 건 처음이고, 특히 컨벤션 맞추는 부분이 어색하고 어려웠지만, 같이 문제를 해결하는 과정이 재미가 있었음.
 - 또한 협업을 할 때 깃 환경을 어떻게 활용하는지 배우면서 팀프로젝트를 진행할 수 있었기 때문에 매우 도움이 되었던 팀프로젝트였음.
 - 아직 부족한 점은 많지만 지난 DRF 개인 프로젝트에 비해 프론트서버랑 통신에서 오류잡는 시간이 단축 되었고, 또한 CI/CD 구축과 서버배포후 오류잡는 과정에서 더욱 성장 할 수 있었음
