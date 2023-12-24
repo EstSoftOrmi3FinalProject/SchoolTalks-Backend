@@ -292,6 +292,7 @@
 - PPT로 간단하게 작성하였으나, 아키텍쳐가 커지거나, 상세한 내용이 필요할 경우 [AWS architecture Tool](https://online.visual-paradigm.com/ko/diagrams/features/aws-architecture-diagram-tool/)을 사용하기도 합니다.
 
 ## 8. 메인 기능
+- accounts
 📌 회원가입
 ![Register](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3879f948-6ea5-4302-915c-57571177fb56)
 - 회원가입 성공시 성공 메시지 생성
@@ -308,7 +309,12 @@
 
 - 로그아웃 성공시 로그아웃 버튼이 사라지고 로그인 버튼이 생성됨
 - 다시 로그인 버튼을 클릭하여 로그인 하거나 회원가입을 할 수 있음
-  
+
+📌 프로필
+![프로필 재수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/81d935af-bad8-4f98-9272-6f1be44ac30d)
+- 회원 가입시 입력 정보를 프로필로 불러옴
+- 회원 가입시 이미지 정보도 불러 오기 가능
+
 ## 9. 에러와 에러 해결
 - <김정원>
 - 에러명 : NameError:
