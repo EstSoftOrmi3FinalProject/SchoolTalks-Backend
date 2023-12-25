@@ -221,6 +221,17 @@
 
 ![모델](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/95cf6f8a-b668-41a3-991f-27901be9983e)
 
+- 학습 게시물 테이블:
+    - 다대일 관계: 사용자는 여러 게시물(StudyPost, Post), 댓글(StudyComment, Comment), 좋아요(StudyLike, Like)를 작성할 수 있음.
+
+- 일반 게시물 테이블:
+    - 다대일 관계: 하나의 게시물은 여러 댓글(StudyComment)과 좋아요(StudyLike)를 받을 수 있음.
+
+- 대화 테이블(Conversation): 사용자 간의 대화 내용 저장. 각 대화는 하나의 사용자에 의해 시작됨.
+
+- 채팅 테이블(Chat): 채팅방 정보 저장. 각 채팅방은 여러 사용자가 참여할 수 있음.
+
+
 ## 7. Architecture
 
 ![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
