@@ -133,8 +133,46 @@
 ## 5. 프로젝트 구조와 개발 일정
 ### 5.1 프로젝트 구조
 - 해당 프로젝트에서 폴더 트리 잘 다듬어 사용하세요. 필요하다면 주석을 달아주세요.
-```bash
-12/25 업데이트 예정
+```
+# SCHOOLTALKS-BACKEND
+├── 📁 .github
+├── 📁 accounts
+├── 📁 aichat
+├── 📁 chat
+├── 📁 media
+├── 📁 post
+├── 📁 project
+├── 📁 qna
+├── 📁 study
+├── 📁 venv
+├── 📄 .env
+├── 📄 .gitignore
+├── 📄 db.sqlite3
+├── 📄 manage.py
+├── 📘 README.md
+└── 📄 requirements.txt
+
+# SCHOOLTALKS-FRONTEND
+├── 📁 .vscode
+├── 📁 assets
+│   ├── 📁 css
+│   ├── 📁 fonts
+│   ├── 📁 images
+│   ├── 📁 js
+│   └── 📁 mail
+├── 📁 chat
+├── 📁 gpt
+├── 📁 post
+├── 📁 study
+├── 📄 header.html
+├── 📄 index.html
+├── 📄 license.txt
+├── 📄 login.html
+├── 📄 profile.html
+├── 📄 qna.html
+├── 📘 README.md
+└── 📄 register.html
+
 ```
 ### 5.2 개발 일정(WBS)
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
