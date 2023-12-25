@@ -125,12 +125,9 @@
 | `channels[daphne]`           | ~4.0.0      | 비동기 웹소켓 처리 및 실시간 기능 구현의 지원을 위한 Django 확장으로, Daphne 서버를 포함       |
 | `channels_redis`             | ~4.0.0      | Channels의 메시징 레이어에 대한 Redis 기반 백엔드 지원                                             |
 | `redis`                      | !=4.4.0     | Redis 서버와의 통신을 위한 클라이언트 라이브러리, Channels의 백엔드로도 사용                            |
-| `django-cors-headers`        | 4.3.1       | Django 프로젝트에서 CORS 정책을 쉽게 관리할 수 있게 해주는 미들웨어                                       |
 | `django-filter`              | 23.5        | 강력한 필터링 기능을 제공하여, 동적으로 쿼리셋을 필터링, Django Rest Framework와 함께 많이 사용    |
 | `python-dotenv`              | 1.0.0       | `.env` 파일에서 환경 변수를 로드하여 Django 설정에 사용할 수 있게 해주는 도구                                   |
 | `openai`                     | 1.5.0       | OpenAI API를 사용하기 위한 공식 클라이언트 라이브러리, GPT-3 등의 AI 모델을 활용할 때 사용               |
-| `Faker`                      | 21.0.0      | 테스트나 시드 데이터 생성을 위해 가짜 데이터를 생성하는 라이브러리, 특히 개발 과정에서 유용                      |
-| `django-seed`                | 0.3.1       | Django 모델에 대해 쉽게 가짜 데이터를 채울 수 있게 해주는 애플리케이션, Faker와 함께 사용             |
 
 
 ## 5. 프로젝트 구조와 개발 일정
