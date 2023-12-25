@@ -115,10 +115,20 @@
   [![Gunicorn](https://img.shields.io/badge/Gunicorn-green.svg?style=for-the-badge&logo=gunicorn)](https://gunicorn.org/)
   [![Nginx](https://img.shields.io/badge/Nginx-blue.svg?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
   [![DB SQLite](https://img.shields.io/badge/DB-SQLite-003B57.svg?style=for-the-badge&logo=sqlite)](https://www.sqlite.org/)
+ ![Netlify](https://img.shields.io/badge/Netlify-00C7B7.svg?style=for-the-badge&logo=netlify&logoColor=white)
 
 
 ### 3.2 배포 URL
-- https://www.studyin.co.kr/
+- BE : https://schooltalks.maxworld7070.net/
+- FE : https://schooltalks77.netlify.app/
+
+
+### 3.3 CI/CD 구축 배포
+- BE Github Action 자동 배포
+<img width="1195" alt="스크린샷 2023-12-25 오후 6 23 26" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/31dbf6c9-b795-42a8-b4d3-e75dc1d1dd6d">
+- FE Netlify 자동 배포
+<img width="1048" alt="스크린샷 2023-12-22 오후 11 18 21" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/50db0517-7d74-4fcc-a21a-e9993337a6df">
+
 
 ## 4. URL 설계 & API 명세 및 사용 외부라이브러리
 
