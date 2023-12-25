@@ -134,6 +134,9 @@
 
 ### 4.1 URL 설계 & API 명세
 
+- 스웨거 문서(API 명세) : API 기능과 사용 방법을 명확히 전달 하기 위한 Swegger drf-yasg 사용하여 문서화
+🖌 https://schooltalks.maxworld7070.net/schema/swagger-ui/
+
 | 엔드포인트               | HTTP 메서드 | 기능                                  | 앱             | 비고 |
 |--------------------------|-------------|--------------------------------------|----------------|------|
 | /accounts/signup/        | POST        | 새로운 User를 만들어주는 역할 (회원가입) | Accounts       |      |
