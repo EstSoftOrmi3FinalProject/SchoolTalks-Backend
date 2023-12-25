@@ -66,7 +66,10 @@
 
 ## 2. 요구사항 명세와 기능 명세
 
-![image](https://github.com/EstSoftOrmi3FinalProject/ESTSoftOrmi3FinalProject/assets/141907655/22a8b15c-a7e9-4ff0-84aa-ae0012d7b3da)
+
+<img width="665" alt="스크린샷 2023-12-25 오후 6 08 58" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/abb1bd04-bec3-49bb-8fb3-5ca2ad9270d5">
+
+
 - 기본 요구사항
     - 회원 관련 기능
     - 기능 최소 3가지 이상 구현 (회원 기능 포함)
