@@ -1,6 +1,6 @@
 # [SchoolTalks] DRF를 활용한 입시정보 커뮤니티 서비스
 
-![배경사진](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/56ba5cd6-67a9-4841-b682-47cc4c4e6bf6)
+![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
 ## 1. 목표와 기능
 
