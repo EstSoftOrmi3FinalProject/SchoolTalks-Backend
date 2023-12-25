@@ -178,8 +178,8 @@
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
 
 ## 6. 데이터베이스 모델링(ERD)
-![12 18](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54ee5db8-5f40-4307-bd08-c366c658e8ec)
 
+![모델](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/95cf6f8a-b668-41a3-991f-27901be9983e)
 
 ## 7. Architecture
 
