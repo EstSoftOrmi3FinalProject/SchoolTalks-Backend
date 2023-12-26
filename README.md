@@ -225,9 +225,9 @@
 
     -   다대일 관계: 사용자는 여러 게시물(StudyPost, Post), 댓글(StudyComment, Comment), 좋아요(StudyLike, Like)를 작성할 수 있음.
 
--   AI 대화 테이블(Conversation): AI와의 대화 내용 . 사용자의 입력(Prompt)와 AI의 답변(Response)를 저장.
+-   일반 게시물 테이블
 
-    -   다대일 관계: 하나의 게시물은 여러 댓글(StudyComment)과 좋아요(StudyLike)를 받을 수 있음.
+    -   다대일 관계: 하나의 게시물은 여러 댓글(Comment)과 좋아요(Like)를 받을 수 있음.
 
 -   대화 테이블(Conversation): 사용자 간의 대화 내용 저장. 각 대화는 하나의 사용자에 의해 시작됨.
 
