@@ -585,6 +585,100 @@ python manage.py fake-post
 ## 12. 에러와 에러 해결
 
 ### 김정원
+
+- 에러명 : 403 Forbidden 오류
+
+
+- 문제점 : 웹 서버(Nginx)를 사용하는 웹 애플리케이션에서 403 Forbidden 오류 발생.
+
+
+- 문제 원인 : Nginx 서버가 기본적으로 www-data 사용자로 실행되어 웹 애플리케이션의 파일에 접근할 때 권한 부족으로 인한 오류.
+
+
+- 해결 방법 :
+```
+Nginx의 실행 사용자 변경
+
+/etc/nginx/nginx.conf 파일을 열어서 Nginx의 실행 사용자를 ubuntu로 변경.
+user ubuntu;
+
+권한 변경
+
+/media 디렉토리의 소유자와 그룹을 ubuntu로 변경.
+sudo chown -R ubuntu:ubuntu /media
+cat /etc/nginx/nginx.conf | grep user
+
+Nginx 구성 파일 테스트
+변경된 구성 파일의 유효성을 검사.
+sudo nginx -t
+
+Nginx 재시작
+변경 사항이 적용되도록 Nginx 서버를 재시작.
+sudo systemctl restart nginx
+
+기타 정보
+sudo systemctl status nginx 명령으로 Nginx 서버 상태 확인.
+```
+
+- 에러명 : 404 에러
+
+
+- 문제 원인 :
+교안에 따라 location / 위치 설정을 하였지만, 새로운 프로젝트와 url 주소가 맞지 않아서 그냥 location 부분을 '/'로 비워둠
+proxy가 url 위치를 찾지 못해서 생기는 문제 
+
+
+- 해결 방법 :
+nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
+
+```
+        location / {
+        include proxy_params;
+        proxy_pass http://unix:/tmp/gunicorn.sock;
+       }
+```
+
+
+- 에러명 : 400에러 Bad Request
+
+
+- 문제: 배포 이후 페이지는 찾지만, 보안 관련설정이 올바르지 않아서 뜨는 오류
+
+
+- 해결 방법:
+- ALLOWED_HOST를 임의로 비워둬서 발생했던 오류
+- DEBUG = False로 보안상 두기
+
+
+- 에러명 : 500에러 Internal Server Error
+
+
+- 문제: 배포 이후 앱 몇 개가 500에러가 뜸
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/f4299f8c-7758-46be-ae2e-13840b49f229)
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/d9e2bbb6-b0b2-4ec0-a425-250b3e80147e)
+
+
+- 문제 원인
+- ls -a로 폴더 권한을 확인하던중 되던 앱은 migration이 있는데 없는앱은 migration이 없었음
+- migrations이 안되었던 상황 gitignore에 migration을 추가해서 이후에 추가 된 앱들이 migration이 없는 체로 배포가됨
+
+
+- 해결 방법
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/d80c78a2-6ff6-48aa-82ec-bcd437968e00)
+
+
+- mgirations 폴더를 다시 올리고 makemigrations 및 migrate 함
+- 500 에러는 migrate가 안될 가능성이 있음 
+- 배포를 위해선 git에 miration 폴더 및 init 도 추가해야 함
+
+
+
 -   에러명 : NameError:
 
 -   문제:
