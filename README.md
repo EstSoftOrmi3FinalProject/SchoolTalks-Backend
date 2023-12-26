@@ -260,7 +260,7 @@
         </tr>
         <tr>
             <td>
-		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f0a25746-a5a7-41a3-98f7-388f063bfa0e" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/482c3dfc-84a7-44f5-98b3-5d610137ce63" width="100%">
             </td>
             <td>
 		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/86d154fe-9395-4576-adcd-04eece74e3eb" width="100%">
