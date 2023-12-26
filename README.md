@@ -439,7 +439,7 @@
 -   로그인한 사용자만 작성 가능
 
 📌 글 보기
-<img src="img/post/read.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/256c0c47-eddf-41a5-9943-c2f9a500652c" alt="글 보기" width="1000">
 
 -   글 목록이 있음
 -   글 제목을 클릭하면 상세보기로 들어가짐
@@ -458,12 +458,12 @@
 -   작성자만 삭제 가능
 
 📌 글 검색
-<img src="img/post/search.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/4d4515d2-a0eb-44a9-8dfe-6a6a879cb714" alt="검색" width="1000">
 
 -   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 📌 좋아요
-<img src="img/post/like.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/df6b9198-a608-4408-9287-37ee16cbde93" alt="좋아요" width="1000">
 
 -   회색일떄 좋아요을 클릭하면 빨갛게 활성화되고 카운트가 1 오름
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
