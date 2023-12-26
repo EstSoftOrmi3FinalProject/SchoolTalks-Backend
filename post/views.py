@@ -66,10 +66,13 @@ class CommentListCreateView(generics.ListCreateAPIView):
     - GET: 댓글 목록을 출력합니다.
     - POST: 댓글을 작성합니다.
     """
-
-    queryset = Comment.objects.all()
+    
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def get_queryset(self):
+        post_id = self.kwargs.get("post_id")
+        return Comment.objects.filter(post=post_id)
 
 
 class CommentDetailUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
