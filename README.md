@@ -420,7 +420,7 @@
 
 -   회원 가입시 입력 정보를 프로필로 불러옴
 -   회원 가입시 이미지 정보도 불러 오기 가능
-![프로필](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/72161025-77db-4a89-b0cc-8e4829e695f8)
+
 
 ### 자유게시판
 
