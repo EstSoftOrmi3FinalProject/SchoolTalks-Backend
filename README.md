@@ -473,13 +473,13 @@
 #### 자유게시판 댓글
 
 📌 댓글 작성
-<img src="img/post/comment/create.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/079f5863-035e-4c0d-ad71-24ddb904ce7f" alt="댓글 작성" width="1000">
 
 -   로그인한 사용자는 글 상세보기에서 최하단에 댓글 작성이 있음
 -   댓글내용을 적고 작성하면 등록됨
 
 📌 댓글 수정
-<img src="img/post/comment/update.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/aff61a58-18aa-4c38-9d34-c64a8ba8fede" alt="댓글 수정" width="1000">
 
 -   댓글 내용을 수정함
 -   기존 댓글 내용이 미리 들어가있음
@@ -487,7 +487,7 @@
 -   수정시 한번 확인 알람이 있음.
 
 📌 댓글 삭제
-<img src="img/post/comment/delete.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/74dda3dc-167d-4020-bc56-00b259717d84" alt="댓글 삭제" width="1000">
 
 -   댓글을 삭제함
 -   댓글 작성자만 삭제 가능함.
