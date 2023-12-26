@@ -427,11 +427,6 @@
 -   회원 가입시 입력 정보를 프로필로 불러옴
 -   회원 가입시 이미지 정보도 불러 오기 가능
   
-📌 Q&A
-![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
-
-- 자주 찾는 질문은 배너를 활용하여 게시함
-- 메일, 카테고리, 문의내용을 통해 문의할 수 있음
 
 ### 자유게시판
 
@@ -489,12 +484,6 @@
 -   댓글을 삭제함
 -   댓글 작성자만 삭제 가능함.
 
-### 채팅방
-📌 익명 채팅방
-![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
-
-- 익명으로 채팅에 참여할 수 있음
-- 로그인하지 않아도 채팅에 참여할 수 있음
 
 ### AI 채팅 기능
 
@@ -538,6 +527,19 @@
 
 -좋아요 기능 구현
 -댓글 CRUD 가능
+
+### QNA 게시판
+📌 Q&A
+![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
+- 자주 찾는 질문은 배너를 활용하여 게시함
+- 메일, 카테고리, 문의내용을 통해 문의할 수 있음
+
+### 채팅방
+📌 익명 채팅방
+![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
+
+- 익명으로 채팅에 참여할 수 있음
+- 로그인하지 않아도 채팅에 참여할 수 있음
 
 ## 11. 에러와 에러 해결
 
