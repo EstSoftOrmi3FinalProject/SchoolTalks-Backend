@@ -583,5 +583,6 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 ## 13. 마무리 및 시연 영상
 
 
-https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/a12387a4-586c-4d8b-b24f-58435265c541
+https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/37a0c6d0-990f-4a94-8265-602bcc16af41
+
 
