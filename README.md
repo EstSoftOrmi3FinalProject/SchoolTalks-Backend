@@ -372,7 +372,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/9d743ed8-7557-4fcf-8843-fb3c5b6ad494" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/27e35373-584b-40b9-88ef-399ffbfa8370" width="100%">
             </td>
         </tr>
     </tbody>
