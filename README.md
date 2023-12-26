@@ -247,11 +247,12 @@
 ## 9. 와이어프레임 / UI / BM
 
 ### 9.1 와이어프레임
+![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
 
--   아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
-    ![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
+-  카카오 오븐을 통한 와이어프레임 제작
+-  게시판, 챗, 로그인 등 메인 기능에 대한 개략적 프레임 작성
+-  부트스트랩 활용 (출처 : GrayGrids)
 
--   와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
 ### 9.2 화면 설계
 
@@ -547,7 +548,7 @@
 - 좋아요 기능 구현
 - 댓글 CRUD 가능
 
-
+## 11. 추가기능
 ### QNA 게시판
 📌 Q&A
 ![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
@@ -561,25 +562,8 @@
 - 익명으로 채팅에 참여할 수 있음
 - 로그인하지 않아도 채팅에 참여할 수 있음
 
-## 11. 추가기능
-
-- 테스트용 더미데이터를 만드는 명령어를 추가하였습니다.
-- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이합니다.
-- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있습니다.
-
-1. 가상 유저 생성방법
-    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
-```shell
-python manage.py seed-users
-```
 
 
-2. 가상 자유게시판 데이터 생성방법
-    - 이것 역시 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
-    - 사용자는 현재 가입된 사용자중 한명이 랜덤하게 선택되어 들어갑니다.
-```shell
-python manage.py fake-post
-```
 
 
 ## 12. 에러와 에러 해결
@@ -797,5 +781,42 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 
 
 https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/37a0c6d0-990f-4a94-8265-602bcc16af41
+
+## 15. 참고 사항(로컬환경 실습)
+
+- 깃폴더를 다운로드 후 아래와 같이 실행합니다.
+```
+python -m venv venv
+
+Window: venv/Scripts/activate
+Mac, Linux: source venv/bin/activate
+
+.env 파일 생성
+
+SECRET_KEY=YOUR_KEY
+DEBUG=True
+OPENAI_API_KEY=YOUR_KEY
+REDIS_HOST=YOUR_HOST
+REDIS_PORT=YOUR_PORT
+REDIS_PASSWORD=YOUR_PWD
+```
+
+- 테스트용 더미데이터를 만드는 명령어를 추가하였습니다.
+- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이합니다.
+- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있습니다.
+
+1. 가상 유저 생성방법
+    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
+```shell
+python manage.py seed-users
+```
+
+
+2. 가상 자유게시판 데이터 생성방법
+    - 이것 역시 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
+    - 사용자는 현재 가입된 사용자중 한명이 랜덤하게 선택되어 들어갑니다.
+```shell
+python manage.py fake-post
+```
 
 
