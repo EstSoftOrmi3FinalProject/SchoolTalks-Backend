@@ -223,7 +223,7 @@
 
 -   학습 게시물 테이블:
 
-    -   다대일 관계: 사용자는 여러 게시물(StudyPost, Post), 댓글(StudyComment, Comment), 좋아요(StudyLike, Like)를 작성할 수 있음.
+    -   다대일 관계: 하나의 게시물은 여러 댓글(Study Comment)과 좋아요(Study Like)를 받을 수 있음.
 
 -   일반 게시물 테이블
 
