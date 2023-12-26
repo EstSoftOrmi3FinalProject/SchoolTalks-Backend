@@ -262,10 +262,10 @@
         </tr>
         <tr>
             <td>
-		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f0a25746-a5a7-41a3-98f7-388f063bfa0e" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b3007dc7-d276-40a5-89a7-0662bc3e2280" width="100%">
             </td>
             <td>
-		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/86d154fe-9395-4576-adcd-04eece74e3eb" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bf097af1-0277-43bd-9425-ea781f4aeac0" width="100%">
             </td>
 	</tr>
         <tr>
@@ -274,10 +274,10 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/c95c7cdf-d0eb-49e8-b2c1-c07feb4c202c" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/82467666-0739-4709-9395-e06a3d0bd13f" width="100%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1ad1f6dd-e98f-4dfd-91b2-546b13dd0b7f" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/888c39fb-723a-42f6-a178-8cab78f7ee16" width="100%">
             </td>
         </tr>
         <tr>
@@ -324,10 +324,10 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f3162cc-686b-410f-9312-5e69ad7f223a" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/0161ac0b-0329-4e59-81c9-326711efcf43" width="2000px">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="2000px">
             </td>
         </tr>
     </tbody>
@@ -372,7 +372,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/9d743ed8-7557-4fcf-8843-fb3c5b6ad494" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/27e35373-584b-40b9-88ef-399ffbfa8370" width="100%">
             </td>
         </tr>
     </tbody>
@@ -387,7 +387,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/214579ea-5f02-44b6-9113-7354fab986ac" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/0b8472a5-983e-47e0-93f0-7fe412a6e450" width="100%">
             </td>
         </tr>
     </tbody>
@@ -404,79 +404,82 @@
 ### accounts
 
 📌 회원가입
-![Register](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3879f948-6ea5-4302-915c-57571177fb56)
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/a6d8f1f7-9e10-419b-bec5-3af6da6d155a" alt="회원가입" width="1000">
 
 -   회원가입 성공시 성공 메시지 생성
 -   로그인 버튼 클릭 후 로그인 화면으로 이동 가능
 
 📌 로그인
-![Login](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/84ddfaae-0859-48bb-bd63-574391538421)
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/2c542d9f-7a3b-4419-b7e5-d9eca7d23817" alt="회원가입" width="1000">
 
 -   로그인 성공시 이전 페이지로 리다이렉트 됨
 -   상단에 로그인 버튼이 사라지고 로그아웃 버튼이 생성됨
 
 📌 로그아웃
-![Logout](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/7d91c31f-70c0-4c35-aaca-cecca9b94bbd)
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/17e25d06-f4f5-4dfe-9af4-9c77ff9efa62" alt="회원가입" width="1000">
 
 -   로그아웃 성공시 로그아웃 버튼이 사라지고 로그인 버튼이 생성됨
 -   다시 로그인 버튼을 클릭하여 로그인 하거나 회원가입을 할 수 있음
 
 📌 프로필
-![프로필 재수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/81d935af-bad8-4f98-9272-6f1be44ac30d)
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/dff99a62-c698-4d98-a06d-13608364a752" alt="회원가입" width="1000">
 
 -   회원 가입시 입력 정보를 프로필로 불러옴
 -   회원 가입시 이미지 정보도 불러 오기 가능
   
-📌 Q&A
-![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
 
-- 자주 찾는 질문은 배너를 활용하여 게시함
-- 메일, 카테고리, 문의내용을 통해 문의할 수 있음
 
 ### 자유게시판
 
 📌 글 작성
-<img src="img/post/create.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/d1966ab1-07f1-47b9-a5d6-88d5fbf5fbe2" alt="글 작성" width="1000">
 
 -   자유게시판에 새로운 글을 작성
 -   제목과 내용으로 구성되어있으며, 따로 제한없이 자유롭게 글을 쓸 수 있음
 -   로그인한 사용자만 작성 가능
 
 📌 글 보기
-<img src="img/post/read.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/256c0c47-eddf-41a5-9943-c2f9a500652c" alt="글 보기" width="1000">
 
 -   글 목록이 있음
 -   글 제목을 클릭하면 상세보기로 들어가짐
 
 📌 글 수정
-<img src="img/post/update.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/37f45ba8-7907-472a-b637-3f157cb8d102" alt="글 수정" width="1000">
 
 -   자유게시판 글을 수정함
 -   기존에 작성햇던 내용이 미리 들어가있음
 -   작성자만 수정 가능
 
+📌 글 삭제
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/9152657c-a1c0-42d9-8e45-56b3bc955c2b" alt="글 삭제" width="1000">
+
+-   자유게시판 글을 삭제함
+-   작성자만 삭제 가능
+
+📌 글 검색
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/4d4515d2-a0eb-44a9-8dfe-6a6a879cb714" alt="검색" width="1000">
+
+-   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
+
 📌 좋아요
-<img src="img/post/like.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/df6b9198-a608-4408-9287-37ee16cbde93" alt="좋아요" width="1000">
 
 -   회색일떄 좋아요을 클릭하면 빨갛게 활성화되고 카운트가 1 오름
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
 -   사용자마다 각기 다른 좋아요 정보가 있음
 
-📌 글 검색
-<img src="img/post/search.gif" width="1000px">
-
--   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 #### 자유게시판 댓글
 
 📌 댓글 작성
-<img src="img/post/comment/create.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/079f5863-035e-4c0d-ad71-24ddb904ce7f" alt="댓글 작성" width="1000">
 
 -   로그인한 사용자는 글 상세보기에서 최하단에 댓글 작성이 있음
 -   댓글내용을 적고 작성하면 등록됨
 
 📌 댓글 수정
-<img src="img/post/comment/update.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/aff61a58-18aa-4c38-9d34-c64a8ba8fede" alt="댓글 수정" width="1000">
 
 -   댓글 내용을 수정함
 -   기존 댓글 내용이 미리 들어가있음
@@ -484,17 +487,11 @@
 -   수정시 한번 확인 알람이 있음.
 
 📌 댓글 삭제
-<img src="img/post/comment/delete.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/74dda3dc-167d-4020-bc56-00b259717d84" alt="댓글 삭제" width="1000">
 
 -   댓글을 삭제함
 -   댓글 작성자만 삭제 가능함.
 
-### 채팅방
-📌 익명 채팅방
-![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
-
-- 익명으로 채팅에 참여할 수 있음
-- 로그인하지 않아도 채팅에 참여할 수 있음
 
 ### AI 채팅 기능
 
@@ -539,6 +536,20 @@
 - 좋아요 기능 구현
 - 댓글 CRUD 가능
 
+
+### QNA 게시판
+📌 Q&A
+![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
+- 자주 찾는 질문은 배너를 활용하여 게시함
+- 메일, 카테고리, 문의내용을 통해 문의할 수 있음
+
+### 채팅방
+📌 익명 채팅방
+![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
+
+- 익명으로 채팅에 참여할 수 있음
+- 로그인하지 않아도 채팅에 참여할 수 있음
+
 ## 11. 추가기능
 
 - 테스트용 더미데이터를 만드는 명령어를 추가하였습니다.
@@ -562,6 +573,7 @@ python manage.py fake-post
 
 ## 12. 에러와 에러 해결
 
+### 김정원
 -   에러명 : NameError:
 
 -   문제:
@@ -589,21 +601,34 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 
 위와 같이 related_name을 설정한 후, makemigrations 및 migrate 명령을 실행하여 데이터베이스를 업데이트 -> 역 관계 이름 충돌 문제가 해결
 
+
+
 ## 13. 개발하며 알게 된 점 및 느낀점
 
+### 김정원
 -   가장 실무와 가까운 협업 프로젝트를 하는 건 처음이고, 특히 컨벤션 맞추는 부분이 어색하고 어려웠지만, 같이 문제를 해결하는 과정이 재미가 있었음.
 -   또한 협업을 할 때 깃 환경을 어떻게 활용하는지 배우면서 팀프로젝트를 진행할 수 있었기 때문에 매우 도움이 되었던 팀프로젝트였음.
 -   아직 부족한 점은 많지만 지난 DRF 개인 프로젝트에 비해 프론트서버랑 통신에서 오류잡는 시간이 단축 되었고, 또한 CI/CD 구축과 서버배포후 오류잡는 과정에서 더욱 성장 할 수 있었음
+
+### 김창수
 -   개인 프로젝트를 진행할 때와는 다르게 팀 프로젝트는 서로간의 커뮤니케이션이 많이 중요하다는걸 느낄수 있었음.
 -   아직 부족하지만 이해하지 못했던 부분들을 계속 작업을 하면서 조금 더 이해할 수 있었고 노력하고 공부하는 만큼 발전되는 결과물을 볼 수 있었음.
 
-- 김찬양
-    - 첫 chatGPT DRF 프로젝트에서 토큰에 과하게 시간을투자해서 아쉬웟던점이 많앗는데, 이번에 여럿이서 개발하면서 시간도 꽤 잇엇기떄문에 나름 만족할 수 있었던 프로젝트가 되었습니다.
-    - 장고에 꽤 많은 라이브러리를 봤다고 생각햇는데 그것보다 더 다양한 라이브러리와 편의기능이 잇다는것에 매우 놀랐습니다.
-    - 협업에 대해 팀원에 대한 참여율이나 컨벤션 등 걱정이 꽤 많앗는데 부드럽게 흘러간 것 같아서 좋은 결과물을 낸 것 같습니다.
-    - 코드를 짜다보니 욕심이 점점 생겨서 차근차근 이것저것 테스트해보면서 못써봣던 기능 등을 이후에도 개발해볼 생각입니다.
+### 김찬양
+- 첫 chatGPT DRF 프로젝트에서 토큰에 과하게 시간을투자해서 아쉬웟던점이 많앗는데, 이번에 여럿이서 개발하면서 시간도 꽤 잇엇기떄문에 나름 만족할 수 있었던 프로젝트가 되었습니다.
+- 장고에 꽤 많은 라이브러리를 봤다고 생각햇는데 그것보다 더 다양한 라이브러리와 편의기능이 잇다는것에 매우 놀랐습니다.
+- 협업에 대해 팀원에 대한 참여율이나 컨벤션 등 걱정이 꽤 많앗는데 부드럽게 흘러간 것 같아서 좋은 결과물을 낸 것 같습니다.
+- 코드를 짜다보니 욕심이 점점 생겨서 차근차근 이것저것 테스트해보면서 못써봣던 기능 등을 이후에도 개발해볼 생각입니다.
 
-
-
+### 황진경
+-  1:1 채팅 개발 경험이 있어 프로젝트 시작과 동시에 채팅을 맡아 프로젝트를 진행하였다. 그러나 첫 DRF 프로젝트였고 오류가 많아 프로젝트 기간내에 완수할 수 없다고 판단되어 포기한 것이 너무 아쉬웠고 부족한 점이 많으니 노력해야겠다고 생각했다.
+- 맡은 임무를 완벽히 수행하지 못해 대부분 서브로 프로젝트를 진행하였다. 그러나 옆에서 팀원들이 개발하는 과정이나 배포하는 과정을 보며 공부할 수 있었으며 실제 서비스가 운용이 되니 신기했다.
+- 협업을 진행하여 Git을 더 숙달할 수 있는 시간이었다.
+- 
 
 ## 14. 마무리 및 시연 영상
+
+
+https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/37a0c6d0-990f-4a94-8265-602bcc16af41
+
+
