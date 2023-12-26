@@ -288,6 +288,24 @@
 </table>
 
 
+-   AI Chat 앱
+<table>
+    <tbody>
+	<tr>
+            <td>시작</td>
+            <td>질문</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/0161ac0b-0329-4e59-81c9-326711efcf43" width="2000px">
+            </td>
+            <td>
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="2000px">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 -   Post 앱
 <table>
     <tbody>
@@ -316,24 +334,6 @@
             </td>
         </tr>
 	</tbody>
-</table>
-
--   AI Chat 앱
-<table>
-    <tbody>
-	<tr>
-            <td>시작</td>
-            <td>질문</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/0161ac0b-0329-4e59-81c9-326711efcf43" width="2000px">
-            </td>
-            <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="2000px">
-            </td>
-        </tr>
-    </tbody>
 </table>
 
 -   Study 앱
