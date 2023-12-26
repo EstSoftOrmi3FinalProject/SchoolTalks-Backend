@@ -406,15 +406,11 @@
 📌 회원가입
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/a6d8f1f7-9e10-419b-bec5-3af6da6d155a" alt="회원가입" width="1000">
 
-![Register](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3879f948-6ea5-4302-915c-57571177fb56)
-
 -   회원가입 성공시 성공 메시지 생성
 -   로그인 버튼 클릭 후 로그인 화면으로 이동 가능
 
 📌 로그인
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/2c542d9f-7a3b-4419-b7e5-d9eca7d23817" alt="회원가입" width="1000">
-
-![Login](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/84ddfaae-0859-48bb-bd63-574391538421)
 
 -   로그인 성공시 이전 페이지로 리다이렉트 됨
 -   상단에 로그인 버튼이 사라지고 로그아웃 버튼이 생성됨
@@ -422,15 +418,11 @@
 📌 로그아웃
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/17e25d06-f4f5-4dfe-9af4-9c77ff9efa62" alt="회원가입" width="1000">
 
-![Logout](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/7d91c31f-70c0-4c35-aaca-cecca9b94bbd)
-
 -   로그아웃 성공시 로그아웃 버튼이 사라지고 로그인 버튼이 생성됨
 -   다시 로그인 버튼을 클릭하여 로그인 하거나 회원가입을 할 수 있음
 
 📌 프로필
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/dff99a62-c698-4d98-a06d-13608364a752" alt="회원가입" width="1000">
-
-![프로필 재수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/81d935af-bad8-4f98-9272-6f1be44ac30d)
 
 -   회원 가입시 입력 정보를 프로필로 불러옴
 -   회원 가입시 이미지 정보도 불러 오기 가능
