@@ -401,7 +401,7 @@
 - 서비스로 이동하는 아이콘이 반응할 수 있도록 함
 - 사용자가 바로 이동할 수 있도록 네비게이션바와 배너를 생성
 
--   accounts
+### accounts
 
 📌 회원가입
 ![Register](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3879f948-6ea5-4302-915c-57571177fb56)
@@ -495,6 +495,29 @@
 
 - 익명으로 채팅에 참여할 수 있음
 - 로그인하지 않아도 채팅에 참여할 수 있음
+
+### AI 채팅 기능
+
+📌 초기 화면
+![초기 화면](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/1da60557-15fb-49da-8b87-6b58389c2d1d)
+
+- AI 채팅을 시작할때, 이전 채팅 내역이 없다면 채팅 예시를 보여줌
+  
+📌 채팅
+![채팅](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/ba2ac8c6-b593-4af3-8229-82e48f04a10e)
+
+ - 질문을 입력하고 보내기 버튼을 누르면, AI의 말풍선이 생기고 잠시후 답변을 보여줌
+  
+📌 채팅 저장
+![채팅 저장](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/856b280a-4602-4079-bbff-34d1e65fc643)
+
+- 유저의 질문과 AI의 답변은 DB에 저장됨
+- 다른 화면에서 AI 채팅방으로 다시 왔을때 이전 채팅 내역을 보여줌
+  
+📌 채팅 삭제
+![채팅 삭제](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/b596081b-1ed7-4eef-9d79-87af28b1ac80)
+
+- 삭제 버튼을 누르면 이전 채팅 내역이 모두 삭제되고 새로운 채팅을 시작함
 
 ## 11. 에러와 에러 해결
 
