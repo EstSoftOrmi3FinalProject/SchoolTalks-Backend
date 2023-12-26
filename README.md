@@ -426,7 +426,6 @@
 
 -   회원 가입시 입력 정보를 프로필로 불러옴
 -   회원 가입시 이미지 정보도 불러 오기 가능
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/aa6b4a9b-2660-46f2-8179-4e7ba7efbf5f" alt="프로필" width="1000">
   
 📌 Q&A
 ![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
