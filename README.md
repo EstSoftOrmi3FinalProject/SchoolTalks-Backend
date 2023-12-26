@@ -284,35 +284,6 @@
 	</tbody>
 </table>
 
--   Study 앱
-<table>
-    <tbody>
-        <tr>
-            <td>입시 정보 게시판</td>
-            <td>게시글 생성</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1946aab9-6946-4271-bb0f-7228b4100ef4" width="95%">
-            </td>
-            <td>
-	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f43d550-0e89-4ff7-b276-2e9b1f5e631b" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>게시글 상세페이지</td>
-            <td>게시글 수정</td>
-        </tr>
-        <tr>
-            <td>
-	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6c217202-2cc9-4a67-a0ca-4f3cd61ab010" width="90%">
-            </td>
-            <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/75887bd4-8cf9-45ba-bb64-47d431c3bd7e" width="100%">
-            </td>
-        </tr>
-	</tbody>
-</table>
 
 -   Post 앱
 <table>
@@ -344,18 +315,52 @@
 	</tbody>
 </table>
 
--   QNA 앱
+-   AI Chat 앱
 <table>
     <tbody>
 	<tr>
-            <td>문의</td>
+            <td>시작</td>
+            <td>질문</td>
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f3162cc-686b-410f-9312-5e69ad7f223a" width="100%">
+            </td>
+            <td>
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="100%">
             </td>
         </tr>
     </tbody>
+</table>
+
+-   Study 앱
+<table>
+    <tbody>
+        <tr>
+            <td>입시 정보 게시판</td>
+            <td>게시글 생성</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1946aab9-6946-4271-bb0f-7228b4100ef4" width="95%">
+            </td>
+            <td>
+	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f43d550-0e89-4ff7-b276-2e9b1f5e631b" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>게시글 상세페이지</td>
+            <td>게시글 수정</td>
+        </tr>
+        <tr>
+            <td>
+	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6c217202-2cc9-4a67-a0ca-4f3cd61ab010" width="90%">
+            </td>
+            <td>
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/75887bd4-8cf9-45ba-bb64-47d431c3bd7e" width="100%">
+            </td>
+        </tr>
+	</tbody>
 </table>
 
 -   Chat 앱
@@ -373,19 +378,16 @@
     </tbody>
 </table>
 
--   AI Chat 앱
+
+-   QNA 앱
 <table>
     <tbody>
 	<tr>
-            <td>시작</td>
-            <td>질문</td>
+            <td>문의</td>
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f3162cc-686b-410f-9312-5e69ad7f223a" width="100%">
-            </td>
-            <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/b223d6ce-8bf9-4e02-ae3d-b5fd9aba59dc" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04" width="100%">
             </td>
         </tr>
     </tbody>
