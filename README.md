@@ -242,6 +242,7 @@
 -   백엔드: Python과 Django를 사용하고, SQLite 데이터베이스, Gunicorn WSGI, Nginx 웹 서버와 함께 Ubuntu 시스템에 AWS Lightsail로 배포
 
 ## 8. 기술성
+![슬라이드14](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54328235-08bc-4392-90e7-9bce91f8af4a)
 
 ## 9. 와이어프레임 / UI / BM
 
