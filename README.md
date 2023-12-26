@@ -602,6 +602,42 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 위와 같이 related_name을 설정한 후, makemigrations 및 migrate 명령을 실행하여 데이터베이스를 업데이트 -> 역 관계 이름 충돌 문제가 해결
 
 
+### 김찬양
+-   에러명 : NOT NULL constraint failed:
+
+-   문제:
+
+```
+django.db.utils.IntegrityError: NOT NULL constraint failed: accounts_user.grade
+```
+
+-   문제 원인:
+
+    -   accounts의 커스텀 사용자 앱에서 학년을 작은 양수만 저장시키기 위해 PositiveSmallIntegerField로 작성한것이 문제.
+    -   해당 필드는 기본적으로 null값을 허용하지 않는것으로 보인다.
+    -   기본값을 주던가, null을 허용하던가, REQUIRED_FIELDS를 사용해 지정해야했다.
+
+-   해결 방법:
+
+    - 처음엔 기본값을 주려고 했다가, REQUIRED_FIELDS를 사용해 입력받도록 하였다.
+    - null=True는 함부로 설정하지 않는게 좋을것 같아서 이렇게했지만, 다른 팀원의 요청사항과 슈퍼유저 생성의 번거로움도 있고, 이가 없어서 에러가 나는경우는 없다고 판단했기에 null=True를 추가하는것으로 변경했다.
+
+-   예제:
+
+```
+grade = models.PositiveSmallIntegerField(verbose_name="학년", null=True)
+
+or
+
+grade = models.PositiveSmallIntegerField(verbose_name="학년", default=1)
+
+or
+
+REQUIRED_FIELDS = [grade]
+```
+
+위와 같이 null=True항목을 추가하거나, 기본값으로 1을 주거나, REQUIRED_FIELDS를 설정하는것으로 해결된다.
+
 
 ## 13. 개발하며 알게 된 점 및 느낀점
 
