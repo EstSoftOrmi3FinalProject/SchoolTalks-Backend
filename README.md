@@ -1,4 +1,4 @@
-# [SchoolTalks] DRF를 활용한 입시정보 커뮤니티 서비스
+# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
@@ -37,7 +37,7 @@
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/d2fd4777-ff32-4187-b31c-162463a1745f" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/176a30ad-043b-4e61-a120-d46a1e213cf3" width="90%"></td>
-        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/c8367fa4-d98f-4d73-906f-0eb0b8549f48" width="100%"></td>
+	<td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/d6ca16e7-71d7-43ef-91b0-ac2768fc6eb6" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4e1dc27b-ae91-4a2e-bdca-d17a1e74566a" width="100%"></td>
     </tr>
     <tr>
@@ -137,21 +137,21 @@
 
 🖌 https://schooltalks.maxworld7070.net/schema/swagger-ui/
 
-| 엔드포인트                    | HTTP 메서드             | 기능                                     | 앱             | 비고 |
-| ----------------------------- | ----------------------- | ---------------------------------------- | -------------- | ---- |
-| /accounts/signup/             | POST                    | 새로운 User를 만들어주는 역할 (회원가입) | Accounts       |      |
-| /accounts/token/              | POST                    | 인증 토큰 생성 (로그인)                  | Authentication |      |
-| /accounts/token/refresh/      | POST                    | 토큰 갱신                                | Authentication |      |
-| /accounts/token/verify/       | POST                    | 토큰 유효성 검사                         | Authentication |      |
-| /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)  | User Profile   |      |
-| /aichat/                      | GET, DELETE             | AI와 채팅 (채팅 보기, 채팅 삭제)         | AI Chat        |      |
-| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                 | Chat           |      |
-| /post/                        | GET, POST               | 글 목록 조회 및 글 작성                  | Posts          |      |
-| /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                 | Posts          |      |
-| /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                     | Comments       |      |
-| /qna/inquiry/                 | GET, POST               | 문의 사항 조회 및 생성                   | QnA            |      |
-| /qna/inquiry/{id}/            | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제          | QnA            |      |
-| /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정             | Study          |      |
+| 엔드포인트                    | HTTP 메서드             | 기능                                               | 앱             | 비고 |
+| ----------------------------- | ----------------------- | -------------------------------------------------- | -------------- | ---- |
+| /accounts/signup/             | POST                    | 새로운 User를 만들어주는 역할 (회원가입)           | Accounts       |      |
+| /accounts/token/              | POST                    | 인증 토큰 생성 (로그인)                            | Authentication |      |
+| /accounts/token/refresh/      | POST                    | 토큰 갱신                                          | Authentication |      |
+| /accounts/token/verify/       | POST                    | 토큰 유효성 검사                                   | Authentication |      |
+| /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)            | User Profile   |      |
+| /aichat/                      | GET, POST, DELETE       | AI와 채팅 (채팅 보기, 채팅 보내기, 전체 채팅 삭제) | AI Chat        |      |
+| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                           | Chat           |      |
+| /post/                        | GET, POST               | 글 목록 조회 및 글 작성                            | Posts          |      |
+| /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |      |
+| /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |      |
+| /qna/inquiry/                 | GET, POST               | 문의 사항 조회 및 생성                             | QnA            |      |
+| /qna/inquiry/{id}/            | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제                    | QnA            |      |
+| /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정                       | Study          |      |
 
 ### 4.2 사용 외부라이브러리
 
@@ -225,7 +225,7 @@
 
     -   다대일 관계: 사용자는 여러 게시물(StudyPost, Post), 댓글(StudyComment, Comment), 좋아요(StudyLike, Like)를 작성할 수 있음.
 
--   일반 게시물 테이블:
+-   AI 대화 테이블(Conversation): AI와의 대화 내용 . 사용자의 입력(Prompt)와 AI의 답변(Response)를 저장.
 
     -   다대일 관계: 하나의 게시물은 여러 댓글(StudyComment)과 좋아요(StudyLike)를 받을 수 있음.
 
@@ -262,7 +262,7 @@
         </tr>
         <tr>
             <td>
-		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f0a25746-a5a7-41a3-98f7-388f063bfa0e" width="100%">
+		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/482c3dfc-84a7-44f5-98b3-5d610137ce63" width="100%">
             </td>
             <td>
 		<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/86d154fe-9395-4576-adcd-04eece74e3eb" width="100%">
@@ -293,10 +293,10 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/26b1edeb-61b6-4ed6-a5f7-8bdb52f55a93" width="95%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/1946aab9-6946-4271-bb0f-7228b4100ef4" width="95%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/e2142153-e018-4564-b6bc-31f355ba702c" width="100%">
+	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/3f43d550-0e89-4ff7-b276-2e9b1f5e631b" width="100%">
             </td>
         </tr>
         <tr>
@@ -305,10 +305,10 @@
         </tr>
         <tr>
             <td>
-	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4bc54f1c-34c2-4420-ad51-b818f39dfa62" width="90%">
+	        <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6c217202-2cc9-4a67-a0ca-4f3cd61ab010" width="90%">
             </td>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0d2dc326-53a5-4546-93ef-3ca7bf3e4721" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/75887bd4-8cf9-45ba-bb64-47d431c3bd7e" width="100%">
             </td>
         </tr>
 	</tbody>
@@ -352,7 +352,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/214579ea-5f02-44b6-9113-7354fab986ac" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04" width="100%">
             </td>
         </tr>
     </tbody>
@@ -367,7 +367,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/9d743ed8-7557-4fcf-8843-fb3c5b6ad494" width="100%">
+                <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c" width="100%">
             </td>
         </tr>
     </tbody>
