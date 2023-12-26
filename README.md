@@ -428,10 +428,11 @@
 -   회원 가입시 이미지 정보도 불러 오기 가능
   
 
+
 ### 자유게시판
 
 📌 글 작성
-<img src="img/post/create.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/d1966ab1-07f1-47b9-a5d6-88d5fbf5fbe2" alt="글 작성" width="1000">
 
 -   자유게시판에 새로운 글을 작성
 -   제목과 내용으로 구성되어있으며, 따로 제한없이 자유롭게 글을 쓸 수 있음
@@ -444,11 +445,22 @@
 -   글 제목을 클릭하면 상세보기로 들어가짐
 
 📌 글 수정
-<img src="img/post/update.gif" width="1000px">
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/37f45ba8-7907-472a-b637-3f157cb8d102" alt="글 수정" width="1000">
 
 -   자유게시판 글을 수정함
 -   기존에 작성햇던 내용이 미리 들어가있음
 -   작성자만 수정 가능
+
+📌 글 삭제
+<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/9152657c-a1c0-42d9-8e45-56b3bc955c2b" alt="글 삭제" width="1000">
+
+-   자유게시판 글을 삭제함
+-   작성자만 삭제 가능
+
+📌 글 검색
+<img src="img/post/search.gif" width="1000px">
+
+-   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 📌 좋아요
 <img src="img/post/like.gif" width="1000px">
@@ -457,10 +469,6 @@
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
 -   사용자마다 각기 다른 좋아요 정보가 있음
 
-📌 글 검색
-<img src="img/post/search.gif" width="1000px">
-
--   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 #### 자유게시판 댓글
 
