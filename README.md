@@ -433,38 +433,44 @@
 ### 자유게시판
 
 📌 글 작성
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/d1966ab1-07f1-47b9-a5d6-88d5fbf5fbe2" alt="글 작성" width="1000">
+![글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/f1d0247f-0120-4c43-b03a-8acf5dae85b9)
+
 
 -   자유게시판에 새로운 글을 작성
 -   제목과 내용으로 구성되어있으며, 따로 제한없이 자유롭게 글을 쓸 수 있음
 -   로그인한 사용자만 작성 가능
 
 📌 글 보기
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/256c0c47-eddf-41a5-9943-c2f9a500652c" alt="글 보기" width="1000">
+![글 보기](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/6bc385a2-ece4-4251-bbbd-5b0292929465)
+
 
 -   글 목록이 있음
 -   글 제목을 클릭하면 상세보기로 들어가짐
 
 📌 글 수정
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/37f45ba8-7907-472a-b637-3f157cb8d102" alt="글 수정" width="1000">
+![글 수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/06c59547-a8f7-4998-8011-e80ed43a26a9)
+
 
 -   자유게시판 글을 수정함
 -   기존에 작성햇던 내용이 미리 들어가있음
 -   작성자만 수정 가능
 
 📌 글 삭제
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/9152657c-a1c0-42d9-8e45-56b3bc955c2b" alt="글 삭제" width="1000">
+![글 삭제](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/6a395840-3545-4af6-9b6d-284a1c6c697a)
+
 
 -   자유게시판 글을 삭제함
 -   작성자만 삭제 가능
 
 📌 글 검색
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/4d4515d2-a0eb-44a9-8dfe-6a6a879cb714" alt="검색" width="1000">
+![글 검색](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/0d2372df-abf2-4ca6-9e54-06d8b52782e7)
+
 
 -   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 📌 좋아요
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/df6b9198-a608-4408-9287-37ee16cbde93" alt="좋아요" width="1000">
+![글 좋아요](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/cc6158ac-979e-4e28-ba3f-3a811ff387a3)
+
 
 -   회색일떄 좋아요을 클릭하면 빨갛게 활성화되고 카운트가 1 오름
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
@@ -474,13 +480,15 @@
 #### 자유게시판 댓글
 
 📌 댓글 작성
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/079f5863-035e-4c0d-ad71-24ddb904ce7f" alt="댓글 작성" width="1000">
+![댓글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/b1799d8e-f967-4580-a382-752ce7645c2b)
+
 
 -   로그인한 사용자는 글 상세보기에서 최하단에 댓글 작성이 있음
 -   댓글내용을 적고 작성하면 등록됨
 
 📌 댓글 수정
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/aff61a58-18aa-4c38-9d34-c64a8ba8fede" alt="댓글 수정" width="1000">
+![댓글 수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/f711be8c-b7b1-4494-9bd9-513d446e266b)
+
 
 -   댓글 내용을 수정함
 -   기존 댓글 내용이 미리 들어가있음
@@ -488,7 +496,8 @@
 -   수정시 한번 확인 알람이 있음.
 
 📌 댓글 삭제
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/74dda3dc-167d-4020-bc56-00b259717d84" alt="댓글 삭제" width="1000">
+![댓글 삭제](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/8cbda8d7-c42a-4b79-aed4-bb1e9f75c32e)
+
 
 -   댓글을 삭제함
 -   댓글 작성자만 삭제 가능함.
