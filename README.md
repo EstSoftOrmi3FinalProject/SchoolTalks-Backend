@@ -519,6 +519,26 @@
 
 - 삭제 버튼을 누르면 이전 채팅 내역이 모두 삭제되고 새로운 채팅을 시작함
 
+### 입시정보게시판
+📌 게시판 리스트 검색 및 페이지네이션
+![1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4a2df1ee-49a0-4495-9de2-364c74824d42)
+
+- 메모지형식의 게시판 구현
+- 페이지네이션 이전 다음 버튼으로 구현
+- 리스트 검색 기능 제목, 작성자, 내용에 따라 검색 가능
+
+
+📌 게시글 CRUD
+![2](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/71594662-9e8f-4b1a-beac-53d87f9758b5)
+
+- 게시글 작성, 수정, 삭제, 읽기 가능
+
+📌 좋아요 및 댓글 CRUD
+![3](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/ea55f917-07b3-4a4f-aaa1-89654a5f1dd6)
+
+-좋아요 기능 구현
+-댓글 CRUD 가능
+
 ## 11. 에러와 에러 해결
 
 -   에러명 : NameError:
