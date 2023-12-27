@@ -1,4 +1,4 @@
-# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
+![image](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/dea3c5a5-2914-4587-b99e-b7b323fcf8e6)# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
@@ -162,9 +162,9 @@
 | `djangorestframework-simplejwt` | 5.3.1   | JWT 인증을 Django Rest Framework에 쉽게 통합할 수 있게 해주는 확장                              |
 | `drf-spectacular`               | 0.26.5  | DRF 스키마 생성 및 문서화를 위한 확장으로, API 문서화 작업을 간소화                             |
 | `channels[daphne]`              | ~4.0.0  | 비동기 웹소켓 처리 및 실시간 기능 구현의 지원을 위한 Django 확장으로, Daphne 서버를 포함        |
-| `channels_redis`                | ~4.0.0  | Channels의 메시징 레이어에 대한 Redis 기반 백엔드 지원                                          |
 | `redis`                         | !=4.4.0 | Redis 서버와의 통신을 위한 클라이언트 라이브러리, Channels의 백엔드로도 사용                    |
-| `django-filter`                 | 23.5    | 강력한 필터링 기능을 제공하여, 동적으로 쿼리셋을 필터링, Django Rest Framework와 함께 많이 사용 |
+| `channels_redis`                | ~4.0.0  | Channels의 메시징 레이어에 대한 Redis 기반 백엔드 지원                                          |
+| `faker`                         | 21.0.0  | 목업 데이터 생성, 데이터베이스의 부하 테스트 등 다양한 상황에서 유용하게 사용 됨                |
 | `python-dotenv`                 | 1.0.0   | `.env` 파일에서 환경 변수를 로드하여 Django 설정에 사용할 수 있게 해주는 도구                   |
 | `openai`                        | 1.5.0   | OpenAI API를 사용하기 위한 공식 클라이언트 라이브러리, GPT-3 등의 AI 모델을 활용할 때 사용      |
 
@@ -811,7 +811,7 @@ https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655
 
 ## 15. 참고 사항(로컬환경 실습)
 
-- 깃폴더를 다운로드 후 아래와 같이 실행합니다.
+- 깃폴더를 다운로드 후 아래와 같이 실행
 ```
 python -m venv venv
 
@@ -828,13 +828,13 @@ REDIS_PORT=YOUR_PORT
 REDIS_PASSWORD=YOUR_PWD
 ```
 
-- 테스트용 더미데이터를 만드는 명령어를 추가하였습니다.
-- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이합니다.
-- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있습니다.
+- 테스트용 더미데이터를 만드는 명령어를 추가
+- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이
+- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있음
 
 1. 가상 유저 생성방법
-    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
-```shell
+    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성
+```
 python manage.py seed-users
 ```
 
