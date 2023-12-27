@@ -46,6 +46,7 @@
             - Study, Qna, Chat BE & FE<br>
             - Accounts FE 연결<br>
             - 전체 프론트 효율 개선<br>
+            - 배포 및 CI/CD 진행<br>	
 	    - 문서작업 	
         </td>
         <td>
