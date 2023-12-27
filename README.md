@@ -590,7 +590,7 @@
 
 ### 김정원
 
-⚙ 에러명 : 403 Forbidden 오류
+⚙ 에러명 : 403 Forbidden
 
 
 - 문제점 : 웹 서버(Nginx)를 사용하는 웹 애플리케이션에서 403 Forbidden 오류 발생.
@@ -624,7 +624,7 @@ sudo systemctl restart nginx
 sudo systemctl status nginx 명령으로 Nginx 서버 상태 확인.
 ```
 
-⚙ 에러명 : 404 에러
+⚙ 에러명 : 404 에러 Not Found
 
 
 - 문제 원인 :
@@ -683,7 +683,7 @@ nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
 
 
 
-⚙  에러명 : NameError:
+⚙  에러명 : NameError
 
 -   문제:
 
@@ -713,7 +713,7 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 
 
 ### 김찬양
-⚙  에러명 : NOT NULL constraint failed:
+⚙  에러명 : NOT NULL constraint failed
 
 -   문제:
 
