@@ -1,4 +1,4 @@
-![image](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/dea3c5a5-2914-4587-b99e-b7b323fcf8e6)# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
+# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
