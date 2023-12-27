@@ -41,7 +41,6 @@
 	<td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/d6ca16e7-71d7-43ef-91b0-ac2768fc6eb6" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/7d0593c2-7ec4-4715-8c6b-b08e57db5d33" width="70%"></td>
     </tr>
-
     <tr>
 	<td>
             - Study, Qna, Chat BE & FE<br>
