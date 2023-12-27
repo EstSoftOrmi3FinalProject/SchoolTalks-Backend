@@ -536,18 +536,23 @@
 - 메모지형식의 게시판 구현
 - 페이지네이션 이전 다음 버튼으로 구현
 - 리스트 검색 기능 제목, 작성자, 내용에 따라 검색 가능
+- 핵심 주요 정보 게시판이기 때문에 로그인을 해야 CRUD 가능
 
 
 📌 게시글 CRUD
 ![2](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/71594662-9e8f-4b1a-beac-53d87f9758b5)
 
 - 게시글 작성, 수정, 삭제, 읽기 가능
+- 게시글에는 작성자, 작성일, 조회수, 좋아요, 내용, 이미지, 첨부파일이 포함됨
+- 해당 페이지에 접속 시 +1로 View가 올라감
+
 
 📌 좋아요 및 댓글 CRUD
 ![3](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/ea55f917-07b3-4a4f-aaa1-89654a5f1dd6)
 
 - 좋아요 기능 구현
 - 댓글 CRUD 가능
+- 로그인 및 사용자 권한이 있어야 CRUD 가능
 
 ## 11. 추가기능
 ### QNA 게시판
