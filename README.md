@@ -570,7 +570,7 @@
 
 ### 김정원
 
-- 에러명 : 403 Forbidden 오류
+⚙ 에러명 : 403 Forbidden 오류
 
 
 - 문제점 : 웹 서버(Nginx)를 사용하는 웹 애플리케이션에서 403 Forbidden 오류 발생.
@@ -604,7 +604,7 @@ sudo systemctl restart nginx
 sudo systemctl status nginx 명령으로 Nginx 서버 상태 확인.
 ```
 
-- 에러명 : 404 에러
+⚙ 에러명 : 404 에러
 
 
 - 문제 원인 :
@@ -623,7 +623,7 @@ nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
 ```
 
 
-- 에러명 : 400에러 Bad Request
+⚙ 에러명 : 400에러 Bad Request
 
 
 - 문제: 배포 이후 페이지는 찾지만, 보안 관련설정이 올바르지 않아서 뜨는 오류
@@ -634,7 +634,7 @@ nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
 - DEBUG = False로 보안상 두기
 
 
-- 에러명 : 500에러 Internal Server Error
+⚙ 에러명 : 500에러 Internal Server Error
 
 
 - 문제: 배포 이후 앱 몇 개가 500에러가 뜸
@@ -663,7 +663,7 @@ nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
 
 
 
--   에러명 : NameError:
+⚙  에러명 : NameError:
 
 -   문제:
 
@@ -692,7 +692,7 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 
 
 ### 김찬양
--   에러명 : NOT NULL constraint failed:
+⚙  에러명 : NOT NULL constraint failed:
 
 -   문제:
 
@@ -729,7 +729,7 @@ REQUIRED_FIELDS = [grade]
 
 
 ### 김동후
--   에러명 : OPEN AI Version Issue
+⚙  에러명 : OPEN AI Version Issue
 
 -   문제:
 
