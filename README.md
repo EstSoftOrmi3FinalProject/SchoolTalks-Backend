@@ -842,6 +842,6 @@ python manage.py seed-users
 ```shell
 python manage.py fake-post
 ```
-[맨 위로](#)
+<button onclick="scrollToTop()">위로 가기</button>
 
 
