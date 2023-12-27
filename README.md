@@ -754,7 +754,7 @@ REQUIRED_FIELDS = [grade]
 -   문제:
 
 ```
-You can run 'openai migrate' to automatically upgrade your codebase to use the 1.0.0 interface.
+You can run 'openai migrate' to automatically upgrade your codebase to use the 1.0.0 interface.
 
 Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
 ```
