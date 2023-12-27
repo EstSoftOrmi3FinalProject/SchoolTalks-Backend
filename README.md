@@ -406,7 +406,7 @@
 - 서비스로 이동하는 아이콘이 반응할 수 있도록 함
 - 사용자가 바로 이동할 수 있도록 네비게이션바와 배너를 생성
 
-### accounts
+### 회원 관리 기능
 
 📌 회원가입
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/a6d8f1f7-9e10-419b-bec5-3af6da6d155a" alt="회원가입" width="1000">
@@ -433,7 +433,7 @@
 -   회원 가입시 이미지 정보도 불러 오기 가능
   
 
-### 자유게시판
+### 자유게시판 기능
 
 📌 글 작성
 ![글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/f1d0247f-0120-4c43-b03a-8acf5dae85b9)
@@ -479,8 +479,6 @@
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
 -   사용자마다 각기 다른 좋아요 정보가 있음
 
-
-#### 자유게시판 댓글
 
 📌 댓글 작성
 ![댓글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/b1799d8e-f967-4580-a382-752ce7645c2b)
@@ -530,7 +528,7 @@
 - 삭제 버튼을 누르면 이전 채팅 내역이 모두 삭제되고 새로운 채팅을 시작함
 
 
-### 입시정보게시판
+### 입시정보게시판 기능
 :pushpin: 게시판 리스트 검색 및 페이지네이션
 ![1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4a2df1ee-49a0-4495-9de2-364c74824d42)
 
@@ -569,13 +567,13 @@
 - 로그인 및 사용자 권한이 있어야 CRUD 가능
 
 ## 11. 추가기능
-### QNA 게시판
+### 문의 기능
 📌 Q&A
 ![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
 - 자주 찾는 질문은 배너를 활용하여 게시함
 - 메일, 카테고리, 문의내용을 통해 문의할 수 있음
 
-### 채팅방
+### 실시간 익명 채팅 기능
 📌 익명 채팅방
 ![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
 
