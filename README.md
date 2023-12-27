@@ -243,7 +243,7 @@
 
 ## 8. 기술성
 
-![슬라이드14](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/6f003307-024d-491a-876d-24314fc8bdce)
+![슬라이드29](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4d428d8d-53e5-42f9-b07a-edc99c029a6d)
 
 ## 9. 와이어프레임 / UI / BM
 
