@@ -842,18 +842,3 @@ python manage.py seed-users
 ```shell
 python manage.py fake-post
 ```
-<!DOCTYPE html>
-<html>
-<body>
-    <button onclick="scrollToTop()">위로 가기</button>
-    <script>
-        // JavaScript 함수로 페이지 상단으로 스크롤하기
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // 부드러운 스크롤 효과를 사용하려면 'smooth'를 설정합니다.
-            });
-        }
-    </script>
-</body>
-</html>
