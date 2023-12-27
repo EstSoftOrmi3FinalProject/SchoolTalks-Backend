@@ -39,7 +39,7 @@
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/d2fd4777-ff32-4187-b31c-162463a1745f" width="100%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/176a30ad-043b-4e61-a120-d46a1e213cf3" width="90%"></td>
 	<td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/d6ca16e7-71d7-43ef-91b0-ac2768fc6eb6" width="100%"></td>
-        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/7d0593c2-7ec4-4715-8c6b-b08e57db5d33" width="70%"></td>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/7d0593c2-7ec4-4715-8c6b-b08e57db5d33" width="100%"></td>
     </tr>
     <tr>
 	<td>
