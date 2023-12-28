@@ -844,3 +844,7 @@ python manage.py seed-users
 ```shell
 python manage.py fake-post
 ```
+
+## 16. 기타
+
+🖍Schooltalks 깃이모지 컨벤션 : https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/School-Talks-:-Git-Emoji-%EC%BB%A8%EB%B2%A4%EC%85%98
