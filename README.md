@@ -16,15 +16,15 @@
 
     -   회원가입, 로그인, 프로필 기능
     -   커뮤니티 게시판 기능(입시게시판, 자유게시판 2개)
-    -   실시간 채팅 기능
+    -   AI 티칭 기능
+
 
 -   선택 기능
-    -   AI 티칭 기능
+    -   실시간 익명 채팅 기능
     -   문의 기능
 
 ### 1.3 팀 구성
 
--   실제 사진을 업로드 하시길 권합니다.
 <table>
     <tr>
         <th>김정원</th>
@@ -34,17 +34,18 @@
         <th>김창수</th>
     </tr>
     <tr>
-        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="100%"></td>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fe51e6d1-e413-450e-9187-6ee80eaa1546" width="150%"></td>
         <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/d2fd4777-ff32-4187-b31c-162463a1745f" width="100%"></td>
-        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/176a30ad-043b-4e61-a120-d46a1e213cf3" width="90%"></td>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/76a07dc7-63d1-4106-8653-797474e3b6f5" width="100%"></td>
 	<td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/d6ca16e7-71d7-43ef-91b0-ac2768fc6eb6" width="100%"></td>
-        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4e1dc27b-ae91-4a2e-bdca-d17a1e74566a" width="100%"></td>
+        <td><img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/7d0593c2-7ec4-4715-8c6b-b08e57db5d33" width="70%"></td>
     </tr>
     <tr>
 	<td>
             - Study, Qna, Chat BE & FE<br>
             - Accounts FE 연결<br>
             - 전체 프론트 효율 개선<br>
+            - 배포 및 CI/CD 진행<br>	
 	    - 문서작업 	
         </td>
         <td>
@@ -67,6 +68,9 @@
     </tr>
 </table>
 
+### 1.4 플로우차트
+![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/47cbf645-e7c8-421a-b03a-022bf176b498)
+
 ## 2. 요구사항 명세와 기능 명세
 
 <img width="665" alt="스크린샷 2023-12-25 오후 6 08 58" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/abb1bd04-bec3-49bb-8fb3-5ca2ad9270d5">
@@ -87,10 +91,10 @@
     -   발표 자료
 
 -   평가 지표
-    -   기술성: 모놀리식, 마이크로식, FBV와 CBV의 적절한 사용 등 Django의 적절한 사용
-    -   DB설계: 데이터베이스 설계, DB 복잡도, 적절성(예를 들어 1개 모델에 1개 필드만 수십개 X)
+    -   기술성: 마이크로식과 CBV의 적절한 사용, Django 라이브러리들의 적절한 사용
+    -   DB설계: 데이터베이스 설계, DB 복잡도, 적절성에 따라 구현
     -   배포: nginx, gunicorn, django 등 연계하여 배포
-    -   설계와 구현: 설계와 구현 복잡도(요구사항 작성, 와이어프레임, 기간 내 설계한 것들이 모두 구현이 되어 있는지 등)
+    -   설계와 구현: 설계와 구현 복잡도(요구사항 작성, 와이어프레임 등 기간 내 설계한 요소들이 모두 구현이 되어 있는지 등)
 
 ## 3. 개발 환경 및 배포 URL
 
@@ -155,17 +159,16 @@
 
 ### 4.2 사용 외부라이브러리
 
-| 라이브러리                      | 버전    | 설명                                                                                            |
-| ------------------------------- | ------- | ----------------------------------------------------------------------------------------------- |
-| `djangorestframework`           | 3.14.0  | RESTful API 구축을 위한 강력한 툴킷을 Django에 제공                                             |
-| `djangorestframework-simplejwt` | 5.3.1   | JWT 인증을 Django Rest Framework에 쉽게 통합할 수 있게 해주는 확장                              |
-| `drf-spectacular`               | 0.26.5  | DRF 스키마 생성 및 문서화를 위한 확장으로, API 문서화 작업을 간소화                             |
-| `channels[daphne]`              | ~4.0.0  | 비동기 웹소켓 처리 및 실시간 기능 구현의 지원을 위한 Django 확장으로, Daphne 서버를 포함        |
-| `channels_redis`                | ~4.0.0  | Channels의 메시징 레이어에 대한 Redis 기반 백엔드 지원                                          |
+| 라이브러리                      | 버전    | 설명                                                                                      |
+| ------------------------------- | ------- | ----------------------------------------------------------------------------------------|
+| `djangorestframework`           | 3.14.0  | RESTful API 구축을 위한 강력한 툴킷을 Django에 제공                                         |
+| `djangorestframework-simplejwt` | 5.3.1   | JWT 인증을 Django Rest Framework에 쉽게 통합할 수 있게 해주는 확장                           |
+| `drf-spectacular`               | 0.26.5  | DRF 스키마 생성 및 문서화를 위한 확장으로, API 문서화 작업을 간소화                            |
+| `channels[daphne]`              | ~4.0.0  | 비동기 웹소켓 처리 및 실시간 기능 구현의 지원을 위한 Django 확장으로, Daphne 서버를 포함         |
 | `redis`                         | !=4.4.0 | Redis 서버와의 통신을 위한 클라이언트 라이브러리, Channels의 백엔드로도 사용                    |
-| `django-filter`                 | 23.5    | 강력한 필터링 기능을 제공하여, 동적으로 쿼리셋을 필터링, Django Rest Framework와 함께 많이 사용 |
+| `faker`                         | 21.0.0  | 목업 데이터 생성, 데이터베이스의 부하 테스트 등 다양한 상황에서 유용하게 사용 됨                  |
 | `python-dotenv`                 | 1.0.0   | `.env` 파일에서 환경 변수를 로드하여 Django 설정에 사용할 수 있게 해주는 도구                   |
-| `openai`                        | 1.5.0   | OpenAI API를 사용하기 위한 공식 클라이언트 라이브러리, GPT-3 등의 AI 모델을 활용할 때 사용      |
+| `openai`                        | 1.5.0   | OpenAI API를 사용하기 위한 공식 클라이언트 라이브러리, GPT-3 등의 AI 모델을 활용할 때 사용       |
 
 ## 5. 프로젝트 구조와 개발 일정
 
@@ -223,13 +226,13 @@
 
 -   학습 게시물 테이블:
 
-    -   다대일 관계: 사용자는 여러 게시물(StudyPost, Post), 댓글(StudyComment, Comment), 좋아요(StudyLike, Like)를 작성할 수 있음.
+    -   다대일 관계: 하나의 게시물은 여러 댓글(Study Comment)과 좋아요(Study Like)를 받을 수 있음.
 
--   AI 대화 테이블(Conversation): AI와의 대화 내용 . 사용자의 입력(Prompt)와 AI의 답변(Response)를 저장.
+-   일반 게시물 테이블
 
-    -   다대일 관계: 하나의 게시물은 여러 댓글(StudyComment)과 좋아요(StudyLike)를 받을 수 있음.
+    -   다대일 관계: 하나의 게시물은 여러 댓글(Comment)과 좋아요(Like)를 받을 수 있음.
 
--   대화 테이블(Conversation): 사용자 간의 대화 내용 저장. 각 대화는 하나의 사용자에 의해 시작됨.
+-   AI 대화 테이블(Conversation): AI 와의 대화 내용. 사용자의 입력(Prompt)와 AI의 답변(Response)를 저장.
 
 -   채팅 테이블(Chat): 채팅방 정보 저장. 각 채팅방은 여러 사용자가 참여할 수 있음.
 
@@ -242,14 +245,17 @@
 
 ## 8. 기술성
 
+![슬라이드29](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4d428d8d-53e5-42f9-b07a-edc99c029a6d)
+
 ## 9. 와이어프레임 / UI / BM
 
 ### 9.1 와이어프레임
+![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
 
--   아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
-    ![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
+-  카카오 오븐을 통한 와이어프레임 제작
+-  게시판, 챗, 로그인 등 메인 기능에 대한 개략적 프레임 작성
+-  부트스트랩 활용 (출처 : GrayGrids)
 
--   와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
 ### 9.2 화면 설계
 
@@ -284,7 +290,6 @@
 	</tbody>
 </table>
 
-
 -   Post 앱
 <table>
     <tbody>
@@ -315,6 +320,7 @@
 	</tbody>
 </table>
 
+
 -   AI Chat 앱
 <table>
     <tbody>
@@ -332,6 +338,7 @@
         </tr>
     </tbody>
 </table>
+
 
 -   Study 앱
 <table>
@@ -401,7 +408,7 @@
 - 서비스로 이동하는 아이콘이 반응할 수 있도록 함
 - 사용자가 바로 이동할 수 있도록 네비게이션바와 배너를 생성
 
-### accounts
+### 회원 관리 기능
 
 📌 회원가입
 <img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/a6d8f1f7-9e10-419b-bec5-3af6da6d155a" alt="회원가입" width="1000">
@@ -428,58 +435,63 @@
 -   회원 가입시 이미지 정보도 불러 오기 가능
   
 
-
-### 자유게시판
+### 자유게시판 기능
 
 📌 글 작성
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/d1966ab1-07f1-47b9-a5d6-88d5fbf5fbe2" alt="글 작성" width="1000">
+![글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/f1d0247f-0120-4c43-b03a-8acf5dae85b9)
+
 
 -   자유게시판에 새로운 글을 작성
 -   제목과 내용으로 구성되어있으며, 따로 제한없이 자유롭게 글을 쓸 수 있음
 -   로그인한 사용자만 작성 가능
 
 📌 글 보기
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/256c0c47-eddf-41a5-9943-c2f9a500652c" alt="글 보기" width="1000">
+![글 보기](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/6bc385a2-ece4-4251-bbbd-5b0292929465)
+
 
 -   글 목록이 있음
 -   글 제목을 클릭하면 상세보기로 들어가짐
 
 📌 글 수정
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/37f45ba8-7907-472a-b637-3f157cb8d102" alt="글 수정" width="1000">
+![글 수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/06c59547-a8f7-4998-8011-e80ed43a26a9)
+
 
 -   자유게시판 글을 수정함
 -   기존에 작성햇던 내용이 미리 들어가있음
 -   작성자만 수정 가능
 
 📌 글 삭제
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/9152657c-a1c0-42d9-8e45-56b3bc955c2b" alt="글 삭제" width="1000">
+![글 삭제](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/6a395840-3545-4af6-9b6d-284a1c6c697a)
+
 
 -   자유게시판 글을 삭제함
 -   작성자만 삭제 가능
 
 📌 글 검색
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/4d4515d2-a0eb-44a9-8dfe-6a6a879cb714" alt="검색" width="1000">
+![글 검색](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/0d2372df-abf2-4ca6-9e54-06d8b52782e7)
+
 
 -   제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
 📌 좋아요
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/df6b9198-a608-4408-9287-37ee16cbde93" alt="좋아요" width="1000">
+![글 좋아요](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/cc6158ac-979e-4e28-ba3f-3a811ff387a3)
+
 
 -   회색일떄 좋아요을 클릭하면 빨갛게 활성화되고 카운트가 1 오름
 -   빨간색일떄 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
 -   사용자마다 각기 다른 좋아요 정보가 있음
 
 
-#### 자유게시판 댓글
-
 📌 댓글 작성
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/079f5863-035e-4c0d-ad71-24ddb904ce7f" alt="댓글 작성" width="1000">
+![댓글 작성](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/b1799d8e-f967-4580-a382-752ce7645c2b)
+
 
 -   로그인한 사용자는 글 상세보기에서 최하단에 댓글 작성이 있음
 -   댓글내용을 적고 작성하면 등록됨
 
 📌 댓글 수정
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/aff61a58-18aa-4c38-9d34-c64a8ba8fede" alt="댓글 수정" width="1000">
+![댓글 수정](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/f711be8c-b7b1-4494-9bd9-513d446e266b)
+
 
 -   댓글 내용을 수정함
 -   기존 댓글 내용이 미리 들어가있음
@@ -487,7 +499,8 @@
 -   수정시 한번 확인 알람이 있음.
 
 📌 댓글 삭제
-<img src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/142385973/74dda3dc-167d-4020-bc56-00b259717d84" alt="댓글 삭제" width="1000">
+![댓글 삭제](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/137512514/8cbda8d7-c42a-4b79-aed4-bb1e9f75c32e)
+
 
 -   댓글을 삭제함
 -   댓글 작성자만 삭제 가능함.
@@ -516,65 +529,161 @@
 
 - 삭제 버튼을 누르면 이전 채팅 내역이 모두 삭제되고 새로운 채팅을 시작함
 
-### 입시정보게시판
-📌 게시판 리스트 검색 및 페이지네이션
+
+### 입시정보게시판 기능
+:pushpin: 게시판 리스트 검색 및 페이지네이션
 ![1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4a2df1ee-49a0-4495-9de2-364c74824d42)
 
 - 메모지형식의 게시판 구현
 - 페이지네이션 이전 다음 버튼으로 구현
 - 리스트 검색 기능 제목, 작성자, 내용에 따라 검색 가능
+- 핵심 주요 정보 게시판이기 때문에 로그인을 해야 CRUD 가능
 
 
-📌 게시글 CRUD
+:pushpin: 게시글 CRUD
 ![2](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/71594662-9e8f-4b1a-beac-53d87f9758b5)
 
 - 게시글 작성, 수정, 삭제, 읽기 가능
+- 게시글에는 작성자, 작성일, 조회수, 좋아요, 내용, 이미지, 첨부파일이 포함됨
+- 게시글은 작성자만 수정, 삭제 가능
+- 로그인한 사용자만 작성 가능, 글 목록이 있음
+- 더보기를 클릭하면 상세글로 들어감
+- 기존에 작성한 내용을 미리 볼 수 있음
+- 해당 페이지에 접속 시 +1로 View가 올라감
+- 제목, 내용, 제목+내용, 글쓴이 정보로 검색이 가능함
 
-📌 좋아요 및 댓글 CRUD
+
+:pushpin: 좋아요 및 댓글 CRUD
 ![3](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/ea55f917-07b3-4a4f-aaa1-89654a5f1dd6)
 
 - 좋아요 기능 구현
+     - 회색일때 좋아요을 클릭하면 빨갛게 활성화되고 카운트가 1 오름
+     - 빨간색일때 좋아요를 클릭하면 회색으로 비활성화되고 카운트가 1 내려감
+     - 사용자마다 각기 다른 좋아요 정보가 있음
+
 - 댓글 CRUD 가능
+    - 로그인한 사용자는 글 상세보기에서 최하단에 댓글 작성이 있음
+    - 댓글 내용을 작성 수정, 삭제 가능
+    - 작성자만 수정 삭제 가능함.
 
+- 로그인 및 사용자 권한이 있어야 CRUD 가능
 
-### QNA 게시판
+## 11. 추가기능
+### 문의 기능
 📌 Q&A
 ![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
 - 자주 찾는 질문은 배너를 활용하여 게시함
 - 메일, 카테고리, 문의내용을 통해 문의할 수 있음
 
-### 채팅방
+### 실시간 익명 채팅 기능
 📌 익명 채팅방
 ![Chat](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/ea10c85f-b623-406a-a556-6d887619df0c)
 
 - 익명으로 채팅에 참여할 수 있음
 - 로그인하지 않아도 채팅에 참여할 수 있음
 
-## 11. 추가기능
-
-- 테스트용 더미데이터를 만드는 명령어를 추가하였습니다.
-- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이합니다.
-- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있습니다.
-
-1. 가상 유저 생성방법
-    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
-```shell
-python manage.py seed-users
-```
 
 
-2. 가상 자유게시판 데이터 생성방법
-    - 이것 역시 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성해줍니다.
-    - 사용자는 현재 가입된 사용자중 한명이 랜덤하게 선택되어 들어갑니다.
-```shell
-python manage.py fake-post
-```
 
 
 ## 12. 에러와 에러 해결
 
 ### 김정원
--   에러명 : NameError:
+
+⚙ 에러명 : 403 Forbidden
+
+
+- 문제점 : 웹 서버(Nginx)를 사용하는 웹 애플리케이션에서 403 Forbidden 오류 발생.
+
+
+- 문제 원인 : Nginx 서버가 기본적으로 www-data 사용자로 실행되어 웹 애플리케이션의 파일에 접근할 때 권한 부족으로 인한 오류.
+
+
+- 해결 방법 :
+```
+Nginx의 실행 사용자 변경
+
+/etc/nginx/nginx.conf 파일을 열어서 Nginx의 실행 사용자를 ubuntu로 변경.
+user ubuntu;
+
+권한 변경
+
+/media 디렉토리의 소유자와 그룹을 ubuntu로 변경.
+sudo chown -R ubuntu:ubuntu /media
+cat /etc/nginx/nginx.conf | grep user
+
+Nginx 구성 파일 테스트
+변경된 구성 파일의 유효성을 검사.
+sudo nginx -t
+
+Nginx 재시작
+변경 사항이 적용되도록 Nginx 서버를 재시작.
+sudo systemctl restart nginx
+
+기타 정보
+sudo systemctl status nginx 명령으로 Nginx 서버 상태 확인.
+```
+
+⚙ 에러명 : 404 에러 Not Found
+
+
+- 문제 원인 :
+교안에 따라 location / 위치 설정을 하였지만, 새로운 프로젝트와 url 주소가 맞지 않아서 그냥 location 부분을 '/'로 비워둠
+proxy가 url 위치를 찾지 못해서 생기는 문제 
+
+
+- 해결 방법 :
+nginx의 default 값이 잘못 설정되어 다음과 같이 수정하여 해결
+
+```
+        location / {
+        include proxy_params;
+        proxy_pass http://unix:/tmp/gunicorn.sock;
+       }
+```
+
+
+⚙ 에러명 : 400에러 Bad Request
+
+
+- 문제: 배포 이후 페이지는 찾지만, 보안 관련설정이 올바르지 않아서 뜨는 오류
+
+
+- 해결 방법:
+- ALLOWED_HOST를 임의로 비워둬서 발생했던 오류
+- DEBUG = False로 보안상 두기
+
+
+⚙ 에러명 : 500에러 Internal Server Error
+
+
+- 문제: 배포 이후 앱 몇 개에서 500에러가 발생
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/f4299f8c-7758-46be-ae2e-13840b49f229)
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/d9e2bbb6-b0b2-4ec0-a425-250b3e80147e)
+
+
+- 문제 원인
+- ls -a로 폴더 권한을 확인하던 중 정상 작동되던 앱은 migration이 있는데 오류가 뜨는 앱은 migration이 없었음
+- migrations이 안되었던 상황 gitignore에 migration을 추가해서 이후에 추가 된 앱들이 migration이 없는 체로 배포가됨
+
+
+- 해결 방법
+
+
+![image](https://github.com/maxkim77/CI/assets/141907655/d80c78a2-6ff6-48aa-82ec-bcd437968e00)
+
+
+- mgirations 폴더를 다시 올리고 makemigrations 및 migrate
+- 500 에러는 migrate가 안될 가능성이 있음
+- 배포를 위해선 git에 miration 폴더 및 init 도 추가해야 함
+
+
+
+⚙  에러명 : NameError
 
 -   문제:
 
@@ -585,11 +694,12 @@ NameError: name 'Post' is not defined SystemCheckError: System check identified 
 -   문제 원인:
 
     -   Django 모델에서 역 관계(accessor)와 역 질의(reverse query) 이름이 충돌하는 경우 발생
-    -   게시판 study와 게시판 post가 합쳐지면서 비슷한 이름끼리 충돌하면서 생긴문제라 각 모델 관계이름을 변경 해야 했음.
+    -   study 게시판과 post 게시판이 합쳐지면서 비슷한 이름끼리 충돌하여 생긴문제
+
 
 -   해결 방법:
 
-각 모델의 역 관계 이름을 명시적으로 설정하여 충돌을 해결. related_name 매개변수를 사용하여 각 모델의 관계 이름을 고유하게 지정가능.
+각 모델의 역 관계 이름을 명시적으로 설정하여 충돌을 해결가능. related_name 매개변수를 사용하여 각 모델의 관계 이름을 고유하게 지정
 
 -   예제:
 
@@ -603,7 +713,7 @@ class StudyComment(models.Model): author = models.ForeignKey(User, on_delete=mod
 
 
 ### 김찬양
--   에러명 : NOT NULL constraint failed:
+⚙  에러명 : NOT NULL constraint failed
 
 -   문제:
 
@@ -613,14 +723,13 @@ django.db.utils.IntegrityError: NOT NULL constraint failed: accounts_user.grade
 
 -   문제 원인:
 
-    -   accounts의 커스텀 사용자 앱에서 학년을 작은 양수만 저장시키기 위해 PositiveSmallIntegerField로 작성한것이 문제.
-    -   해당 필드는 기본적으로 null값을 허용하지 않는것으로 보인다.
-    -   기본값을 주던가, null을 허용하던가, REQUIRED_FIELDS를 사용해 지정해야했다.
+    -   accounts의 커스텀 사용자 앱에서 학년에 작은 양수만 저장시키기 위해 PositiveSmallIntegerField로 작성한것이 문제
+    -   해당 필드는 기본적으로 null값을 허용하지 않는것으로 보임
 
 -   해결 방법:
 
-    - 처음엔 기본값을 주려고 했다가, REQUIRED_FIELDS를 사용해 입력받도록 하였다.
-    - null=True는 함부로 설정하지 않는게 좋을것 같아서 이렇게했지만, 다른 팀원의 요청사항과 슈퍼유저 생성의 번거로움도 있고, 이가 없어서 에러가 나는경우는 없다고 판단했기에 null=True를 추가하는것으로 변경했다.
+    - 처음엔 기본값을 주려고 했다가, REQUIRED_FIELDS를 사용해 입력받도록 함
+    - 기본값을 주기 or null을 허용 or REQUIRED_FIELDS를 사용해 지정해야함
 
 -   예제:
 
@@ -636,35 +745,103 @@ or
 REQUIRED_FIELDS = [grade]
 ```
 
-위와 같이 null=True항목을 추가하거나, 기본값으로 1을 주거나, REQUIRED_FIELDS를 설정하는것으로 해결된다.
+위와 같이 null = True를 해도 에러가 나지 않는다고 판단했기에 추가하여 에러를 해결
 
+
+### 김동후
+⚙  에러명 : OPEN AI Version Issue
+
+-   문제:
+
+```
+You can run 'openai migrate' to automatically upgrade your codebase to use the 1.0.0 interface.
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+```
+
+-   문제 원인:
+
+    -   Openai Api를 사용해서 인공지능 답변을 받아오기위한 views.py의 코드가 openai 버전에 맞지 않음
+    -   Openai 라이브러리의 버전이 1.~ 버전으로 변경됨에 따라서 인공지능 모델을 생성하는 코드가 변경됨
+
+-   해결 방법:
+
+    - Openai 버전을 강제로 낮춰서 쓰거나 코드를 수정해야 해야 함
+
+-   문제 원인:
+
+    - Openai 버전을 0.27로 낮추어서 사용했으나 pip 버전에 따라서 0.27이 설치되지 않는 문제가 추가로 발생
+
+-   해결 방법:
+
+    - openai migrate를 통해서 모델을 생성 후, OPEN-AI-KEY 가져오는 코드를 최대한 최신 버전의 라이브러리에서 사용해도 문제가 없도록 수정
 
 ## 13. 개발하며 알게 된 점 및 느낀점
 
 ### 김정원
--   가장 실무와 가까운 협업 프로젝트를 하는 건 처음이고, 특히 컨벤션 맞추는 부분이 어색하고 어려웠지만, 같이 문제를 해결하는 과정이 재미가 있었음.
--   또한 협업을 할 때 깃 환경을 어떻게 활용하는지 배우면서 팀프로젝트를 진행할 수 있었기 때문에 매우 도움이 되었던 팀프로젝트였음.
--   아직 부족한 점은 많지만 지난 DRF 개인 프로젝트에 비해 프론트서버랑 통신에서 오류잡는 시간이 단축 되었고, 또한 CI/CD 구축과 서버배포후 오류잡는 과정에서 더욱 성장 할 수 있었음
+-  가장 실무와 가까운 협업 프로젝트를 하는 건 처음이고, 특히 컨벤션 맞추는 부분이 어색하고 어려웠지만, 같이 문제를 해결하는 과정이 재미가 있었음.
+-  또한 협업을 할 때 깃 환경을 어떻게 활용하는지 배우면서 팀 프로젝트를 진행할 수 있었기 때문에 매우 도움이 되었던 프로젝트임.
+-  아직 부족한 점은 많지만 지난 DRF 개인 프로젝트에 비해 프론트서버랑 통신에서 오류잡는 시간이 단축되었고, 또한 CI/CD 구축과 서버 배포 후 오류를 잡는 과정에서 더욱 성장할 수 있었음.
 
 ### 김창수
--   개인 프로젝트를 진행할 때와는 다르게 팀 프로젝트는 서로간의 커뮤니케이션이 많이 중요하다는걸 느낄수 있었음.
--   아직 부족하지만 이해하지 못했던 부분들을 계속 작업을 하면서 조금 더 이해할 수 있었고 노력하고 공부하는 만큼 발전되는 결과물을 볼 수 있었음.
+-  개인 프로젝트를 진행할 때와는 다르게 팀 프로젝트는 서로간의 커뮤니케이션이 많이 중요하다는 걸 느낄 수 있었음.
+-  부족하여 이해하지 못했던 부분들을 계속 작업을 하면서 조금 더 이해할 수 있었고, 협업하는데 Git이 많은 도움이 된다는걸 느껴 앞으로 더 다양하게 활용하는 방법을 공부할 예정.
+-  개인 프로젝트와는 다르게 팀 프로젝트여서 팀원들에게 많은 도움을 받아 혼자 구현하지 못했던 부분들을 해낼 수 있었고 많은 공부가 되었음.
 
 ### 김찬양
-- 첫 chatGPT DRF 프로젝트에서 토큰에 과하게 시간을투자해서 아쉬웟던점이 많앗는데, 이번에 여럿이서 개발하면서 시간도 꽤 잇엇기떄문에 나름 만족할 수 있었던 프로젝트가 되었습니다.
-- 장고에 꽤 많은 라이브러리를 봤다고 생각햇는데 그것보다 더 다양한 라이브러리와 편의기능이 잇다는것에 매우 놀랐습니다.
-- 협업에 대해 팀원에 대한 참여율이나 컨벤션 등 걱정이 꽤 많앗는데 부드럽게 흘러간 것 같아서 좋은 결과물을 낸 것 같습니다.
-- 코드를 짜다보니 욕심이 점점 생겨서 차근차근 이것저것 테스트해보면서 못써봣던 기능 등을 이후에도 개발해볼 생각입니다.
+-  첫 chatGPT DRF 프로젝트에서 토큰에 과하게 시간을 투자해서 아쉬웠던 점이 많앗는데, 이번에는 여럿이서 개발하게 되어 시간이 넉넉했기 때문에 나름 만족할 수 있었던 프로젝트가 되었음.
+-  장고에서 꽤 많은 라이브러리를 봤다고 생각했는데 그것보다 더 다양한 라이브러리와 편의 기능이 있다는 것에 매우 놀랐음.
+-  협업에 대해 팀원에 대한 참여율이나 컨벤션 등 걱정이 꽤 많았는데, 생각보다 부드럽게 흘러가 좋은 결과물을 낸 것 같음
+-  코드를 짜다보니 욕심이 점점 생겨서 차근차근 이것저것 테스트해 보면서 사용하지 못했던 기능 등을 이후에 더 개발해볼 생각.
 
 ### 황진경
--  1:1 채팅 개발 경험이 있어 프로젝트 시작과 동시에 채팅을 맡아 프로젝트를 진행하였다. 그러나 첫 DRF 프로젝트였고 오류가 많아 프로젝트 기간내에 완수할 수 없다고 판단되어 포기한 것이 너무 아쉬웠고 부족한 점이 많으니 노력해야겠다고 생각했다.
-- 맡은 임무를 완벽히 수행하지 못해 대부분 서브로 프로젝트를 진행하였다. 그러나 옆에서 팀원들이 개발하는 과정이나 배포하는 과정을 보며 공부할 수 있었으며 실제 서비스가 운용이 되니 신기했다.
-- 협업을 진행하여 Git을 더 숙달할 수 있는 시간이었다.
-- 
+-  1:1 채팅 개발 경험이 있어 프로젝트 시작과 동시에 채팅을 맡아 팀 프로젝트를 진행하였다. 그러나 첫 DRF 프로젝트였고 오류가 많아 프로젝트 기간 내 완수할 수 없다고 판단되어 포기한 것이 너무 아쉬웠음.
+   부족한 점이  많으니 노력해야겠다고 생각함.
+-  맡은 임무를 완벽히 수행하지 못해 대부분 서브로 프로젝트를 진행. 그러나 옆에서 팀원들이 개발하는 과정이나 배포하는 과정을 보며 공부할 수 있었고 실제 서비스가 운용이 되니 신기 함.
+-  협업을 진행하여 Git을 더 숙달할 수 있는 시간이었음.
+
+### 김동후
+-  Git을 실무와 비슷하게 사용하는 법을 익히고 이를 통해서 배움이 늘어가는 것이 눈에 뚜렷하게 보여서 뿌듯했고, 처음 하는 팀 프로젝트이다 보니까 많이 미숙하고 부족한 부분도 있었지만 결과물을 보니 만족스러움
+-  Django에 조금 더 익숙해지고 특히 담당한 Open ai API를 사용하는 부분이나 채팅 관련 부분에서 많은 공부가 되어서 단순히 결과물을 위한 프로젝트가 아니라 성장하는 경험이 된거같아 아주 의미 있는 시간이었음.
 
 ## 14. 마무리 및 시연 영상
 
 
 https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/37a0c6d0-990f-4a94-8265-602bcc16af41
 
+## 15. 참고 사항(로컬환경 실습)
 
+- 깃폴더를 다운로드 후 아래와 같이 실행
+```
+python -m venv venv
+
+Window: venv/Scripts/activate
+Mac, Linux: source venv/bin/activate
+
+.env 파일 생성
+
+SECRET_KEY=YOUR_KEY
+DEBUG=True
+OPENAI_API_KEY=YOUR_KEY
+REDIS_HOST=YOUR_HOST
+REDIS_PORT=YOUR_PORT
+REDIS_PASSWORD=YOUR_PWD
+```
+
+- 테스트용 더미데이터를 만드는 명령어를 추가
+- faker 라이브러리를 이용해서, 랜덤한 가상의 데이터가 들어가서 보다 다양한 경우의수에 대한 테스트가 용이
+- 현재 가상 사용자(비밀번호는 해싱되지 않은 데이터이므로 변경 필요)와 가상 자유게시판 글이 기능중에 있음
+
+1. 가상 유저 생성방법
+    - 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성
+```
+python manage.py seed-users
+```
+
+
+2. 가상 자유게시판 데이터 생성방법
+    - 이것 역시 기본값은 2명 생성이고, 뒤에 --total (생성할 갯수)를 붙여주면 그만큼 생성
+    - 사용자는 현재 가입된 사용자중 한명이 랜덤하게 선택되어 들어 감
+```shell
+python manage.py fake-post
+```
