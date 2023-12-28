@@ -154,7 +154,6 @@
 | /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |      |
 | /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |      |
 | /qna/inquiry/                 | GET, POST               | 문의 사항 조회 및 생성                             | QnA            |      |
-| /qna/inquiry/{id}/            | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제                    | QnA            |      |
 | /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정                       | Study          |      |
 
 ### 4.2 사용 외부라이브러리
