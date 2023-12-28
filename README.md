@@ -1,8 +1,8 @@
-# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
+# 📖[School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
-## 1. 목표와 기능
+## 🎯1. 목표와 기능
 
 ### 1.1 목표
 
@@ -71,7 +71,7 @@
 ### 1.4 플로우차트
 ![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bcaa29f8-27d8-493d-b413-ce281b53d6e3)
 
-## 2. 요구사항 명세와 기능 명세
+## ✨2. 요구사항 명세와 기능 명세
 ![001](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0ebcbaef-bd88-43d7-9237-6c52331ebe03)
 
 
@@ -97,7 +97,7 @@
     -   배포: nginx, gunicorn, django 등 연계하여 배포
     -   설계와 구현: 설계와 구현 복잡도(요구사항 작성, 와이어프레임 등 기간 내 설계한 요소들이 모두 구현이 되어 있는지 등)
 
-## 3. 개발 환경 및 배포 URL
+## 🖥3. 개발 환경 및 배포 URL
 
 ### 3.1 개발 환경
 
@@ -140,7 +140,7 @@ PWD : test007@
 -   FE Netlify 자동 배포
     <img width="1048" alt="스크린샷 2023-12-22 오후 11 18 21" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/50db0517-7d74-4fcc-a21a-e9993337a6df">
 
-## 4. URL 설계 & API 명세 및 사용 외부라이브러리
+## 🧶4. URL 설계 & API 명세 및 사용 외부라이브러리
 
 ### 4.1 URL 설계 & API 명세
 
@@ -181,7 +181,7 @@ PWD : test007@
 | `python-dotenv`                 | 1.0.0   | `.env` 파일에서 환경 변수를 로드하여 Django 설정에 사용할 수 있게 해주는 도구                   |
 | `openai`                        | 1.5.0   | OpenAI API를 사용하기 위한 공식 클라이언트 라이브러리, GPT-3 등의 AI 모델을 활용할 때 사용       |
 
-## 5. 프로젝트 구조와 개발 일정
+## 📅5. 프로젝트 구조와 개발 일정
 
 ### 5.1 프로젝트 구조
 
@@ -238,7 +238,7 @@ PWD : test007@
 - 배포일정은 앞당겨 여유있게 문서작업을 진행
 - 발표전날은 여유있게 프로젝트 복기와 코드 팀스터디를 진행 
 
-## 6. 데이터베이스 모델링(ERD)
+## 🗂6. 데이터베이스 모델링(ERD)
 
 ![모델](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/95cf6f8a-b668-41a3-991f-27901be9983e)
 
@@ -254,18 +254,18 @@ PWD : test007@
 
 -   채팅 테이블(Chat): 채팅방 정보 저장. 각 채팅방은 여러 사용자가 참여할 수 있음.
 
-## 7. Architecture
+## 🎲7. Architecture
 
 ![SchooltalksSystem drawio (1)](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/eb7111aa-c47a-4482-a789-4ac310aa2d9a)
 
 -   프론트엔드: HTML, CSS, JavaScript, Bootstrap으로 구성되며, Netlify를 통해 배포
 -   백엔드: Python과 Django를 사용하고, SQLite 데이터베이스, Gunicorn WSGI, Nginx 웹 서버와 함께 Ubuntu 시스템에 AWS Lightsail로 배포
 
-## 8. 기술성
+## ⌨8. 기술성
 
 ![슬라이드29](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/4d428d8d-53e5-42f9-b07a-edc99c029a6d)
 
-## 9. 와이어프레임 / UI / BM
+## 💶9. 와이어프레임 / UI
 
 ### 9.1 와이어프레임
 ![슬라이드1](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/f38583cf-038a-4153-b228-aab783940390)
@@ -418,7 +418,7 @@ PWD : test007@
     </tbody>
 </table>
 
-## 10. 메인 기능
+## 🔍10. 메인 기능
 
 📌 메인 페이지
 ![Main](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/482c3dfc-84a7-44f5-98b3-5d610137ce63)
@@ -590,7 +590,7 @@ PWD : test007@
 
 - 로그인 및 사용자 권한이 있어야 CRUD 가능
 
-## 11. 추가기능
+## 🔎11. 추가기능
 ### 문의 기능
 📌 Q&A
 ![QNA](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/75780140/891c1d87-b649-4ee1-8804-11bda3bfac04)
@@ -606,7 +606,7 @@ PWD : test007@
 - 하단에는 쿠팡파트너스 광고를 넣어 실제 커뮤니티와 비슷하게 수익성도 고려 해 보았음.
 
 
-## 12. 에러와 에러 해결
+## 🛠12. 에러와 에러 해결
 
 ### 김정원
 
@@ -796,7 +796,7 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 
     - openai migrate를 통해서 모델을 생성 후, OPEN-AI-KEY 가져오는 코드를 최대한 최신 버전의 라이브러리에서 사용해도 문제가 없도록 수정
 
-## 13. 개발하며 알게 된 점 및 느낀점
+## 👦13. 개발하며 알게 된 점 및 느낀점
 
 ### 김정원
 -  가장 실무와 가까운 협업 프로젝트를 하는 건 처음이고, 특히 컨벤션 맞추는 부분이 어색하고 어려웠지만, 같이 문제를 해결하는 과정이 재미가 있었음.
@@ -824,12 +824,12 @@ Alternatively, you can pin your installation to the old version, e.g. `pip insta
 -  Git을 실무와 비슷하게 사용하는 법을 익히고 이를 통해서 배움이 늘어가는 것이 눈에 뚜렷하게 보여서 뿌듯했고, 처음 하는 팀 프로젝트이다 보니까 많이 미숙하고 부족한 부분도 있었지만 결과물을 보니 만족스러움
 -  Django에 조금 더 익숙해지고 특히 담당한 Open ai API를 사용하는 부분이나 채팅 관련 부분에서 많은 공부가 되어서 단순히 결과물을 위한 프로젝트가 아니라 성장하는 경험이 된거같아 아주 의미 있는 시간이었음.
 
-## 14. 마무리 및 시연 영상
+## 🎞14. 마무리 및 시연 영상
 
 
 https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/37a0c6d0-990f-4a94-8265-602bcc16af41
 
-## 15. 참고 사항(로컬환경 실습)
+## 🧱15. 참고 사항(로컬환경 실습)
 
 - 깃폴더를 다운로드 후 아래와 같이 실행
 ```
@@ -866,7 +866,7 @@ python manage.py seed-users
 python manage.py fake-post
 ```
 
-## 16. 기타
+## 📍16. 기타
 
 🖍 [School Talks 깃이모지 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/School-Talks-:-Git-Emoji-%EC%BB%A8%EB%B2%A4%EC%85%98)
 
