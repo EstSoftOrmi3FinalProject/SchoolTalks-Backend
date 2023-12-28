@@ -68,6 +68,9 @@
     </tr>
 </table>
 
+### 1.4 플로우차트
+![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/47cbf645-e7c8-421a-b03a-022bf176b498)
+
 ## 2. 요구사항 명세와 기능 명세
 
 <img width="665" alt="스크린샷 2023-12-25 오후 6 08 58" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/abb1bd04-bec3-49bb-8fb3-5ca2ad9270d5">
