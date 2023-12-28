@@ -208,8 +208,10 @@ class LikeView(views.APIView):
             post.likesCount += 1
             post.save()
 
-            # 좋아요가 생성되었으면 201 응답
-            return response.Response(status=status.HTTP_201_CREATED)
+            return response.Response(
+                status=status.HTTP_200_OK,
+                data={"likesCount": post.likesCount},
+            )
 
         # 이미 좋아요가 존재하는 경우, 409 Conflict 반환
         return response.Response(status=status.HTTP_409_CONFLICT)
@@ -226,5 +228,6 @@ class LikeView(views.APIView):
 
         like.delete()
         return response.Response(
-            status=status.HTTP_204_NO_CONTENT
-        )  # 좋아요가 삭제되었으면 204 응답
+            status=status.HTTP_200_OK,
+            data={"likesCount": post.likesCount},
+        )
