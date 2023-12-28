@@ -69,7 +69,7 @@
 </table>
 
 ### 1.4 플로우차트
-![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/47cbf645-e7c8-421a-b03a-022bf176b498)
+![플로우 차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54c68f72-78d0-4ef9-aad1-58c69fedb925)
 
 ## 2. 요구사항 명세와 기능 명세
 
@@ -154,7 +154,6 @@
 | /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |      |
 | /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |      |
 | /qna/inquiry/                 | GET, POST               | 문의 사항 조회 및 생성                             | QnA            |      |
-| /qna/inquiry/{id}/            | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제                    | QnA            |      |
 | /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정                       | Study          |      |
 
 ### 4.2 사용 외부라이브러리
@@ -845,3 +844,8 @@ python manage.py seed-users
 ```shell
 python manage.py fake-post
 ```
+
+## 16. 기타
+
+🖍[Schooltalks 깃이모지 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/School-Talks-:-Git-Emoji-%EC%BB%A8%EB%B2%A4%EC%85%98)
+
