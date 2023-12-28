@@ -126,12 +126,10 @@
 -   BE : https://schooltalks.maxworld7070.net/
 -   FE : https://schooltalks77.netlify.app/ (도메인주소 : https://englishmax.xyz)
 
+**Test ID**
 ```
-Test ID:
-
 ID : test007
 PWD : test007@
-
 ```
 
 ### 3.3 CI/CD 구축 배포
