@@ -871,7 +871,7 @@ python manage.py fake-post
 🖍 [School Talks 깃이모지 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/School-Talks-:-Git-Emoji-%EC%BB%A8%EB%B2%A4%EC%85%98)
 
 
-🖋 [School Talks깃브랜치 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/GitHub-Branch-Convention)
+🖋 [School Talks 깃브랜치 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/GitHub-Branch-Convention)
 
 
 [맨 위로](#school-talks-drf를-활용한-입시정보-커뮤니티-서비스)
