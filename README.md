@@ -1,4 +1,4 @@
-# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
+![image](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/8a0e6c65-c612-4e0c-b5ed-df270bd1bbcc)# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
 
@@ -221,9 +221,16 @@ PWD : test007@
 
 ```
 
+- 7개의 앱과 1개의 프로젝트로 구성
+- assets와 html 폴더로 구성
+
 ### 5.2 개발 일정(WBS)
 
 ![4545443](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/fd1869f3-60b9-457e-a813-e5c256d7f90d)
+
+- 개발일정은 GitHub Projects Tool로 작성
+- 배포일정은 앞당겨 여유있게 문서작업을 진행
+- 발표전날은 여유있게 프로젝트 복기와 코드 팀스터디를 진행 
 
 ## 6. 데이터베이스 모델링(ERD)
 
