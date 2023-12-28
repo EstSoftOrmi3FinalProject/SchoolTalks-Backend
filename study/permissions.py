@@ -1,7 +1,6 @@
 # study/permissions.py
 from rest_framework import permissions
 
-
 class IsOwnerOrReadOnly(permissions.BasePermission):
     """
     게시물 작성자만 수정 및 삭제할 수 있도록 권한을 설정합니다.
@@ -22,11 +21,6 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
 
         # 다른 요청에 대해서는 작성자만 허용합니다.
         return obj.author == request.user
-
-
-# study/permissions.py
-from rest_framework import permissions
-
 
 class IsCommentAuthorOrReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
