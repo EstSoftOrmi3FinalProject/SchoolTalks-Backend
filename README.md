@@ -69,7 +69,7 @@
 </table>
 
 ### 1.4 플로우차트
-![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/47cbf645-e7c8-421a-b03a-022bf176b498)
+![플로우 차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/54c68f72-78d0-4ef9-aad1-58c69fedb925)
 
 ## 2. 요구사항 명세와 기능 명세
 
