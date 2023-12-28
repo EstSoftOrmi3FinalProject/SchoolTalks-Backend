@@ -72,8 +72,9 @@
 ![플로우차트](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/bcaa29f8-27d8-493d-b413-ce281b53d6e3)
 
 ## 2. 요구사항 명세와 기능 명세
+![001](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/0ebcbaef-bd88-43d7-9237-6c52331ebe03)
 
-<img width="665" alt="스크린샷 2023-12-25 오후 6 08 58" src="https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/abb1bd04-bec3-49bb-8fb3-5ca2ad9270d5">
+
 
 -   기본 요구사항
 
@@ -593,9 +594,7 @@ PWD : test007@
 
 - 익명으로 채팅에 참여할 수 있음
 - 로그인하지 않아도 채팅에 참여할 수 있음
-
-
-
+- 하단에는 쿠팡파트너스 광고를 넣어 실제 커뮤니티와 비슷하게 수익성도 고려 해 보았음.
 
 
 ## 12. 에러와 에러 해결
