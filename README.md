@@ -156,7 +156,7 @@ PWD : test007@
 | /accounts/token/verify/       | POST                    | 토큰 유효성 검사                                   | Authentication | 🔑   |
 | /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)            | User Profile   | 🔑 🧑 |
 | /aichat/                      | GET, POST, DELETE       | AI와 채팅 (채팅 보기, 채팅 보내기, 전체 채팅 삭제) | AI Chat        | 🔑 🧑 |
-| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                           | Chat           | 🔑 🧑 |
+| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                           | Chat           |       |
 | /post/                        | GET, POST               | 글 목록 조회 및 글 작성                            | Posts          |      |
 | /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |  🔑 🧑    |
 | /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |  🔑 🧑    |
