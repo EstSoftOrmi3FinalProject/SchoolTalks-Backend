@@ -873,6 +873,7 @@ python manage.py fake-post
 
 🖋 [School Talks 깃브랜치 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/GitHub-Branch-Convention)
 
+🖊 [School Talks 프레젠테이션](https://drive.google.com/file/d/1h38GegycqC5suVipqaHLt6Q-2R7Op0oj/view?usp=sharing)
 
 [맨 위로](#school-talks-drf를-활용한-입시정보-커뮤니티-서비스)
 
