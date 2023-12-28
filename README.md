@@ -869,6 +869,6 @@ python manage.py fake-post
 🖋 [School Talks깃브랜치 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/GitHub-Branch-Convention)
 
 
-<a href="#" class="btn--success">Success Button</a>
+[맨 위로](# [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스)
 
 
