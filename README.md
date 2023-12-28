@@ -151,7 +151,7 @@ PWD : test007@
 | 엔드포인트                    | HTTP 메서드             | 기능                                               | 앱             | 비고 |
 | ----------------------------- | ----------------------- | -------------------------------------------------- | -------------- | ---- |
 | /accounts/signup/             | POST                    | 새로운 User를 만들어주는 역할 (회원가입)           | Accounts       |      |
-| /accounts/token/              | POST                    | 인증 토큰 생성 (로그인)                            | Authentication |      |
+| /accounts/token/              | POST                    | 인증 토큰 생성 (로그인)                            | Authentication | 🔑  |
 | /accounts/token/refresh/      | POST                    | 토큰 갱신                                          | Authentication | 🔑  |
 | /accounts/token/verify/       | POST                    | 토큰 유효성 검사                                   | Authentication | 🔑   |
 | /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)            | User Profile   | 🔑 🧑 |
