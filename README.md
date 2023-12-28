@@ -1,6 +1,3 @@
-
-
-
 # [School Talks] DRF를 활용한 입시정보 커뮤니티 서비스
 
 ![logo](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/assets/141907655/5fe3d797-5b4d-42e3-bca7-49baef1ffeaf)
@@ -872,6 +869,6 @@ python manage.py fake-post
 🖋 [School Talks깃브랜치 컨벤션](https://github.com/EstSoftOrmi3FinalProject/SchoolTalks-Backend/wiki/GitHub-Branch-Convention)
 
 
-[맨 위로 가기](##-1.-목표와-기능)
+[맨 위로](#school-talks-drf를-활용한-입시정보-커뮤니티-서비스)
 
 
