@@ -152,16 +152,21 @@ PWD : test007@
 | ----------------------------- | ----------------------- | -------------------------------------------------- | -------------- | ---- |
 | /accounts/signup/             | POST                    | 새로운 User를 만들어주는 역할 (회원가입)           | Accounts       |      |
 | /accounts/token/              | POST                    | 인증 토큰 생성 (로그인)                            | Authentication |      |
-| /accounts/token/refresh/      | POST                    | 토큰 갱신                                          | Authentication |      |
-| /accounts/token/verify/       | POST                    | 토큰 유효성 검사                                   | Authentication |      |
-| /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)            | User Profile   |      |
-| /aichat/                      | GET, POST, DELETE       | AI와 채팅 (채팅 보기, 채팅 보내기, 전체 채팅 삭제) | AI Chat        |      |
-| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                           | Chat           |      |
+| /accounts/token/refresh/      | POST                    | 토큰 갱신                                          | Authentication | 🔑  |
+| /accounts/token/verify/       | POST                    | 토큰 유효성 검사                                   | Authentication | 🔑   |
+| /accounts/user/               | GET                     | 특정 사용자의 프로필 조회 (프로필 보기)            | User Profile   | 🔑 🧑 |
+| /aichat/                      | GET, POST, DELETE       | AI와 채팅 (채팅 보기, 채팅 보내기, 전체 채팅 삭제) | AI Chat        | 🔑 🧑 |
+| /chat/api/chat-messages/      | GET, POST               | 채팅 메시지 조회 및 생성                           | Chat           | 🔑 🧑 |
 | /post/                        | GET, POST               | 글 목록 조회 및 글 작성                            | Posts          |      |
-| /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |      |
-| /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |      |
+| /post/{id}/                   | GET, PUT, PATCH, DELETE | 특정 글 조회, 수정, 삭제                           | Posts          |  🔑 🧑    |
+| /post/{post_id}/comment/{id}/ | DELETE, PUT, PATCH      | 특정 댓글 삭제, 수정                               | Comments       |  🔑 🧑    |
 | /qna/inquiry/                 | GET, POST               | 문의 사항 조회 및 생성                             | QnA            |      |
-| /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정                       | Study          |      |
+| /qna/inquiry/{id}/            | GET, PUT, PATCH, DELETE | 특정 문의 사항 조회, 수정, 삭제                    | QnA            |      |
+| /study/{id}/                  | GET, DELETE, PUT        | 특정 게시물 조회, 삭제, 수정                       | Study          | 🔑 🧑|
+
+
+- 🔑 : 로그인 권한
+- 🧑 : 작성자 권한
 
 ### 4.2 사용 외부라이브러리
 
