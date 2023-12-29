@@ -885,6 +885,7 @@ python manage.py fake-post
 
 🖊 [School Talks 프레젠테이션](https://drive.google.com/file/d/1h38GegycqC5suVipqaHLt6Q-2R7Op0oj/view?usp=sharing)
 
+📌 [School Talks 코드 스터디](https://docs.google.com/document/d/1jC32aTWhoP1_qiBY3m7ljmuS3aLhRLX2kAGPHFBE1UI/edit?usp=sharing)
 [맨 위로](#school-talks-drf를-활용한-입시정보-커뮤니티-서비스)
 
 
