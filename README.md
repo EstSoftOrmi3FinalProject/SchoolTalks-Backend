@@ -127,6 +127,7 @@
 -   BE : https://schooltalks.maxworld7070.net/
 -   FE : https://schooltalks77.netlify.app/ (도메인주소 : https://englishmax.xyz)
 
+* aws과금으로 현재 서버 중단 상태
 **📍Test ID**
 ```
 ID : test007
